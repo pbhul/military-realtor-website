@@ -1,0 +1,442 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { CurrencyDollarIcon, HomeIcon, MapPinIcon, CalculatorIcon, ChartBarIcon, ClockIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+
+export default function BAHHousingGuide() {
+  const bahRates2024 = [
+    {
+      location: "Fort Belvoir Area",
+      zipCodes: ["22060", "22079", "22039"],
+      withDependents: "$2,928",
+      withoutDependents: "$2,436",
+      rank: "E-5 and above"
+    },
+    {
+      location: "Pentagon Area",
+      zipCodes: ["22202", "22204", "22206"],
+      withDependents: "$3,126",
+      withoutDependents: "$2,601",
+      rank: "E-5 and above"
+    },
+    {
+      location: "Quantico Area", 
+      zipCodes: ["22134", "22191", "22192"],
+      withDependents: "$2,928",
+      withoutDependents: "$2,436",
+      rank: "E-5 and above"
+    },
+    {
+      location: "Loudoun County",
+      zipCodes: ["20147", "20148", "20152"],
+      withDependents: "$2,928",
+      withoutDependents: "$2,436",
+      rank: "E-5 and above"
+    }
+  ];
+
+  const strategies = [
+    {
+      icon: CurrencyDollarIcon,
+      title: "100% BAH Strategy",
+      description: "Find homes where your mortgage payment equals your BAH rate, maximizing your housing benefit.",
+      tips: [
+        "Include taxes and insurance in calculations",
+        "Consider HOA fees in total housing costs",
+        "Account for utilities not covered by BAH"
+      ]
+    },
+    {
+      icon: HomeIcon,
+      title: "BAH Plus Strategy",
+      description: "Use BAH as base payment and add personal funds for upgraded housing options.",
+      tips: [
+        "Typically add 10-20% to BAH for premium areas",
+        "Consider long-term equity building",
+        "Factor in potential appreciation"
+      ]
+    },
+    {
+      icon: ChartBarIcon,
+      title: "Under BAH Strategy",
+      description: "Choose housing below BAH rate to pocket the difference tax-free.",
+      tips: [
+        "Keep extra BAH funds for savings",
+        "Build emergency fund with difference", 
+        "Consider investment opportunities"
+      ]
+    }
+  ];
+
+  const housingOptions = [
+    {
+      type: "Single Family Homes",
+      priceRange: "$500K - $800K",
+      bahFit: "100-120% BAH",
+      pros: ["Privacy", "Yard space", "No HOA fees", "Potential appreciation"],
+      cons: ["Higher maintenance", "Property taxes", "Utilities responsibility"]
+    },
+    {
+      type: "Townhomes/Condos",
+      priceRange: "$400K - $650K", 
+      bahFit: "80-100% BAH",
+      pros: ["Lower maintenance", "Community amenities", "Often newer construction"],
+      cons: ["HOA fees", "Shared walls", "Parking limitations"]
+    },
+    {
+      type: "Military Housing",
+      priceRange: "100% BAH",
+      bahFit: "Exact BAH match",
+      pros: ["No out-of-pocket costs", "Maintenance included", "Military community"],
+      cons: ["Limited privacy", "No equity building", "Waiting lists"]
+    }
+  ];
+
+  const calculations = [
+    {
+      scenario: "Fort Belvoir E-6 with Dependents",
+      bah: "$2,928",
+      maxMortgage: "$2,500",
+      taxesInsurance: "$300",
+      utilities: "$200",
+      totalBudget: "$2,928",
+      recommendation: "Look for homes under $520K with good energy efficiency"
+    },
+    {
+      scenario: "Pentagon O-3 with Dependents", 
+      bah: "$3,126",
+      maxMortgage: "$2,650",
+      taxesInsurance: "$350",
+      utilities: "$200",
+      totalBudget: "$3,126",
+      recommendation: "Consider homes up to $550K in Arlington/Alexandria"
+    }
+  ];
+
+  return (
+    <>
+      <Header />
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+              BAH Housing Guide for Northern Virginia
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-blue-100">
+              Maximize your Basic Allowance for Housing with expert guidance from an MRP Certified military real estate specialist. 
+              Find the perfect home within your BAH budget while building long-term wealth.
+            </p>
+            <div className="mt-10">
+              <Link
+                href="/contact"
+                className="rounded-md bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow-sm hover:bg-blue-50"
+              >
+                Get Personalized BAH Strategy
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2024 BAH Rates */}
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              2024 BAH Rates - Northern Virginia
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Current Basic Allowance for Housing rates for major military installations in the area.
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Location
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Zip Codes
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      With Dependents
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Without Dependents
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  {bahRates2024.map((rate, index) => (
+                    <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <div className="text-sm font-medium text-gray-900">{rate.location}</div>
+                        <div className="text-sm text-gray-500">{rate.rank}</div>
+                      </td>
+                      <td className="px-6 py-4">
+                        <div className="text-sm text-gray-900">
+                          {rate.zipCodes.join(", ")}
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <span className="text-lg font-semibold text-green-600">{rate.withDependents}</span>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <span className="text-lg font-semibold text-blue-600">{rate.withoutDependents}</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="px-6 py-4 bg-yellow-50">
+              <p className="text-sm text-gray-700">
+                <strong>Note:</strong> Rates shown are for E-5 and above. Junior enlisted rates vary by rank. 
+                Contact us for specific rate calculations for your rank and situation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BAH Strategies */}
+      <section className="py-24 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Smart BAH Strategies
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Different approaches to maximize your housing allowance based on your financial goals and lifestyle preferences.
+            </p>
+          </div>
+          
+          <div className="grid gap-8 lg:grid-cols-3">
+            {strategies.map((strategy) => (
+              <div key={strategy.title} className="bg-white rounded-lg p-8 shadow-lg">
+                <strategy.icon className="h-8 w-8 text-blue-600 mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">{strategy.title}</h3>
+                <p className="text-gray-600 mb-6">{strategy.description}</p>
+                <ul className="space-y-2">
+                  {strategy.tips.map((tip, index) => (
+                    <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
+                      <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Housing Options Comparison */}
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Housing Options & BAH Fit
+            </h2>
+          </div>
+          
+          <div className="grid gap-8 lg:grid-cols-3">
+            {housingOptions.map((option) => (
+              <div key={option.type} className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{option.type}</h3>
+                <div className="mb-4">
+                  <p className="text-lg font-medium text-green-600">{option.priceRange}</p>
+                  <p className="text-sm text-gray-600">{option.bahFit}</p>
+                </div>
+                
+                <div className="mb-4">
+                  <h4 className="font-medium text-gray-900 mb-2">Pros:</h4>
+                  <ul className="space-y-1">
+                    {option.pros.map((pro, index) => (
+                      <li key={index} className="flex items-center gap-2 text-sm text-gray-700">
+                        <div className="w-1.5 h-1.5 bg-green-600 rounded-full"></div>
+                        {pro}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="font-medium text-gray-900 mb-2">Considerations:</h4>
+                  <ul className="space-y-1">
+                    {option.cons.map((con, index) => (
+                      <li key={index} className="flex items-center gap-2 text-sm text-gray-700">
+                        <div className="w-1.5 h-1.5 bg-orange-600 rounded-full"></div>
+                        {con}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BAH Calculation Examples */}
+      <section className="py-24 bg-blue-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Real BAH Calculation Examples
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                See how BAH works in practice for different ranks and family situations.
+              </p>
+            </div>
+            
+            <div className="space-y-8">
+              {calculations.map((calc, index) => (
+                <div key={index} className="bg-white rounded-lg p-8 shadow-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-6">{calc.scenario}</h3>
+                  <div className="grid gap-6 md:grid-cols-2">
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-4">Monthly Budget Breakdown:</h4>
+                      <div className="space-y-2">
+                        <div className="flex justify-between">
+                          <span>Total BAH:</span>
+                          <span className="font-semibold text-green-600">{calc.bah}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Max Mortgage Payment:</span>
+                          <span>{calc.maxMortgage}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Taxes & Insurance:</span>
+                          <span>{calc.taxesInsurance}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Estimated Utilities:</span>
+                          <span>{calc.utilities}</span>
+                        </div>
+                        <div className="border-t pt-2">
+                          <div className="flex justify-between font-semibold">
+                            <span>Total Housing Budget:</span>
+                            <span>{calc.totalBudget}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-4">MRP Recommendation:</h4>
+                      <p className="text-gray-700 bg-gray-50 p-4 rounded-lg">
+                        {calc.recommendation}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tips & Best Practices */}
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                BAH Best Practices & Tips
+              </h2>
+            </div>
+            
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div className="bg-green-50 rounded-lg p-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                  <CalculatorIcon className="h-6 w-6 text-green-600" />
+                  Smart BAH Management
+                </h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>BAH is received tax-free - factor this into calculations</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Consider total cost of ownership, not just mortgage</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Factor in commute costs and time to your base</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Remember BAH rates can change annually</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-blue-50 rounded-lg p-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                  <MapPinIcon className="h-6 w-6 text-blue-600" />
+                  Location Considerations
+                </h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Different zip codes = different BAH rates</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Consider school districts for families</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Evaluate resale potential for PCS moves</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Research local military communities and support</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-blue-900 py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Ready to Maximize Your BAH?
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-blue-100">
+              Get personalized BAH strategy and home recommendations from an MRP Certified military real estate specialist 
+              who understands your unique financial situation and goals.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <Link
+                href="/contact"
+                className="rounded-md bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow-sm hover:bg-blue-50"
+              >
+                Get Your BAH Strategy
+              </Link>
+              <Link
+                href="/va-loan-guidance"
+                className="text-base font-semibold leading-6 text-white hover:text-blue-100"
+              >
+                Learn About VA Loans →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}

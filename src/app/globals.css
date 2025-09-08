@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --military-blue: #1e3a8a;
+  --military-navy: #1e2832;
+  --military-gold: #d4af37;
+  --military-red: #dc2626;
+  --military-green: #16a34a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* Military Color Palette */
+  --color-military-blue: var(--military-blue);
+  --color-military-navy: var(--military-navy);
+  --color-military-gold: var(--military-gold);
+  --color-military-red: var(--military-red);
+  --color-military-green: var(--military-green);
+  
+  /* Extended Blue Palette for Military Theme */
+  --color-blue-950: #172554;
+  --color-blue-900: #1e3a8a;
+  --color-blue-800: #1e40af;
+  --color-blue-700: #1d4ed8;
+  --color-blue-600: #2563eb;
+  --color-blue-500: #3b82f6;
+  --color-blue-400: #60a5fa;
+  --color-blue-300: #93c5fd;
+  --color-blue-200: #bfdbfe;
+  --color-blue-100: #dbeafe;
+  --color-blue-50: #eff6ff;
+  
+  /* Navy variants */
+  --color-navy-950: #0c1015;
+  --color-navy-900: #1e2832;
+  --color-navy-800: #2a3441;
+  --color-navy-700: #374151;
+  --color-navy-600: #4b5563;
+  --color-navy-500: #6b7280;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Military Styling */
+.military-gradient {
+  background: linear-gradient(135deg, var(--military-blue) 0%, var(--military-navy) 100%);
+}
+
+.military-btn {
+  @apply bg-blue-900 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+}
+
+.military-card {
+  @apply bg-white rounded-lg shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-200 hover:border-blue-200;
+}
+
+.military-text-gradient {
+  background: linear-gradient(135deg, var(--military-blue) 0%, var(--military-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Flag-inspired accents */
+.flag-stripe {
+  background: repeating-linear-gradient(
+    45deg,
+    #dc2626,
+    #dc2626 2px,
+    #ffffff 2px,
+    #ffffff 4px
+  );
+  height: 4px;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+.focus-military:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Loading animations */
+@keyframes military-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.military-pulse {
+  animation: military-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

@@ -1,0 +1,56 @@
+# Military Real Estate Northern Virginia - Robots.txt
+# Serving military families at Fort Belvoir, Pentagon, and Quantico
+
+User-agent: *
+Allow: /
+
+# Important military real estate pages
+Allow: /contact
+Allow: /services  
+Allow: /locations
+Allow: /military-resources
+Allow: /about
+Allow: /va-loan-guidance
+Allow: /pcs-timeline
+Allow: /bah-housing-guide
+Allow: /military-communities
+
+# Base-specific pages
+Allow: /bases/fort-belvoir
+Allow: /bases/pentagon
+Allow: /bases/quantico
+
+# Location-specific pages
+Allow: /locations/alexandria
+Allow: /locations/fairfax-county
+Allow: /locations/stafford
+Allow: /locations/arlington
+Allow: /locations/loudoun
+Allow: /locations/prince-william
+
+# Legal pages
+Allow: /privacy
+Allow: /terms
+
+# Lead magnets and resources
+Allow: /download-guide
+Allow: /military-real-estate-guide.pdf
+
+# Block admin or sensitive areas
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Sitemaps
+Sitemap: https://www.militaryrealestatenova.com/sitemap.xml
+Sitemap: https://www.militaryrealestatenova.com/sitemap-pages.xml
+Sitemap: https://www.militaryrealestatenova.com/sitemap-locations.xml
+
+# Military-specific crawl delay to respect server resources
+Crawl-delay: 1
+
+# Host specification
+Host: https://www.militaryrealestatenova.com

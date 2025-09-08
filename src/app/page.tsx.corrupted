@@ -1,0 +1,324 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { PhoneIcon, MapPinIcon, ShieldCheckIcon, HomeIcon, DocumentTextIcon, CalculatorIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+
+export default function Home() {
+  const features = [
+    {
+      icon: ShieldCheckIcon,
+      title: "MRP Certified Military Veteran",
+      description: "Veteran-owned and Military Relocation Professional (MRP) certified with specialized training in military relocations, PCS moves, and deployment challenges."
+    },
+    {
+      icon: HomeIcon,
+      title: "VA Loan Process Guide",
+      description: "Expert guidance through VA loan process, connecting you with trusted lenders and helping navigate the benefits you've earned."
+    },
+    {
+      icon: MapPinIcon,
+      title: "Local Knowledge",
+      description: "Intimate knowledge of Fort Belvoir, Pentagon, and Quantico areas with base proximity insights and military community connections."
+    },
+    {
+      icon: DocumentTextIcon,
+      title: "PCS Timeline Expert",
+      description: "Coordinating real estate transactions with military orders and deployment schedules from someone who understands the process."
+    }
+  ];
+
+  const locations = [
+    "Fort Belvoir Area",
+    "Pentagon Region", 
+    "Quantico Marine Base",
+    "Fairfax County",
+    "Alexandria",
+    "Arlington",
+    "Loudoun County",
+    "Prince William County",
+    "Stafford County",
+    "Fredericksburg"
+  ];
+
+  return (
+    <>
+      <Header />
+      
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            className="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1565223579796-45abdd10be76?ixlib=rb-4.0.3https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80auto=formathttps://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80fit=crophttps://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80w=2070https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80q=80"
+            alt="Military family with American flag"
+          />
+          <div className="absolute inset-0 bg-blue-900/70"></div>
+        </div>
+        
+        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <div className="mb-4">
+              <span className="inline-flex items-center rounded-full bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
+                🇺🇸 MRP Certified • Military Relocation Professional
+              </span>
+            </div>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+              Northern Virginia MRP Certified Military Realtor
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-blue-100">
+              Veteran-owned & MRP Certified real estate services for military families at Fort Belvoir, Pentagon, and Quantico. 
+              Specializing in PCS relocations, VA loan guidance, and military housing solutions with specialized military relocation training.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <Link
+                href="/pcs-timeline"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-blue-900 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Get Free PCS Guide
+              </Link>
+              <a
+                href="tel:+1-555-MILITARY"
+                className="flex items-center gap-2 text-sm font-semibold leading-6 text-white hover:text-blue-100"
+              >
+                <PhoneIcon className="h-5 w-5" />
+                Call (555) MILITARY
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-24 sm:py-32 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Why Choose an MRP Certified Military Veteran?
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              As a Military Relocation Professional (MRP), I have specialized training beyond standard real estate education. 
+              This certification ensures deep understanding of military life, PCS timelines, VA loans, and the unique challenges military families face.
+            </p>
+          </div>
+          
+          {/* Military Family Image */}
+          <div className="mx-auto mt-12 max-w-2xl">
+            <img
+              className="w-full rounded-lg shadow-lg"
+              src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Happy military family in front of their new home"
+            />
+          </div>
+          
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+              {features.map((feature) => (
+                <div key={feature.title} className="flex flex-col">
+                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                    <feature.icon className="h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                    {feature.title}
+                  </dt>
+                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                    <p className="flex-auto">{feature.description}</p>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Serving Military Families Throughout Northern Virginia
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Expert knowledge of military communities near major installations and commuter-friendly neighborhoods.
+            </p>
+          </div>
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+            {locations.map((location) => (
+              <div key={location} className="flex items-center justify-center rounded-lg bg-blue-50 px-6 py-4">
+                <span className="text-sm font-semibold text-blue-900">{location}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/locations"
+              className="text-sm font-semibold text-blue-600 hover:text-blue-500"
+            >
+              View all service areas <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Lead Capture Section */}
+      <section className="bg-blue-900 py-16 sm:py-24 relative">
+        {/* Subtle flag pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <img
+            src="https://images.unsplash.com/photo-1484100356142-db6ab6244067?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80"
+            alt="American flag"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Free Military PCS Real Estate Guide
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-blue-100">
+              Get your comprehensive guide to buying or selling during a PCS move. Includes VA loan guidance, 
+              timeline checklists, and Northern Virginia area insights from a fellow veteran.
+            </p>
+          </div>
+          <div className="mx-auto mt-10 max-w-md lg:mx-0">
+            <form className="flex flex-col gap-4">
+              <input
+                type="text"
+                placeholder="Full Name"
+                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-white/60 focus:ring-2 focus:ring-inset focus:ring-white"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-white/60 focus:ring-2 focus:ring-inset focus:ring-white"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-white/60 focus:ring-2 focus:ring-inset focus:ring-white"
+              />
+              <select className="flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white">
+                <option value="" className="text-gray-900">Select Your Base</option>
+                <option value="fort-belvoir" className="text-gray-900">Fort Belvoir</option>
+                <option value="pentagon" className="text-gray-900">Pentagon</option>
+                <option value="quantico" className="text-gray-900">Quantico Marine Base</option>
+                <option value="other" className="text-gray-900">Other/Not Military</option>
+              </select>
+              <button
+                type="submit"
+                className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-blue-900 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Get Free Guide
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* MRP Certification Benefits */}
+      <section className="py-24 sm:py-32 bg-blue-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              What Makes MRP Certification Special?
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Military Relocation Professional (MRP) certification provides specialized training that goes beyond standard real estate education,
+              ensuring I understand the unique challenges and opportunities military families face.
+            </p>
+          </div>
+          
+          {/* Military Realtor Image */}
+          <div className="mx-auto mt-12 max-w-2xl">
+            <img
+              className="w-full rounded-lg shadow-lg"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              alt="Professional military veteran realtor"
+            />
+          </div>
+          
+          <div className="mx-auto mt-16 max-w-4xl">
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div className="bg-white rounded-lg p-8 shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Specialized Military Training</h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Understanding of military pay structures and allowances (BAH, BAS, Family Separation Pay)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Knowledge of PCS timelines and deployment cycles affecting real estate decisions</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>VA loan expertise including eligibility, limits, and specialized programs</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Military spouse employment considerations and dual-career challenges</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-lg p-8 shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Unique Military Challenges</h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Coordinating remote transactions during deployments or TDY assignments</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Managing dual-coast relocations and compressed timelines</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Understanding security clearance impacts on housing choices</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Knowledge of military family life and community integration needs</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center rounded-lg bg-white px-6 py-3 shadow-lg">
+                <span className="text-lg font-semibold text-gray-900">🎖️ MRP Certified Since 2020</span>
+                <span className="ml-3 text-sm text-gray-600">| Continuing Education Annually</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Resources */}
+      <section className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Military Real Estate Resources
+            </h2>
+          </div>
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <Link href="/va-loan-guidance" className="group relative flex flex-col items-center p-8 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+              <CalculatorIcon className="h-8 w-8 text-blue-600 mb-4" />
+              <h3 className="text-lg font-semibold text-gray-900">VA Loan Guidance</h3>
+              <p className="mt-2 text-sm text-gray-600 text-center">Navigate the VA loan process with expert guidance</p>
+            </Link>
+            <Link href="/pcs-timeline" className="group relative flex flex-col items-center p-8 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+              <DocumentTextIcon className="h-8 w-8 text-blue-600 mb-4" />
+              <h3 className="text-lg font-semibold text-gray-900">PCS Timeline Guide</h3>
+              <p className="mt-2 text-sm text-gray-600 text-center">Step-by-step real estate timeline for military moves</p>
+            </Link>
+            <Link href="/military-communities" className="group relative flex flex-col items-center p-8 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+              <HomeIcon className="h-8 w-8 text-blue-600 mb-4" />
+              <h3 className="text-lg font-semibold text-gray-900">Military Communities</h3>
+              <p className="mt-2 text-sm text-gray-600 text-center">Find the best neighborhoods for military families</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}
