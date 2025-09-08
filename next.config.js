@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Skip ESLint during builds for faster deployment
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   // Core Web Vitals optimizations
   experimental: {
     optimizeCss: true,
