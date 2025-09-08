@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Skip ESLint during builds for faster deployment
+  // Skip ESLint during builds to fix deployment issues
   eslint: {
     ignoreDuringBuilds: true,
   },
