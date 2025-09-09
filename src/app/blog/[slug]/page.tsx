@@ -101,7 +101,6 @@ const getBlogPost = (slug: string) => {
       readTime: "8 min read",
       category: "BAH & Housing Allowance", 
       tags: ["BAH", "2024", "Housing Allowance", "Fort Belvoir", "Pentagon", "Quantico"],
-      image: "/blog/bah-rates-2024.jpg",
       schema: {
         "@type": "BlogPosting",
         "headline": "2024 BAH Rate Changes: What Military Families in Northern Virginia Need to Know",

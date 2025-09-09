@@ -29,7 +29,6 @@ const testimonials = [
     serviceType: "Home Purchase",
     testimonial: "Outstanding service from start to finish! As a military family PCSing to Fort Belvoir, we had a very tight timeline and specific requirements. Our realtor understood the unique challenges we faced and went above and beyond to find us the perfect home in Springfield within our BAH budget. The knowledge of military life and VA loan process was invaluable. We closed on time and couldn't be happier with our new home!",
     highlights: ["VA Loan Expertise", "PCS Timeline Management", "BAH Optimization", "Springfield Area Knowledge"],
-    image: "/testimonials/captain-johnson.jpg"
   },
   {
     id: 2,
@@ -43,7 +42,6 @@ const testimonials = [
     serviceType: "Home Purchase",
     testimonial: "Exceptional experience working with this team! Moving to Quantico with a large family, we needed someone who truly understood the area and military lifestyle. They found us a beautiful home in Stafford County that perfectly fits our family's needs and budget. The commute to base is ideal, and the neighborhood is fantastic for military families. Professional, responsive, and genuinely cares about getting the best outcome for military families.",
     highlights: ["Quantico Expertise", "Family-Friendly Neighborhoods", "Military Community Knowledge", "Excellent Communication"],
-    image: "/testimonials/major-rodriguez.jpg"
   },
   {
     id: 3,
@@ -57,7 +55,6 @@ const testimonials = [
     serviceType: "Condo Purchase",
     testimonial: "Pentagon area specialist! Working at the Pentagon, I needed someone who understood the importance of Metro accessibility and commute times. They found me the perfect condo in Crystal City with excellent Metro access and all the amenities I wanted. The entire process was smooth, professional, and efficient. Their knowledge of the Pentagon area market is unmatched.",
     highlights: ["Pentagon Area Expert", "Metro Accessibility", "Condo Market Knowledge", "Professional Service"],
-    image: "/testimonials/ltcol-kim.jpg"
   },
   {
     id: 4,
@@ -71,7 +68,6 @@ const testimonials = [
     serviceType: "First Home Purchase",
     testimonial: "First-time home buyer experience was amazing! As a young NCO, I was nervous about the home buying process, but they made it so easy to understand. Explained every step of the VA loan process, helped me understand what I could afford with my BAH, and found me a great starter home in Burke. The school district is excellent for when we start our family. Highly recommend to any military member looking to buy their first home!",
     highlights: ["First-Time Buyer Support", "VA Loan Education", "Burke Area Knowledge", "School District Expertise"],
-    image: "/testimonials/sfc-wilson.jpg"
   },
   {
     id: 5,
@@ -85,7 +81,6 @@ const testimonials = [
     serviceType: "Home Purchase & Sale",
     testimonial: "Handled both selling our old home and buying our new one seamlessly! PCSing from San Diego to the Pentagon area, we needed to coordinate a complex transaction. They managed both the sale of our California home and purchase of our new home in Alexandria with incredible expertise. Their network of professionals made the entire process stress-free. Old Town Alexandria is perfect for our family!",
     highlights: ["Dual Transaction Management", "Cross-Country Coordination", "Alexandria Expertise", "Professional Network"],
-    image: "/testimonials/commander-martinez.jpg"
   },
   {
     id: 6,
@@ -99,7 +94,6 @@ const testimonials = [
     serviceType: "Home Purchase",
     testimonial: "Vienna area expert with incredible attention to detail! After 15 years in the military, this was our dream assignment and we wanted the perfect home. They understood our vision and found us a beautiful home in Vienna with top-rated schools and easy Pentagon access. Their knowledge of the local market helped us negotiate a great price. This is our forever home!",
     highlights: ["Vienna Market Expert", "School District Knowledge", "Negotiation Skills", "Dream Home Achievement"],
-    image: "/testimonials/msgt-chen.jpg"
   },
   {
     id: 7,
@@ -113,7 +107,6 @@ const testimonials = [
     serviceType: "Home Purchase",
     testimonial: "Military spouse employment considerations handled perfectly! As a dual military couple, we had specific needs around commute times and my spouse's remote work requirements. They found us a home in Fairfax Station with a perfect home office setup and reasonable commute to Fort Belvoir. Understanding of military family dynamics was exceptional.",
     highlights: ["Dual Military Couples", "Home Office Requirements", "Fairfax Station Knowledge", "Military Family Dynamics"],
-    image: "/testimonials/captain-gonzalez.jpg"
   },
   {
     id: 8,
@@ -127,7 +120,6 @@ const testimonials = [
     serviceType: "Executive Home Purchase",
     testimonial: "Executive-level service for senior military officers! Looking for our retirement home while still serving at the Pentagon, we had very specific requirements. They understood the unique needs of senior officers and found us a stunning home in McLean that will serve us well into retirement. White-glove service throughout the entire process.",
     highlights: ["Senior Officer Expertise", "McLean Luxury Market", "Retirement Planning", "Executive Service"],
-    image: "/testimonials/colonel-thompson.jpg"
   }
 ];
 
@@ -225,7 +217,6 @@ export default function TestimonialsPage() {
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center gap-4">
                     <img 
-                      src={testimonial.image}
                       alt={testimonial.name}
                       className="w-16 h-16 rounded-full object-cover"
                     />

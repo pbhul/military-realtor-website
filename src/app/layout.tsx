@@ -69,7 +69,6 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-military-realtor.jpg",
         width: 1200,
         height: 630,
         alt: "Military Realtor Northern Virginia - MRP Certified Professional",
@@ -81,7 +80,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "🎖️ Military Realtor NoVA | MRP Certified | PCS Expert",
     description: "Veteran-owned MRP certified realtor. Fort Belvoir, Pentagon, Quantico military relocations. PCS moves, VA loans, military family real estate.",
-    images: ["/twitter-military-realtor.jpg"],
     creator: "@MilitaryRealtorNoVA",
     site: "@MilitaryRealtorNoVA",
   },
@@ -149,8 +147,6 @@ export default function RootLayout({
                   ],
                   "telephone": "+1-703-477-2606",
                   "email": "contact@militaryrealestatenova.com",
-                  "image": "https://www.militaryrealestatenova.com/logo-military-realtor.jpg",
-                  "logo": "https://www.militaryrealestatenova.com/logo-military-realtor.jpg",
                   "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "123 Military Drive",
@@ -252,8 +248,6 @@ export default function RootLayout({
                   "alternateName": "Military Realtor NoVA",
                   "description": "Veteran-owned MRP certified real estate company specializing in military relocations in Northern Virginia",
                   "url": "https://www.militaryrealestatenova.com",
-                  "logo": "https://www.militaryrealestatenova.com/logo-military-realtor.jpg",
-                  "image": "https://www.militaryrealestatenova.com/logo-military-realtor.jpg",
                   "foundingDate": "2020",
                   "founder": {
                     "@type": "Person",

@@ -29,7 +29,6 @@ const blogPosts = [
     category: "BAH & Housing Allowance",
     tags: ["BAH", "2024", "Housing Allowance", "Fort Belvoir", "Pentagon", "Quantico"],
     featured: true,
-    image: "/blog/bah-rates-2024.jpg"
   },
   {
     id: 2,
@@ -43,7 +42,6 @@ const blogPosts = [
     category: "Market Updates",
     tags: ["Fort Belvoir", "Housing Market", "Neighborhoods", "Military Families"],
     featured: true,
-    image: "/blog/fort-belvoir-neighborhoods.jpg"
   },
   {
     id: 3,
@@ -57,7 +55,6 @@ const blogPosts = [
     category: "PCS & Relocation",
     tags: ["PCS", "Relocation", "Northern Virginia", "Military Move", "Timeline"],
     featured: true,
-    image: "/blog/pcs-relocation-guide.jpg"
   },
   {
     id: 4,
@@ -71,7 +68,6 @@ const blogPosts = [
     category: "VA Loans",
     tags: ["VA Loans", "2024", "Home Affordability", "Loan Limits"],
     featured: false,
-    image: "/blog/va-loan-limits-2024.jpg"
   },
   {
     id: 5,
@@ -85,7 +81,6 @@ const blogPosts = [
     category: "Commuting & Transportation",
     tags: ["Pentagon", "Metro", "Commuting", "Transportation"],
     featured: false,
-    image: "/blog/pentagon-metro-access.jpg"
   },
   {
     id: 6,
@@ -99,7 +94,6 @@ const blogPosts = [
     category: "Military Life",
     tags: ["Military Spouse", "Employment", "Career", "Northern Virginia"],
     featured: false,
-    image: "/blog/military-spouse-careers.jpg"
   }
 ];
 
@@ -157,7 +151,6 @@ export default function BlogPage() {
             {featuredPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <img 
-                  src={post.image} 
                   alt={post.title}
                   className="w-full h-48 object-cover"
                 />
@@ -219,7 +212,6 @@ export default function BlogPage() {
                   <article key={post.id} className="bg-white rounded-lg shadow p-6">
                     <div className="flex gap-6">
                       <img 
-                        src={post.image} 
                         alt={post.title}
                         className="w-32 h-24 object-cover rounded flex-shrink-0"
                       />

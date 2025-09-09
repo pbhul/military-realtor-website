@@ -102,15 +102,6 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden">
-        {/* Military Family Background Image */}
-        <div className="absolute inset-0">
-          <img
-            className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1541132455640-98ba5fa53eec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-            alt="Military service members with American flag"
-          />
-          <div className="absolute inset-0 bg-blue-900/75"></div>
-        </div>
         
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
@@ -163,7 +154,6 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <img
                 className="w-full rounded-lg shadow-xl"
-                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                 alt="Military family holding house keys in front of American flag"
               />
               <div className="space-y-4">
@@ -207,7 +197,6 @@ export default function Home() {
         <div className="absolute inset-0 opacity-5">
           <img
             className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1517404215738-15263e9f9178?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
             alt="American flag"
           />
         </div>
@@ -245,7 +234,6 @@ export default function Home() {
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
             alt="Military service members saluting with American flag"
           />
           <div className="absolute inset-0 bg-blue-900/85"></div>
@@ -357,7 +345,6 @@ export default function Home() {
           <div className="mx-auto mt-12 max-w-3xl">
             <img
               className="w-full rounded-lg shadow-xl"
-              src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2098&q=80"
               alt="Professional military veteran in uniform with American flag"
             />
           </div>

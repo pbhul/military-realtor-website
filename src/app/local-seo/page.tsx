@@ -20,7 +20,6 @@ const localBusinessData = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   "name": "Military Real Estate Northern Virginia",
-  "image": "https://www.militaryrealestatenova.com/images/office-front.jpg",
   "telephone": "+1-703-477-2606",
   "email": "info@militaryrealestatenova.com",
   "url": "https://www.militaryrealestatenova.com",
