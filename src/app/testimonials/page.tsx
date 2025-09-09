@@ -337,10 +337,10 @@ export default function TestimonialsPage() {
                 Start Your Journey
               </Link>
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="text-base font-semibold leading-6 text-white hover:text-blue-100"
               >
-                Call (555) MILITARY <span aria-hidden="true">→</span>
+                Call (703) 477-2606 <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

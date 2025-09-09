@@ -44,8 +44,8 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <PhoneIcon className="h-5 w-5 text-blue-400" />
-                <a href="tel:+1-555-MILITARY" className="text-gray-300 hover:text-white">
-                  (555) MILITARY
+                <a href="tel:+1-703-477-2606" className="text-gray-300 hover:text-white">
+                  (703) 477-2606
                 </a>
               </div>
               <div className="flex items-center gap-3">

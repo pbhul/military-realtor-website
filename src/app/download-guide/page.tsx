@@ -140,11 +140,11 @@ function DownloadGuideContent() {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a 
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="flex items-center gap-3 bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
               >
                 <PhoneIcon className="h-5 w-5" />
-                (555) MILITARY
+                (703) 477-2606
               </a>
               <a 
                 href="mailto:contact@militaryrealestatenova.com"

@@ -46,9 +46,9 @@ export default function Header() {
         </div>
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-4">
-          <a href="tel:+1-555-MILITARY" className="flex items-center gap-2 text-sm font-semibold leading-6 text-blue-900 hover:text-blue-700">
+          <a href="tel:+1-703-477-2606" className="flex items-center gap-2 text-sm font-semibold leading-6 text-blue-900 hover:text-blue-700">
             <PhoneIcon className="h-5 w-5" />
-            (555) MILITARY
+            (703) 477-2606
           </a>
           <Link
             href="/contact"
@@ -92,9 +92,9 @@ export default function Header() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a href="tel:+1-555-MILITARY" className="flex items-center gap-2 -mx-3 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-blue-900 hover:bg-gray-50">
+                  <a href="tel:+1-703-477-2606" className="flex items-center gap-2 -mx-3 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-blue-900 hover:bg-gray-50">
                     <PhoneIcon className="h-5 w-5" />
-                    (555) MILITARY
+                    (703) 477-2606
                   </a>
                   <Link
                     href="/contact"

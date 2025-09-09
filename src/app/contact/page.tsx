@@ -77,9 +77,9 @@ export default function ContactPage() {
     {
       icon: PhoneIcon,
       title: "Phone",
-      content: "(555) MILITARY",
+      content: "(703) 477-2606",
       subContent: "Available 7 days a week",
-      action: "tel:+1-555-MILITARY"
+      action: "tel:+1-703-477-2606"
     },
     {
       icon: EnvelopeIcon,

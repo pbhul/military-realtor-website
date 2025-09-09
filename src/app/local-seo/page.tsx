@@ -21,7 +21,7 @@ const localBusinessData = {
   "@type": "RealEstateAgent",
   "name": "Military Real Estate Northern Virginia",
   "image": "https://www.militaryrealestatenova.com/images/office-front.jpg",
-  "telephone": "+1-555-MILITARY",
+  "telephone": "+1-703-477-2606",
   "email": "info@militaryrealestatenova.com",
   "url": "https://www.militaryrealestatenova.com",
   "address": {
@@ -178,10 +178,10 @@ export default function LocalSEOPage() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-blue-900 shadow-sm hover:bg-blue-50"
               >
-                Call (555) MILITARY
+                Call (703) 477-2606
               </a>
               <Link
                 href="/contact"
@@ -335,7 +335,7 @@ export default function LocalSEOPage() {
               <div>
                 <PhoneIcon className="h-8 w-8 text-white mx-auto mb-2" />
                 <div className="text-white font-semibold">Call or Text</div>
-                <div className="text-blue-100">(555) MILITARY</div>
+                <div className="text-blue-100">(703) 477-2606</div>
               </div>
               <div>
                 <MapPinIcon className="h-8 w-8 text-white mx-auto mb-2" />
@@ -357,7 +357,7 @@ export default function LocalSEOPage() {
                 Schedule In-Person Meeting
               </Link>
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="text-base font-semibold leading-6 text-white hover:text-blue-100"
               >
                 Call Now <span aria-hidden="true">→</span>

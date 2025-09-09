@@ -183,11 +183,11 @@ export default function MilitaryResourcesPage() {
                 Get Personal Guidance
               </Link>
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="flex items-center gap-2 text-sm font-semibold leading-6 text-white hover:text-blue-100"
               >
                 <PhoneIcon className="h-5 w-5" />
-                Call (555) MILITARY
+                Call (703) 477-2606
               </a>
             </div>
           </div>
@@ -323,11 +323,11 @@ export default function MilitaryResourcesPage() {
                 Schedule Consultation
               </Link>
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="flex items-center gap-2 text-sm font-semibold leading-6 text-white hover:text-blue-100"
               >
                 <PhoneIcon className="h-5 w-5" />
-                Call Now: (555) MILITARY
+                Call Now: (703) 477-2606
               </a>
             </div>
           </div>

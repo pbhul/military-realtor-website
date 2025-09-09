@@ -327,7 +327,7 @@ async function sendAutoReply(formData: ContactFormData) {
             
             <div class="contact-info">
                 <strong>📞 Need to reach me sooner?</strong><br>
-                Phone: <a href="tel:+1-555-MILITARY">(555) MILITARY</a><br>
+                Phone: <a href="tel:+1-703-477-2606">(703) 477-2606</a><br>
                 Email: <a href="mailto:contact@militaryrealestatenova.com">contact@militaryrealestatenova.com</a><br>
                 <br>
                 <em>Available 7 days a week to accommodate military schedules</em>
@@ -367,7 +367,7 @@ What happens next:
 • Free Military PCS Real Estate Guide included
 
 Need to reach me sooner?
-Phone: (555) MILITARY
+Phone: (703) 477-2606
 Email: contact@militaryrealestatenova.com
 Available 7 days a week for military schedules
 

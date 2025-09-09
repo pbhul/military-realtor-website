@@ -213,11 +213,11 @@ export default function FirstTimeBuyerGuidePage() {
                 Get Personal Guidance
               </Link>
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="flex items-center gap-2 text-sm font-semibold leading-6 text-white hover:text-blue-100"
               >
                 <PhoneIcon className="h-5 w-5" />
-                Call (555) MILITARY
+                Call (703) 477-2606
               </a>
             </div>
           </div>
@@ -354,10 +354,10 @@ export default function FirstTimeBuyerGuidePage() {
                 Start Your Home Buying Journey
               </Link>
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="text-base font-semibold leading-6 text-white hover:text-blue-100"
               >
-                Call (555) MILITARY <span aria-hidden="true">→</span>
+                Call (703) 477-2606 <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

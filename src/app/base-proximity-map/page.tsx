@@ -392,7 +392,7 @@ export default function BaseProximityMapPage() {
                               View Homes in {selected.name}
                             </a>
                             <a
-                              href="tel:+1-555-MILITARY"
+                              href="tel:+1-703-477-2606"
                               className="flex-1 border border-blue-600 text-blue-600 text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
                             >
                               Call Realtor

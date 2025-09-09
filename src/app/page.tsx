@@ -134,11 +134,11 @@ export default function Home() {
                 🏠 Get Free PCS Guide
               </Link>
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="flex items-center gap-2 text-base font-semibold leading-6 text-white hover:text-blue-100 transition-colors"
               >
                 <PhoneIcon className="h-6 w-6" />
-                Call (555) MILITARY
+                Call (703) 477-2606
               </a>
             </div>
           </div>
@@ -282,7 +282,7 @@ export default function Home() {
               {submitStatus === 'error' && (
                 <div className="mb-6 p-4 bg-red-500/20 border border-red-400/30 rounded-md backdrop-blur-sm">
                   <p className="text-white text-center">
-                    ❌ Sorry, there was an error. Please try calling us directly at (555) MILITARY.
+                    ❌ Sorry, there was an error. Please try calling us directly at (703) 477-2606.
                   </p>
                 </div>
               )}

@@ -321,7 +321,7 @@ async function sendLeadMagnetEmail(leadData: LeadCaptureData) {
             </ul>
             
             <p><strong>Need to talk sooner?</strong><br>
-            📞 <a href="tel:+1-555-MILITARY">(555) MILITARY</a><br>
+            📞 <a href="tel:+1-703-477-2606">(703) 477-2606</a><br>
             📧 <a href="mailto:contact@militaryrealestatenova.com">contact@militaryrealestatenova.com</a></p>
             
             <p>Your service to our country deserves the best service from us. I look forward to helping you and your family find the perfect home in Northern Virginia!</p>
@@ -334,7 +334,7 @@ async function sendLeadMagnetEmail(leadData: LeadCaptureData) {
         <div class="footer">
             Military Real Estate Northern Virginia<br>
             Serving Fort Belvoir • Pentagon • Quantico • All of NoVA<br>
-            📧 contact@militaryrealestatenova.com | 📞 (555) MILITARY
+            📧 contact@militaryrealestatenova.com | 📞 (703) 477-2606
         </div>
     </body>
     </html>
@@ -369,7 +369,7 @@ ${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3003'}/download-guide?em
 I'll contact you within 24 hours to discuss your specific needs and answer any questions about the Northern Virginia military housing market.
 
 📞 NEED TO TALK SOONER?
-Phone: (555) MILITARY
+Phone: (703) 477-2606
 Email: contact@militaryrealestatenova.com
 
 Your service deserves our best service!

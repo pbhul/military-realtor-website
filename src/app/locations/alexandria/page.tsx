@@ -139,11 +139,11 @@ export default function AlexandriaPage() {
                 Free Alexandria Guide
               </Link>
               <a
-                href="tel:+1-555-MILITARY"
+                href="tel:+1-703-477-2606"
                 className="flex items-center gap-2 text-sm font-semibold leading-6 text-white hover:text-blue-100"
               >
                 <PhoneIcon className="h-5 w-5" />
-                Call (555) MILITARY
+                Call (703) 477-2606
               </a>
             </div>
           </div>

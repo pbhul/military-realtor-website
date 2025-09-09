@@ -279,10 +279,10 @@ export default function BAHCalculatorPage() {
                     Get Free Consultation
                   </a>
                   <a
-                    href="tel:+1-555-MILITARY"
+                    href="tel:+1-703-477-2606"
                     className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors text-center"
                   >
-                    Call (555) MILITARY
+                    Call (703) 477-2606
                   </a>
                 </div>
               </div>

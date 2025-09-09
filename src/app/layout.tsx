@@ -147,7 +147,7 @@ export default function RootLayout({
                     "https://linkedin.com/in/militaryrealtor",
                     "https://instagram.com/militaryrealestatenova"
                   ],
-                  "telephone": "+1-555-MILITARY",
+                  "telephone": "+1-703-477-2606",
                   "email": "contact@militaryrealestatenova.com",
                   "image": "https://www.militaryrealestatenova.com/logo-military-realtor.jpg",
                   "logo": "https://www.militaryrealestatenova.com/logo-military-realtor.jpg",
