@@ -135,6 +135,14 @@ export default function LocationsPage() {
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Specialized expertise for each major military installation in Northern Virginia.
             </p>
+            <div className="mt-8">
+              <Link
+                href="/military-housing-information-northern-virginia.html"
+                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium"
+              >
+                📋 Complete Military Housing Guide 2025 <span className="ml-2">→</span>
+              </Link>
+            </div>
           </div>
           
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -153,12 +161,38 @@ export default function LocationsPage() {
                       ))}
                     </div>
                   </div>
-                  <Link
-                    href={area.link}
-                    className="inline-flex items-center text-blue-600 hover:text-blue-500 font-medium"
-                  >
-                    Explore Area <span className="ml-1">→</span>
-                  </Link>
+                  <div className="space-y-2">
+                    <Link
+                      href={area.link}
+                      className="inline-flex items-center text-blue-600 hover:text-blue-500 font-medium block"
+                    >
+                      Explore Area <span className="ml-1">→</span>
+                    </Link>
+                    {area.name === "Fort Belvoir Area" && (
+                      <Link
+                        href="/fort-belvoir-realtor.html"
+                        className="inline-flex items-center text-green-600 hover:text-green-500 font-medium text-sm block"
+                      >
+                        Detailed Fort Belvoir Information <span className="ml-1">→</span>
+                      </Link>
+                    )}
+                    {area.name === "Pentagon Area" && (
+                      <Link
+                        href="/pentagon-area-realtor.html"
+                        className="inline-flex items-center text-green-600 hover:text-green-500 font-medium text-sm block"
+                      >
+                        Detailed Pentagon Information <span className="ml-1">→</span>
+                      </Link>
+                    )}
+                    {area.name === "Quantico Marine Base Area" && (
+                      <Link
+                        href="/quantico-marine-realtor.html"
+                        className="inline-flex items-center text-green-600 hover:text-green-500 font-medium text-sm block"
+                      >
+                        Detailed Quantico Information <span className="ml-1">→</span>
+                      </Link>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
