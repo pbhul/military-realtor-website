@@ -95,25 +95,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Meet Your Realtor Section */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <img
-              className="mx-auto h-48 w-48 rounded-full object-cover shadow-lg border-4 border-blue-100"
-              src="/photos/Headshot.png"
-              alt="Professional Military Realtor Headshot"
-            />
-            <h2 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Your Trusted Military Realtor
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-600">
-              MRP Certified professional with personal military experience, dedicated to serving 
-              military families throughout Northern Virginia with expertise you can trust.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Personal Story */}
       <section className="py-24 sm:py-32">
@@ -149,11 +130,11 @@ export default function AboutPage() {
                 <img
                   className="h-48 w-48 rounded-full object-cover border-4 border-blue-200 shadow-lg"
                   src="/photos/Headshot.png"
-                  alt="Paul Bosco - Your Military Realtor"
+                  alt="Your Military Realtor"
                 />
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
-                <p className="text-lg font-semibold text-gray-900">Paul Bosco</p>
+                <p className="text-lg font-semibold text-gray-900">[Your Name]</p>
                 <p className="text-blue-600 font-medium">Military Veteran & MRP Certified Agent</p>
                 <p className="text-gray-600 mt-2">Serving Northern Virginia Military Families</p>
               </div>
