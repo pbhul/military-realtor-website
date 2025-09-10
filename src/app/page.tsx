@@ -342,14 +342,6 @@ export default function Home() {
             </p>
           </div>
           
-          {/* Professional Military Realtor Image */}
-          <div className="mx-auto mt-12 max-w-3xl">
-            <img
-              className="w-full rounded-lg shadow-xl"
-              alt="Professional military veteran in uniform with American flag"
-            />
-          </div>
-          
           <div className="mx-auto mt-16 max-w-4xl">
             <div className="grid gap-8 lg:grid-cols-2">
               <div className="bg-white rounded-lg p-8 shadow-lg border-l-4 border-blue-600">
