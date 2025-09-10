@@ -416,13 +416,6 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="mt-12 text-center">
-              <div className="inline-flex items-center rounded-lg bg-white px-8 py-4 shadow-xl border border-blue-200">
-                <span className="text-xl font-semibold text-gray-900">🎖️ MRP Certified Since 2020</span>
-                <span className="mx-3 text-blue-600">|</span>
-                <span className="text-sm text-gray-600">🎖️ Continuing Education Annually | Veteran-Owned</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
