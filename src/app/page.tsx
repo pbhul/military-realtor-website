@@ -178,7 +178,8 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <img
                 className="w-full rounded-lg shadow-xl"
-                alt="Military family holding house keys in front of American flag"
+                src="/photos/house-key-door.jpg"
+                alt="House keys in front of door - home ownership"
               />
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-gray-900">🎖️ Military Families Trust Our Expertise</h3>
@@ -215,15 +216,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Service Areas with Flag Background */}
+      {/* Service Areas */}
       <section className="py-24 sm:py-32 relative">
-        {/* Subtle flag overlay */}
-        <div className="absolute inset-0 opacity-5">
-          <img
-            className="h-full w-full object-cover"
-            alt="American flag"
-          />
-        </div>
         
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
