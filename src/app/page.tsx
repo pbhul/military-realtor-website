@@ -101,6 +101,23 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
+        {/* US Flag Background */}
+        <div className="absolute inset-0">
+          <img
+            className="h-full w-full object-cover opacity-30"
+            src="/photos/us-flag.png"
+            alt="American Flag"
+          />
+          <div className="absolute inset-0 bg-blue-900/60"></div>
+        </div>
+        <div class="absolute inset-0">
+          <img
+            class="h-full w-full object-cover opacity-30"
+            src="/photos/us-flag.png"
+            alt="American Flag"
+          />
+          <div class="absolute inset-0 bg-blue-900/60"></div>
+        </div>
       <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden">
         
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
@@ -142,6 +159,13 @@ export default function Home() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Why Choose an MRP Certified Military Veteran?
+            <div className="mt-8 flex justify-center">
+              <img
+                className="h-16 w-16 rounded-full object-cover border-2 border-blue-200"
+                src="/photos/Headshot.png"
+                alt="Your Military Realtor"
+              />
+            </div>
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               As a Military Relocation Professional (MRP), I have specialized training beyond standard real estate education. 

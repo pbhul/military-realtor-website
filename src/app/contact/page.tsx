@@ -337,6 +337,13 @@ export default function ContactPage() {
               <div className="mb-8">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">
                   Get in Touch
+        <div className="text-center py-6">
+          <img
+            className="mx-auto h-32 w-48 object-cover rounded-lg shadow-md opacity-90"
+            src="/photos/house-key-door.jpg"
+            alt="House keys representing new home ownership"
+          />
+        </div>
                 </h2>
               </div>
 
