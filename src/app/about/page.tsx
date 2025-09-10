@@ -118,26 +118,46 @@ export default function AboutPage() {
       {/* Personal Story */}
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Understanding Military Life from Experience
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              As a military veteran, I understand the unique challenges that come with military life. 
-              From PCS moves on short notice to deployment schedules that don&apos;t align with traditional 
-              real estate timelines, I&apos;ve lived the experiences that my clients are navigating.
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              This personal understanding, combined with years of serving military families in Northern Virginia, 
-              allows me to provide the specialized service that military personnel and their families deserve. 
-              I know what it&apos;s like to balance military obligations with family needs, and I bring that 
-              perspective to every real estate transaction.
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Whether you&apos;re PCSing to the area, looking to buy your first home with VA loan benefits, 
-              or need to sell quickly due to military orders, I&apos;m here to make the process as smooth 
-              as possible for you and your family.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Understanding Military Life from Experience
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                As a military veteran, I understand the unique challenges that come with military life. 
+                From PCS moves on short notice to deployment schedules that don&apos;t align with traditional 
+                real estate timelines, I&apos;ve lived the experiences that my clients are navigating.
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                This personal understanding, combined with years of serving military families in Northern Virginia, 
+                allows me to provide the specialized service that military personnel and their families deserve. 
+                I know what it&apos;s like to balance military obligations with family needs, and I bring that 
+                perspective to every real estate transaction.
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Whether you&apos;re PCSing to the area, looking to buy your first home with VA loan benefits, 
+                or need to sell quickly due to military orders, I&apos;m here to make the process as smooth 
+                as possible for you and your family.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 mb-6">
+                Your Trusted Military Realtor
+              </h3>
+              <div className="flex justify-center mb-6">
+                <img
+                  className="h-48 w-48 rounded-full object-cover border-4 border-blue-200 shadow-lg"
+                  src="/photos/Headshot.png"
+                  alt="Paul Bosco - Your Military Realtor"
+                />
+              </div>
+              <div className="bg-blue-50 rounded-lg p-6">
+                <p className="text-lg font-semibold text-gray-900">Paul Bosco</p>
+                <p className="text-blue-600 font-medium">Military Veteran & MRP Certified Agent</p>
+                <p className="text-gray-600 mt-2">Serving Northern Virginia Military Families</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
