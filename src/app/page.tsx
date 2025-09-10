@@ -144,7 +144,7 @@ export default function Home() {
               Why Choose an MRP Certified Military Veteran?
             <div className="mt-8 flex justify-center">
               <img
-                className="h-16 w-16 rounded-full object-cover border-2 border-blue-200"
+                className="h-24 w-24 rounded-full object-cover border-4 border-blue-200"
                 src="/photos/Headshot.png"
                 alt="Your Military Realtor"
               />
