@@ -101,23 +101,6 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-        {/* US Flag Background */}
-        <div className="absolute inset-0">
-          <img
-            className="h-full w-full object-cover opacity-30"
-            src="/photos/us-flag.png"
-            alt="American Flag"
-          />
-          <div className="absolute inset-0 bg-blue-900/60"></div>
-        </div>
-        <div class="absolute inset-0">
-          <img
-            class="h-full w-full object-cover opacity-30"
-            src="/photos/us-flag.png"
-            alt="American Flag"
-          />
-          <div class="absolute inset-0 bg-blue-900/60"></div>
-        </div>
       <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white overflow-hidden">
         
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
