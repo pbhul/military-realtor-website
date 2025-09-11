@@ -5,9 +5,9 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Quantico Marine Realtor | #1 Marine Corps Real Estate Specialist Virginia",
-  description: "🇺🇸 #1 Quantico Marine realtor specializing exclusively in Marine Corps families. Expert PCS moves, VA loans, emergency relocations. Serving Marines since 2020. Semper Fi!",
-  keywords: "Quantico Marine realtor, Marine Corps realtor Quantico, Quantico Marine real estate agent, Marine realtor Virginia, Quantico Marine specialist, Marine Corps Base Quantico realtor, Marine family realtor",
+  title: "Quantico Marine Base Realtor | #1 Marine Corps Real Estate Specialist Virginia",
+  description: "🇺🇸 #1 Quantico Marine Base realtor specializing in Marine Corps families. Military veteran providing expert PCS moves, VA loans, emergency relocations. Serving Marines since 2020.",
+  keywords: "Quantico Marine Base realtor, Marine Corps realtor Quantico, Quantico Marine real estate agent, Marine realtor Virginia, Quantico Marine specialist, Marine Corps Base Quantico realtor, Marine family realtor",
   openGraph: {
     title: "Quantico Marine Base Realtor | Military Real Estate Specialist",
     description: "Expert Quantico Marine Base realtor specializing in military families, PCS moves, and VA loans. Serving Quantico and surrounding Virginia areas.",
@@ -108,10 +108,10 @@ export default function QuanticoPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              🇺🇸 #1 Quantico Marine Realtor
+              🇺🇸 #1 Quantico Marine Base Realtor
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
-              <strong>Semper Fi!</strong> The only realtor in Northern Virginia specializing exclusively in Marine Corps families at Quantico. 
+              <strong>Honoring All Who Serve!</strong> As a military veteran, I specialize exclusively in serving Marine Corps families at Quantico. 
               Expert Marine PCS relocations, emergency orders, VA loans, and finding homes that honor your service.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -141,11 +141,11 @@ export default function QuanticoPage() {
               <div className="text-6xl">🇺🇸</div>
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
-              Why Choose a Quantico Marine Realtor?
+              Why Choose a Veteran Who Serves Marine Families?
             </h2>
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-8 border-red-600">
               <p className="text-lg text-gray-700 mb-4">
-                <strong>"Once a Marine, Always a Marine."</strong> As your dedicated Quantico Marine realtor, 
+                <strong>"Honoring All Military Service."</strong> As a military veteran and your dedicated Quantico Marine Base realtor, 
                 I understand Marine Corps values, deployment cycles, and the unique challenges Marine families face.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
@@ -349,11 +349,11 @@ export default function QuanticoPage() {
               <div className="text-4xl">🇺🇸</div>
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Semper Fi! Ready to Serve Your Real Estate Mission?
+              Ready to Serve Your Real Estate Mission?
             </h2>
             <p className="mt-6 text-lg leading-8 text-red-100">
               Whether you're PCSing to Quantico, receiving emergency orders, or ready to buy your first home as a Marine, 
-              your dedicated Quantico Marine realtor is standing by. <strong>Oorah!</strong>
+              your dedicated military veteran realtor is standing by to serve your family.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
@@ -361,7 +361,7 @@ export default function QuanticoPage() {
                 className="flex items-center gap-3 rounded-md bg-white px-6 py-4 text-lg font-bold text-red-800 shadow-sm hover:bg-gray-100 transform hover:scale-105 transition-all duration-200"
               >
                 <PhoneIcon className="h-6 w-6" />
-                Call Your Marine Realtor: (703) 477-2606
+                Call Your Veteran Realtor: (703) 477-2606
               </a>
             </div>
             
@@ -378,7 +378,7 @@ export default function QuanticoPage() {
             
             <div className="mt-8 text-center text-red-100">
               <p className="font-semibold">🎖️ "Your Service Deserves Our Best Service" 🎖️</p>
-              <p className="text-sm mt-2">Proudly serving Marine Corps families at Quantico since 2020</p>
+              <p className="text-sm mt-2">Military veteran proudly serving Marine Corps families at Quantico since 2020</p>
             </div>
           </div>
         </div>
