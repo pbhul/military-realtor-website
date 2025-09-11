@@ -71,8 +71,8 @@ export default function EmergencyPCSPage() {
                 CALL NOW: (703) 477-2606
               </a>
               <p className="text-red-100 text-sm">
-                ⚡ Emergency line monitored 24/7<br/>
-                📱 Text "URGENT" for immediate callback
+                📱 Text "URGENT" for priority response<br/>
+                ⚡ Fast response for emergency situations
               </p>
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function EmergencyPCSPage() {
             </h2>
             <p className="mt-6 text-lg leading-8 text-red-100">
               Military families deserve specialized support during urgent situations. 
-              We understand the pressure of military timelines and are here to help 24/7.
+              We understand the pressure of military timelines and provide priority support for urgent situations.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
@@ -196,9 +196,9 @@ export default function EmergencyPCSPage() {
                 (703) 477-2606
               </a>
               <div className="text-center text-red-100">
-                <p className="font-semibold">Emergency Hotline</p>
-                <p className="text-sm">Available 24/7 for urgent military real estate needs</p>
-                <p className="text-sm mt-1">📱 Text "URGENT" for immediate callback</p>
+                <p className="font-semibold">Emergency Response Line</p>
+                <p className="text-sm">Priority response for urgent military real estate needs</p>
+                <p className="text-sm mt-1">📱 Text "URGENT" for priority callback</p>
               </div>
             </div>
             
