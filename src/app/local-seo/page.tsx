@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { MapPinIcon, StarIcon, PhoneIcon, ClockIcon } from '@heroicons/react/24/outline';
+import { MapPinIcon, PhoneIcon, ClockIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -121,35 +121,6 @@ const serviceAreas = [
   }
 ];
 
-const localReviews = [
-  {
-    id: 1,
-    reviewer: "Captain Sarah Johnson, USA",
-    rating: 5,
-    location: "Fort Belvoir",
-    review: "Outstanding service! As a military family PCSing to Fort Belvoir, we needed someone who understood our unique timeline and requirements. Found our perfect home in Springfield within our BAH budget.",
-    date: "2024-01-10",
-    verified: true
-  },
-  {
-    id: 2,
-    reviewer: "Major Mike Rodriguez, USMC",
-    rating: 5,
-    location: "Quantico",
-    review: "Exceptional knowledge of the Quantico area. Helped us find a home in Stafford County that fits our family size and commute needs. The VA loan process was seamless.",
-    date: "2024-01-05",
-    verified: true
-  },
-  {
-    id: 3,
-    reviewer: "Lt. Colonel Jennifer Kim, USAF",
-    rating: 5,
-    location: "Pentagon",
-    review: "Pentagon area expert! Found us the perfect condo in Crystal City with Metro access. Professional, responsive, and truly understands military life.",
-    date: "2023-12-28",
-    verified: true
-  }
-];
 
 export default function LocalSEOPage() {
   return (
@@ -253,70 +224,6 @@ export default function LocalSEOPage() {
         </div>
       </section>
 
-      {/* Local Reviews */}
-      <section className="py-24 sm:py-32 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              What Local Military Families Say
-            </h2>
-            <div className="flex items-center justify-center gap-2 mt-4">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <StarIcon key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <span className="text-lg font-semibold text-gray-900">4.9/5.0</span>
-              <span className="text-gray-600">(247+ reviews)</span>
-            </div>
-          </div>
-
-          <div className="grid gap-8 lg:grid-cols-3">
-            {localReviews.map((review) => (
-              <div key={review.id} className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <StarIcon key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  {review.verified && (
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">
-                      Verified
-                    </span>
-                  )}
-                </div>
-                
-                <p className="text-gray-700 mb-4">"{review.review}"</p>
-                
-                <div className="border-t pt-4">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="font-semibold text-gray-900">{review.reviewer}</div>
-                      <div className="text-sm text-gray-600 flex items-center gap-1">
-                        <MapPinIcon className="h-4 w-4" />
-                        {review.location}
-                      </div>
-                    </div>
-                    <div className="text-sm text-gray-500">
-                      {new Date(review.date).toLocaleDateString()}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              href="/testimonials"
-              className="text-blue-600 hover:text-blue-500 font-medium"
-            >
-              Read All Reviews →
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Local Contact */}
       <section className="bg-blue-900 py-16 sm:py-24">

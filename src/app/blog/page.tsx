@@ -15,85 +15,49 @@ export const metadata: Metadata = {
   },
 };
 
-// Sample blog posts - in production these would come from a CMS or markdown files
+// Current military real estate blog posts
 const blogPosts = [
   {
     id: 1,
-    title: "2024 BAH Rate Changes: What Military Families in Northern Virginia Need to Know",
-    slug: "2024-bah-rate-changes-northern-virginia",
-    excerpt: "The 2024 BAH rates have been released, and Northern Virginia military families will see significant changes. Here's what you need to know about the new rates and how they affect your housing budget.",
-    content: "Complete analysis of BAH changes...",
-    author: "Military Real Estate Specialist",
-    publishDate: "2024-01-15",
-    readTime: "8 min read",
-    category: "BAH & Housing Allowance",
-    tags: ["BAH", "2024", "Housing Allowance", "Fort Belvoir", "Pentagon", "Quantico"],
+    title: "2025 VA Loan Changes: No Limits for First-Time Military Home Buyers",
+    slug: "2025-va-loan-no-limits-first-time-buyers",
+    excerpt: "Breaking: VA loan limits don't apply to first-time users with full entitlement. Learn how this affects your home buying power in Northern Virginia's competitive market.",
+    content: "Complete analysis of 2025 VA loan changes...",
+    author: "Parjinder Brar, MRP Certified",
+    publishDate: "2025-01-11",
+    readTime: "6 min read",
+    category: "VA Loans",
+    tags: ["VA Loans", "2025", "First Time Buyers", "Full Entitlement"],
     featured: true,
+    image: "/photos/military-family-keys.jpg"
   },
   {
     id: 2,
-    title: "Fort Belvoir Housing Market Update: Best Neighborhoods for Military Families in 2024",
-    slug: "fort-belvoir-housing-market-2024-best-neighborhoods",
-    excerpt: "A comprehensive look at the Fort Belvoir area housing market, including the best neighborhoods for military families, commute times, school districts, and current pricing trends.",
-    content: "Detailed market analysis...",
-    author: "Military Real Estate Specialist",
-    publishDate: "2024-01-10",
-    readTime: "12 min read",
-    category: "Market Updates",
-    tags: ["Fort Belvoir", "Housing Market", "Neighborhoods", "Military Families"],
+    title: "Fort Belvoir BAH Rates 2025: 11th Highest Among All Army Bases",
+    slug: "fort-belvoir-bah-rates-2025-ranking",
+    excerpt: "Fort Belvoir ranks 11th highest for BAH rates in 2025 with a 2.9% increase. Here's what this means for your housing budget and home buying power.",
+    content: "Detailed BAH analysis for Fort Belvoir...",
+    author: "Parjinder Brar, MRP Certified",
+    publishDate: "2025-01-10",
+    readTime: "8 min read",
+    category: "BAH & Housing Allowance",
+    tags: ["Fort Belvoir", "BAH", "2025", "Housing Allowance"],
     featured: true,
+    image: "/photos/fort-belvoir-housing.jpg"
   },
   {
     id: 3,
-    title: "PCS to Northern Virginia: Complete Relocation Timeline and Checklist",
-    slug: "pcs-northern-virginia-relocation-timeline-checklist",
-    excerpt: "Planning a PCS move to Northern Virginia? This comprehensive guide covers everything from 120 days out to your first week in your new duty station.",
-    content: "Complete PCS timeline...",
-    author: "Military Real Estate Specialist", 
-    publishDate: "2024-01-05",
-    readTime: "15 min read",
-    category: "PCS & Relocation",
-    tags: ["PCS", "Relocation", "Northern Virginia", "Military Move", "Timeline"],
-    featured: true,
-  },
-  {
-    id: 4,
-    title: "VA Loan Limits 2024: How Much House Can You Afford in Northern Virginia?",
-    slug: "va-loan-limits-2024-northern-virginia-home-affordability",
-    excerpt: "VA loan limits have increased for 2024. Learn how these changes affect your home buying power in high-cost Northern Virginia markets.",
-    content: "VA loan analysis...",
-    author: "Military Real Estate Specialist",
-    publishDate: "2023-12-28", 
+    title: "Pentagon Area Real Estate: Metro Access vs. Home Prices in 2025",
+    slug: "pentagon-metro-real-estate-2025",
+    excerpt: "Analysis of Pentagon-area neighborhoods balancing Metro accessibility with home affordability for military families in 2025.",
+    content: "Pentagon commuter analysis...",
+    author: "Parjinder Brar, MRP Certified",
+    publishDate: "2025-01-08",
     readTime: "10 min read",
-    category: "VA Loans",
-    tags: ["VA Loans", "2024", "Home Affordability", "Loan Limits"],
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "Pentagon Metro Accessibility: Best Commuter-Friendly Neighborhoods",
-    slug: "pentagon-metro-commuter-neighborhoods-northern-virginia",
-    excerpt: "Working at the Pentagon? Discover the best neighborhoods with Metro access, parking options, and commute times to optimize your daily travel.",
-    content: "Metro accessibility analysis...",
-    author: "Military Real Estate Specialist",
-    publishDate: "2023-12-20",
-    readTime: "9 min read", 
-    category: "Commuting & Transportation",
-    tags: ["Pentagon", "Metro", "Commuting", "Transportation"],
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Military Spouse Employment: Northern Virginia's Best Career Opportunities",
-    slug: "military-spouse-employment-northern-virginia-career-opportunities",
-    excerpt: "Northern Virginia offers exceptional career opportunities for military spouses. Explore remote work, federal contracting, and local business opportunities.",
-    content: "Employment opportunities...",
-    author: "Military Real Estate Specialist",
-    publishDate: "2023-12-15",
-    readTime: "11 min read",
-    category: "Military Life",
-    tags: ["Military Spouse", "Employment", "Career", "Northern Virginia"],
-    featured: false,
+    category: "Market Updates",
+    tags: ["Pentagon", "Metro", "Real Estate", "Commuting"],
+    featured: true,
+    image: "/photos/pentagon-metro.jpg"
   }
 ];
 
@@ -151,6 +115,7 @@ export default function BlogPage() {
             {featuredPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <img 
+                  src={post.image || "/photos/military-family-keys.jpg"}
                   alt={post.title}
                   className="w-full h-48 object-cover"
                 />
@@ -212,6 +177,7 @@ export default function BlogPage() {
                   <article key={post.id} className="bg-white rounded-lg shadow p-6">
                     <div className="flex gap-6">
                       <img 
+                        src={post.image || "/photos/military-family-keys.jpg"}
                         alt={post.title}
                         className="w-32 h-24 object-cover rounded flex-shrink-0"
                       />

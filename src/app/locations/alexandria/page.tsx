@@ -95,20 +95,6 @@ export default function AlexandriaPage() {
     }
   ];
 
-  const testimonials = [
-    {
-      content: "Love living in Old Town Alexandria! The Metro makes my Pentagon commute easy, and the historic charm is unmatched. Perfect for our military lifestyle.",
-      author: "Commander Smith",
-      branch: "Navy",
-      area: "Old Town"
-    },
-    {
-      content: "Del Ray has been perfect for our family. Great community feel, excellent restaurants, and reasonable commute to both Pentagon and Fort Belvoir.",
-      author: "Major Johnson",
-      branch: "Army",
-      area: "Del Ray"
-    }
-  ];
 
   const metroStations = [
     { name: "King Street-Old Town", line: "Blue/Yellow", pentagon: "15 min" },

@@ -95,20 +95,6 @@ export default function StaffordPage() {
     }
   ];
 
-  const testimonials = [
-    {
-      content: "Stafford County has been perfect for our Marine family. Great value, new schools, and easy commute to Quantico. The community is very welcoming to military families.",
-      author: "Gunnery Sgt. Davis",
-      branch: "Marines",
-      area: "Embrey Mill"
-    },
-    {
-      content: "Love living in Aquia Harbour! The waterfront community feel is amazing and the commute to Quantico is so convenient. Great choice for our PCS move.",
-      author: "Staff Sgt. Williams",
-      branch: "Marines",
-      area: "Aquia Harbour"
-    }
-  ];
 
   const advantages = [
     {

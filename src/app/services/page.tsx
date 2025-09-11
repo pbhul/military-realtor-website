@@ -112,26 +112,6 @@ export default function ServicesPage() {
     }
   ];
 
-  const testimonials = [
-    {
-      content: "The PCS relocation service was incredible. They coordinated everything with our moving timeline and made our transition to Northern Virginia seamless.",
-      author: "Major Williams",
-      branch: "Army",
-      service: "PCS Relocation"
-    },
-    {
-      content: "VA loan expertise saved us thousands. They found us a lender with the best rates and walked us through the entire process.",
-      author: "SSG Martinez",
-      branch: "Air Force", 
-      service: "VA Loan Services"
-    },
-    {
-      content: "As a military spouse, finding someone who understood our unique challenges was amazing. Professional, flexible, and truly caring.",
-      author: "Sarah Chen",
-      branch: "Navy Spouse",
-      service: "Military Spouse Support"
-    }
-  ];
 
   return (
     <>

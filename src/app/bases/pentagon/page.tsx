@@ -59,20 +59,6 @@ export default function PentagonPage() {
     }
   ];
 
-  const testimonials = [
-    {
-      content: "Outstanding service during our Pentagon assignment. Found us the perfect condo in Arlington with Metro access. Made the high-pressure market manageable.",
-      author: "Colonel Davis",
-      rank: "Air Force",
-      area: "Arlington"
-    },
-    {
-      content: "Expertise in the Pentagon area market was invaluable. Helped us compete successfully in multiple offer situations and secured our dream home.",
-      author: "Commander Johnson",
-      rank: "Navy",
-      area: "Alexandria"
-    }
-  ];
 
   const metroStations = [
     { name: "Pentagon", line: "Blue/Yellow", time: "0 min" },

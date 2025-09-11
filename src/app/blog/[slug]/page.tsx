@@ -7,6 +7,238 @@ import type { Metadata } from 'next';
 // Sample blog post data - in production this would come from a CMS or markdown files
 const getBlogPost = (slug: string) => {
   const posts: Record<string, any> = {
+    "2025-va-loan-no-limits-first-time-buyers": {
+      id: 1,
+      title: "2025 VA Loan Changes: No Limits for First-Time Military Home Buyers",
+      slug: "2025-va-loan-no-limits-first-time-buyers",
+      excerpt: "Breaking: VA loan limits don't apply to first-time users with full entitlement. Learn how this affects your home buying power in Northern Virginia's competitive market.",
+      content: `
+        <h2>Major VA Loan Policy Update for 2025</h2>
+        <p>The Department of Veterans Affairs has clarified that VA loan limits do not apply to first-time borrowers with full entitlement. This is a game-changer for military families in Northern Virginia's high-cost housing market.</p>
+        
+        <h3>What Full Entitlement Means</h3>
+        <p>First-time VA loan users have what's called "full entitlement" - meaning they can purchase a home of any price with:</p>
+        <ul>
+          <li><strong>$0 down payment</strong> regardless of home price</li>
+          <li><strong>No conforming loan limits</strong> that apply to other loan programs</li>
+          <li><strong>Competitive interest rates</strong> typically lower than conventional loans</li>
+          <li><strong>No private mortgage insurance (PMI)</strong> requirements</li>
+        </ul>
+        
+        <h3>Impact on Northern Virginia Market</h3>
+        <p>In Northern Virginia where median home prices often exceed $600,000:</p>
+        <ul>
+          <li>First-time military buyers can compete with cash offers</li>
+          <li>Access to homes previously out of reach due to down payment requirements</li>
+          <li>Ability to purchase in premium locations near bases</li>
+        </ul>
+
+        <h2>Partial Entitlement Borrowers</h2>
+        <p>Military members who have previously used their VA loan benefit may have partial entitlement and are subject to county loan limits:</p>
+        <ul>
+          <li><strong>2025 Northern Virginia limit:</strong> $1,209,750</li>
+          <li>Can restore full entitlement by paying off previous VA loan</li>
+          <li>May still qualify for subsequent use at reduced entitlement</li>
+        </ul>
+
+        <h2>Funding Fee Changes for 2025</h2>
+        <ul>
+          <li><strong>First use:</strong> 2.3% of loan amount</li>
+          <li><strong>Subsequent use:</strong> 3.6% of loan amount</li>
+          <li><strong>Disabled veterans:</strong> Exempt from funding fees</li>
+          <li><strong>National Guard/Reserves:</strong> Additional 0.25% for first use</li>
+        </ul>
+
+        <h2>Strategic Advantages for Military Families</h2>
+        <p>This clarification provides significant advantages:</p>
+        <ul>
+          <li>Faster home purchases with pre-approved VA financing</li>
+          <li>Competitive edge in seller's markets</li>
+          <li>Ability to purchase investment properties (with restrictions)</li>
+          <li>Lower overall cost of homeownership compared to conventional loans</li>
+        </ul>
+      `,
+      author: "Parjinder Brar, MRP Certified",
+      publishDate: "2025-01-11",
+      readTime: "6 min read",
+      category: "VA Loans",
+      tags: ["VA Loans", "2025", "First Time Buyers", "Full Entitlement"],
+      featured: true,
+      image: "/photos/military-family-keys.jpg",
+      schema: {
+        "@type": "BlogPosting",
+        "headline": "2025 VA Loan Changes: No Limits for First-Time Military Home Buyers",
+        "description": "Breaking: VA loan limits don't apply to first-time users with full entitlement. Learn how this affects your home buying power in Northern Virginia's competitive market.",
+        "image": "https://pbrealtynova.com/photos/military-family-keys.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Parjinder Brar, MRP Certified"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "PB Realty Nova",
+          "logo": {
+            "@type": "ImageObject", 
+            "url": "https://pbrealtynova.com/logo.jpg"
+          }
+        },
+        "datePublished": "2025-01-11",
+        "dateModified": "2025-01-11"
+      }
+    },
+    "fort-belvoir-bah-rates-2025-ranking": {
+      id: 2,
+      title: "Fort Belvoir BAH Rates 2025: 11th Highest Among All Army Bases",
+      slug: "fort-belvoir-bah-rates-2025-ranking",
+      excerpt: "Fort Belvoir ranks 11th highest for BAH rates in 2025 with a 2.9% increase. Here's what this means for your housing budget and home buying power.",
+      content: `
+        <h2>Fort Belvoir's Impressive BAH Ranking</h2>
+        <p>Fort Belvoir has secured the 11th highest BAH rates among all Army installations for 2025, reflecting the high cost of living in Northern Virginia and providing substantial housing allowances for military families.</p>
+        
+        <h3>2025 BAH Rate Details</h3>
+        <p>Fort Belvoir personnel received a 2.9% increase across all pay grades:</p>
+        <ul>
+          <li><strong>E-1 to E-4:</strong> $2,451/month (up from $2,382)</li>
+          <li><strong>E-5 to E-6:</strong> $2,709/month (up from $2,633)</li>
+          <li><strong>E-7 to E-9:</strong> $2,985/month (up from $2,901)</li>
+          <li><strong>O-1 to O-2:</strong> $2,709/month (up from $2,633)</li>
+          <li><strong>O-3 and above:</strong> $3,384/month (up from $3,288)</li>
+        </ul>
+        
+        <h3>Ranking Context</h3>
+        <p>Fort Belvoir's ranking reflects several factors:</p>
+        <ul>
+          <li>Proximity to Washington DC premium market</li>
+          <li>Limited on-base housing availability</li>
+          <li>Competitive Northern Virginia rental/housing market</li>
+          <li>Quality of life expectations for military families</li>
+        </ul>
+
+        <h2>Housing Strategy with New BAH Rates</h2>
+        <p>The increased BAH provides new opportunities:</p>
+        <ul>
+          <li><strong>Home Purchase:</strong> Higher monthly housing budget supports larger mortgages</li>
+          <li><strong>Rental Options:</strong> Access to premium communities previously out of range</li>
+          <li><strong>Commute Flexibility:</strong> Budget for closer-to-base housing with shorter commutes</li>
+        </ul>
+
+        <h2>Market Impact Analysis</h2>
+        <p>The BAH increase will likely impact local housing:</p>
+        <ul>
+          <li>Increased demand for military-preferred neighborhoods</li>
+          <li>Potential rental rate adjustments in base-proximate areas</li>
+          <li>Greater competition for quality housing near Fort Belvoir</li>
+        </ul>
+      `,
+      author: "Parjinder Brar, MRP Certified",
+      publishDate: "2025-01-10",
+      readTime: "8 min read",
+      category: "BAH & Housing Allowance",
+      tags: ["Fort Belvoir", "BAH", "2025", "Housing Allowance"],
+      featured: true,
+      image: "/photos/fort-belvoir-housing.jpg",
+      schema: {
+        "@type": "BlogPosting",
+        "headline": "Fort Belvoir BAH Rates 2025: 11th Highest Among All Army Bases",
+        "description": "Fort Belvoir ranks 11th highest for BAH rates in 2025 with a 2.9% increase. Here's what this means for your housing budget and home buying power.",
+        "image": "https://pbrealtynova.com/photos/fort-belvoir-housing.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Parjinder Brar, MRP Certified"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "PB Realty Nova",
+          "logo": {
+            "@type": "ImageObject", 
+            "url": "https://pbrealtynova.com/logo.jpg"
+          }
+        },
+        "datePublished": "2025-01-10",
+        "dateModified": "2025-01-10"
+      }
+    },
+    "pentagon-metro-real-estate-2025": {
+      id: 3,
+      title: "Pentagon Area Real Estate: Metro Access vs. Home Prices in 2025",
+      slug: "pentagon-metro-real-estate-2025", 
+      excerpt: "Analysis of Pentagon-area neighborhoods balancing Metro accessibility with home affordability for military families in 2025.",
+      content: `
+        <h2>Pentagon Commuter Strategy for 2025</h2>
+        <p>Pentagon personnel face unique challenges balancing Metro accessibility with affordable housing. Our 2025 analysis reveals the best strategies for military families.</p>
+        
+        <h3>Metro-Accessible vs. Affordable Housing</h3>
+        <p>Key neighborhoods and their trade-offs:</p>
+        
+        <h4>Crystal City/Pentagon City</h4>
+        <ul>
+          <li><strong>Commute:</strong> 2-5 minutes via Metro</li>
+          <li><strong>Median rent:</strong> $2,800-3,200/month</li>
+          <li><strong>Home prices:</strong> $650,000-850,000</li>
+          <li><strong>Best for:</strong> Senior officers, dual military couples</li>
+        </ul>
+        
+        <h4>Arlington (Rosslyn/Ballston)</h4>
+        <ul>
+          <li><strong>Commute:</strong> 10-15 minutes via Metro</li>
+          <li><strong>Median rent:</strong> $2,400-2,800/month</li>
+          <li><strong>Home prices:</strong> $550,000-750,000</li>
+          <li><strong>Best for:</strong> Officers, families preferring urban amenities</li>
+        </ul>
+        
+        <h4>Alexandria (Old Town/Del Ray)</h4>
+        <ul>
+          <li><strong>Commute:</strong> 15-20 minutes via Metro</li>
+          <li><strong>Median rent:</strong> $2,200-2,600/month</li>
+          <li><strong>Home prices:</strong> $500,000-700,000</li>
+          <li><strong>Best for:</strong> Families valuing historic charm and walkability</li>
+        </ul>
+
+        <h2>Cost-Benefit Analysis</h2>
+        <p>When factoring in transportation costs:</p>
+        <ul>
+          <li><strong>Metro pass:</strong> $300-400/month for unlimited access</li>
+          <li><strong>Parking at Pentagon:</strong> $200+/month (when available)</li>
+          <li><strong>Gas + wear:</strong> $400-600/month for distant suburbs</li>
+        </ul>
+
+        <h2>2025 Market Trends</h2>
+        <p>Current market conditions affecting Pentagon area housing:</p>
+        <ul>
+          <li>Interest rate stabilization encouraging home purchases</li>
+          <li>Limited inventory driving up prices near Metro stations</li>
+          <li>New construction focusing on high-density, Metro-accessible areas</li>
+          <li>Increased military BAH rates improving affordability</li>
+        </ul>
+      `,
+      author: "Parjinder Brar, MRP Certified",
+      publishDate: "2025-01-08",
+      readTime: "10 min read",
+      category: "Market Updates",
+      tags: ["Pentagon", "Metro", "Real Estate", "Commuting"],
+      featured: true,
+      image: "/photos/pentagon-metro.jpg",
+      schema: {
+        "@type": "BlogPosting",
+        "headline": "Pentagon Area Real Estate: Metro Access vs. Home Prices in 2025",
+        "description": "Analysis of Pentagon-area neighborhoods balancing Metro accessibility with home affordability for military families in 2025.",
+        "image": "https://pbrealtynova.com/photos/pentagon-metro.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Parjinder Brar, MRP Certified"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "PB Realty Nova",
+          "logo": {
+            "@type": "ImageObject", 
+            "url": "https://pbrealtynova.com/logo.jpg"
+          }
+        },
+        "datePublished": "2025-01-08",
+        "dateModified": "2025-01-08"
+      }
+    },
     "2024-bah-rate-changes-northern-virginia": {
       id: 1,
       title: "2024 BAH Rate Changes: What Military Families in Northern Virginia Need to Know",

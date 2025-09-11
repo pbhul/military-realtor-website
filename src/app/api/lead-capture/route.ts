@@ -295,8 +295,8 @@ async function sendLeadMagnetEmail(leadData: LeadCaptureData) {
                 </ul>
                 
                 <div style="text-align: center; margin: 20px 0;">
-                    <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.pbrealtynova.com'}/download-guide?email=${encodeURIComponent(leadData.email)}" class="download-btn" style="color: white;">
-                        📋 DOWNLOAD YOUR FREE GUIDE
+                    <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.pbrealtynova.com'}/contact" class="download-btn" style="color: white;">
+                        📋 SCHEDULE YOUR CONSULTATION
                     </a>
                 </div>
             </div>

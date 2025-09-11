@@ -108,20 +108,6 @@ export default function FortBelvoirPage() {
     }
   ];
 
-  const testimonials = [
-    {
-      content: "Made our PCS from Fort Hood to Fort Belvoir seamless. Found us the perfect home in Fairfax Station within our BAH and close to base.",
-      author: "Major Williams",
-      rank: "Army",
-      area: "Fairfax Station"
-    },
-    {
-      content: "Outstanding service during our first home purchase near Fort Belvoir. Walked us through every step of the VA loan process.",
-      author: "SSG Martinez",
-      rank: "Army",
-      area: "Springfield"
-    }
-  ];
 
   return (
     <>

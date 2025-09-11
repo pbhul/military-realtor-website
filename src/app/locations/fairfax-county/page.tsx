@@ -102,20 +102,6 @@ export default function FairfaxCountyPage() {
     }
   ];
 
-  const testimonials = [
-    {
-      content: "Found us the perfect home in Burke with great schools for our kids. The commute to Fort Belvoir is easy and the community is very military-friendly.",
-      author: "Lt. Col. Anderson",
-      branch: "Army",
-      area: "Burke"
-    },
-    {
-      content: "Expertise in Fairfax County market was invaluable. Helped us understand the different communities and found our dream home in Vienna.",
-      author: "Major Chen",
-      branch: "Air Force",
-      area: "Vienna"
-    }
-  ];
 
   return (
     <>

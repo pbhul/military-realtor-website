@@ -59,26 +59,6 @@ export default function QuanticoPage() {
     }
   ];
 
-  const testimonials = [
-    {
-      content: "Outstanding support during our PCS from Camp Lejeune to Quantico. Found us a beautiful home in Stafford County perfect for our Marine family.",
-      author: "Gunnery Sgt. Thompson",
-      rank: "Marines",
-      area: "Stafford County"
-    },
-    {
-      content: "Professional, knowledgeable, and understands the Marine lifestyle. Helped us navigate the Quantico area market with confidence.",
-      author: "Captain Rodriguez",
-      rank: "Marines",
-      area: "Woodbridge"
-    },
-    {
-      content: "Made our first home purchase near Quantico stress-free. Great knowledge of VA loans and military benefits.",
-      author: "Staff Sgt. Wilson",
-      rank: "Marines",
-      area: "Triangle"
-    }
-  ];
 
   const quanticoFeatures = [
     {
