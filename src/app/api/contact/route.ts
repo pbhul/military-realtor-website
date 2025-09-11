@@ -319,7 +319,7 @@ async function sendAutoReply(formData: ContactFormData) {
             
             <p><strong>What happens next:</strong></p>
             <ul>
-                <li>🕐 I will personally contact you within 2 hours (during business hours)</li>
+                <li>🕐 I will personally contact you promptly during business hours</li>
                 <li>📋 We'll discuss your specific military real estate needs</li>
                 <li>🎯 I'll provide you with a customized action plan</li>
                 <li>📚 You'll receive our free Military PCS Real Estate Guide</li>
@@ -361,7 +361,7 @@ ${formData.timeline ? `Timeline: ${formData.timeline}` : ''}
 ${formData.base ? `Base: ${formData.base}` : ''}
 
 What happens next:
-• I will personally contact you within 2 hours (business hours)
+• I will personally contact you promptly during business hours
 • We'll discuss your specific military real estate needs  
 • You'll receive a customized action plan
 • Free Military PCS Real Estate Guide included
@@ -384,7 +384,7 @@ MRP Certified | Veteran-Owned Business
         email: fromEmail,
         name: 'Military Real Estate NoVA'
       },
-      subject: '🎖️ Thank you for contacting us - We\'ll be in touch within 2 hours',
+      subject: '🎖️ Thank you for contacting us - We\'ll be in touch soon',
       text: autoReplyText,
       html: autoReplyHtml,
       categories: ['auto-reply', 'customer-communication'],

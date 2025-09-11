@@ -160,7 +160,7 @@ function DownloadGuideContent() {
             <div className="text-center p-6 bg-white rounded-lg shadow-sm">
               <div className="text-3xl mb-4">⚡</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Fast Response</h3>
-              <p className="text-gray-600">Personal response within 2 hours during business hours</p>
+              <p className="text-gray-600">Personal response during business hours</p>
             </div>
             <div className="text-center p-6 bg-white rounded-lg shadow-sm">
               <div className="text-3xl mb-4">🎖️</div>

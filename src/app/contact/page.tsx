@@ -86,7 +86,7 @@ export default function ContactPage() {
       icon: EnvelopeIcon,
       title: "Email", 
       content: "contact@militaryrealestatenova.com",
-      subContent: "We respond within 2 hours",
+      subContent: "Fast response times",
       action: "mailto:contact@militaryrealestatenova.com"
     },
     {
@@ -155,13 +155,13 @@ export default function ContactPage() {
                   Get Your Free Military Real Estate Consultation
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Fill out the form below and we&apos;ll contact you within 2 hours to discuss your needs.
+                  Fill out the form below and we&apos;ll contact you promptly to discuss your needs.
                 </p>
               </div>
 
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md">
-                  <p className="text-green-800">Thank you for your message! We&apos;ll contact you within 2 hours.</p>
+                  <p className="text-green-800">Thank you for your message! We&apos;ll contact you soon.</p>
                 </div>
               )}
 
@@ -338,17 +338,17 @@ export default function ContactPage() {
               <div className="mb-8">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">
                   Get in Touch
-        <div className="text-center py-6">
-          <Image
-            className="mx-auto h-32 w-32 object-cover rounded-full shadow-md border-4 border-blue-200"
-            src="/photos/Headshot.png"
-            alt="Parjinder - Your Northern Virginia Military Real Estate Specialist"
-            width={128}
-            height={128}
-            priority
-          />
-        </div>
                 </h2>
+                <div className="mb-6">
+                  <Image
+                    className="h-24 w-24 object-cover rounded-full shadow-md border-4 border-blue-200"
+                    src="/photos/Headshot.png"
+                    alt="Parjinder - Your Northern Virginia Military Real Estate Specialist"
+                    width={96}
+                    height={96}
+                    priority
+                  />
+                </div>
               </div>
 
               <div className="space-y-6">
