@@ -244,18 +244,11 @@ export default function DeploymentPropertyManagementPage() {
                 <p className="text-gray-600 mt-2">Complete property management during deployment</p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-green-50 rounded-lg">
-                  <h4 className="font-bold text-green-800 mb-2">Standard Management</h4>
-                  <p className="text-2xl font-bold text-green-600">8%</p>
-                  <p className="text-sm text-gray-600">of monthly rental income</p>
-                </div>
-                
-                <div className="text-center p-6 bg-blue-50 rounded-lg">
-                  <h4 className="font-bold text-blue-800 mb-2">Military Discount Rate</h4>
-                  <p className="text-2xl font-bold text-blue-600">6%</p>
-                  <p className="text-sm text-gray-600">of monthly rental income</p>
-                </div>
+              <div className="text-center p-6 bg-green-50 rounded-lg max-w-md mx-auto">
+                <h4 className="font-bold text-green-800 mb-2">Property Management Rate</h4>
+                <p className="text-2xl font-bold text-green-600">8%</p>
+                <p className="text-sm text-gray-600">of monthly rental income</p>
+                <p className="text-xs text-gray-500 mt-2">Competitive rates for all clients</p>
               </div>
               
               <div className="mt-6 p-4 bg-blue-50 rounded-lg">

@@ -111,7 +111,7 @@ export default function QuanticoPage() {
               🇺🇸 #1 Quantico Marine Base Realtor
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
-              <strong>Honoring All Who Serve!</strong> As a military veteran, I specialize exclusively in serving Marine Corps families at Quantico. 
+              <strong>Honoring All Who Serve!</strong> As a military veteran, I have extensive experience serving Marine Corps families at Quantico. 
               Expert Marine PCS relocations, emergency orders, VA loans, and finding homes that honor your service.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">

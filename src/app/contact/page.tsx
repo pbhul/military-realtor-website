@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 // Note: For static generation, we'll need to move metadata to a separate file or handle differently
@@ -338,10 +339,13 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">
                   Get in Touch
         <div className="text-center py-6">
-          <img
-            className="mx-auto h-32 w-48 object-cover rounded-lg shadow-md opacity-90"
-            src="/photos/house-key-door.jpg"
-            alt="House keys representing new home ownership"
+          <Image
+            className="mx-auto h-32 w-32 object-cover rounded-full shadow-md border-4 border-blue-200"
+            src="/photos/Headshot.png"
+            alt="Parjinder - Your Northern Virginia Military Real Estate Specialist"
+            width={128}
+            height={128}
+            priority
           />
         </div>
                 </h2>
