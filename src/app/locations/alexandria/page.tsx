@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Alexandria Military Realtor | Pentagon & Fort Belvoir Real Estate Specialist",
     description: "Expert Alexandria military realtor serving Pentagon and Fort Belvoir personnel. Specializing in military families, PCS relocations, and VA loans.",
-    url: "https://www.militaryrealestatenova.com/locations/alexandria",
+    url: "https://pbrealtynova.com/locations/alexandria",
   },
 };
 

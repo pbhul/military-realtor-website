@@ -253,7 +253,7 @@ Lead Capture System
 async function sendLeadMagnetEmail(leadData: LeadCaptureData) {
   try {
     const sgMail = await import('@sendgrid/mail');
-    const fromEmail = process.env.FROM_EMAIL || 'noreply@militaryrealestatenova.com';
+    const fromEmail = process.env.FROM_EMAIL || 'noreply@pbrealtynova.com';
 
     const leadMagnetHtml = `
     <!DOCTYPE html>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Military Home Selling Guide | PCS Home Sale Strategies Northern Virginia",
     description: "Complete guide for military families selling their home during PCS moves. Timing strategies and remote selling procedures.",
-    url: "https://www.militaryrealestatenova.com/military-selling-guide",
+    url: "https://pbrealtynova.com/military-selling-guide",
   },
 };
 

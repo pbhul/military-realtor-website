@@ -4,6 +4,55 @@ import { MapPinIcon, ClockIcon, HomeIcon, CalculatorIcon, PhoneIcon, CheckCircle
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
+// Fort Belvoir Location Schema
+const fortBelvoirSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "PB Realty Nova - Fort Belvoir Military Real Estate",
+  "description": "Expert Fort Belvoir realtor specializing in military families, PCS moves, and VA loans. MRP certified with 2025 current military housing information.",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Fairfax Station",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Virginia"
+      }
+    },
+    {
+      "@type": "City", 
+      "name": "Springfield",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Virginia"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Burke",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Virginia"
+      }
+    }
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.7073,
+      "longitude": -77.1428
+    },
+    "geoRadius": "30000"
+  },
+  "knowsAbout": [
+    "Fort Belvoir Military Housing",
+    "2025 BAH Rates Fort Belvoir",
+    "VA Loan Specialist Fort Belvoir",
+    "PCS Relocation Services"
+  ]
+};
+
 export const metadata: Metadata = {
   title: "Fort Belvoir Realtor | Military Real Estate Specialist Northern Virginia",
   description: "Expert Fort Belvoir realtor specializing in military families, PCS moves, and VA loans. Serving Fort Belvoir, Fairfax Station, Springfield, and surrounding Northern Virginia areas.",
@@ -11,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fort Belvoir Realtor | Military Real Estate Specialist",
     description: "Expert Fort Belvoir realtor specializing in military families, PCS moves, and VA loans. Serving Fort Belvoir and surrounding Northern Virginia areas.",
-    url: "https://www.militaryrealestatenova.com/bases/fort-belvoir",
+    url: "https://pbrealtynova.com/bases/fort-belvoir",
   },
 };
 
@@ -76,6 +125,12 @@ export default function FortBelvoirPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(fortBelvoirSchema)
+        }}
+      />
       <Header />
       
       {/* Hero Section */}
@@ -117,7 +172,8 @@ export default function FortBelvoirPage() {
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Fort Belvoir is home to over 50,000 military personnel, civilians, and family members. 
-              As a premier military installation in Northern Virginia, finding the right home near base requires local expertise.
+              As a premier military installation in Northern Virginia, Fort Belvoir ranks 11th highest among all Army bases for 2025 BAH rates, 
+              which increased by 2.9% from 2024. Finding the right home near base requires local expertise and current market knowledge.
             </p>
           </div>
           

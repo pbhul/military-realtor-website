@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Military Family Testimonials | 5-Star Reviews Northern Virginia Realtor",
     description: "Read authentic testimonials from military families who chose our MRP-certified realtor for their Northern Virginia home buying and selling needs.",
-    url: "https://www.militaryrealestatenova.com/testimonials",
+    url: "https://pbrealtynova.com/testimonials",
   },
 };
 

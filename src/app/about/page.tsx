@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About | Military Veteran Real Estate Agent Northern Virginia", 
     description: "Learn about your military veteran real estate agent specializing in Northern Virginia military families.",
-    url: "https://www.militaryrealestatenova.com/about",
+    url: "https://pbrealtynova.com/about",
   },
 };
 

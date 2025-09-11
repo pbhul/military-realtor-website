@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Military Real Estate Blog | Expert Insights for Northern Virginia Military Families",
     description: "Latest insights, tips, and market updates for military families in Northern Virginia.",
-    url: "https://www.militaryrealestatenova.com/blog",
+    url: "https://pbrealtynova.com/blog",
   },
 };
 

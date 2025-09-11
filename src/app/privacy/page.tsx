@@ -132,7 +132,7 @@ export default function PrivacyPolicy() {
                   Questions about this privacy policy or how we handle your information?
                 </p>
                 <div className="space-y-2 text-gray-600">
-                  <p><strong>Email:</strong> privacy@militaryrealestatenova.com</p>
+                  <p><strong>Email:</strong> privacy@pbrealtynova.com</p>
                   <p><strong>Phone:</strong> (703) 477-2606</p>
                   <p><strong>Mail:</strong> 123 Military Drive, Fairfax, VA 22030</p>
                 </div>

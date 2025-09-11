@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Northern Virginia Locations | Military Real Estate Coverage Areas",
     description: "Complete coverage of Northern Virginia military communities. Expert real estate services for all major military areas.",
-    url: "https://www.militaryrealestatenova.com/locations",
+    url: "https://pbrealtynova.com/locations",
   },
 };
 

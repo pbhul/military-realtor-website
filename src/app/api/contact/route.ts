@@ -343,7 +343,7 @@ MRP Certified | Serving Military Families
 async function sendAutoReply(formData: ContactFormData) {
   try {
     const sgMail = await import('@sendgrid/mail');
-    const fromEmail = process.env.FROM_EMAIL || 'noreply@militaryrealestatenova.com';
+    const fromEmail = process.env.FROM_EMAIL || 'noreply@pbrealtynova.com';
 
     const autoReplyHtml = `
     <!DOCTYPE html>

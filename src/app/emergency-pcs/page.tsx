@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "🚨 Emergency PCS Real Estate | 24-48 Hour Response",
     description: "Got urgent military orders? Emergency real estate services for military families in Northern Virginia. Fast response guaranteed.",
-    url: "https://www.militaryrealestatenova.com/emergency-pcs",
+    url: "https://pbrealtynova.com/emergency-pcs",
   },
 };
 

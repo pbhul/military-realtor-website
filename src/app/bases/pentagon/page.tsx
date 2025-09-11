@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pentagon Realtor | Military Real Estate Specialist",
     description: "Expert Pentagon area realtor specializing in military families, PCS moves, and VA loans. Serving Pentagon and surrounding Washington DC areas.",
-    url: "https://www.militaryrealestatenova.com/bases/pentagon",
+    url: "https://pbrealtynova.com/bases/pentagon",
   },
 };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "First-Time Military Buyer Guide | Complete VA Loan Home Buying Guide Northern Virginia",
     description: "Complete guide for military personnel buying their first home in Northern Virginia. VA loan benefits and military-specific considerations.",
-    url: "https://www.militaryrealestatenova.com/first-time-military-buyer",
+    url: "https://pbrealtynova.com/first-time-military-buyer",
   },
 };
 

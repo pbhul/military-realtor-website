@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Quantico Marine Base Realtor | Military Real Estate Specialist",
     description: "Expert Quantico Marine Base realtor specializing in military families, PCS moves, and VA loans. Serving Quantico and surrounding Virginia areas.",
-    url: "https://www.militaryrealestatenova.com/bases/quantico",
+    url: "https://pbrealtynova.com/bases/quantico",
   },
 };
 

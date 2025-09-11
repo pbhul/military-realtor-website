@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Military Real Estate Services | Northern Virginia PCS & VA Loan Specialist",
     description: "Comprehensive military real estate services for Northern Virginia. PCS relocations, VA loan assistance, and specialized support for military families.",
-    url: "https://www.militaryrealestatenova.com/services",
+    url: "https://pbrealtynova.com/services",
   },
 };
 

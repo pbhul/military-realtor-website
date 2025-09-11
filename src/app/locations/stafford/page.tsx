@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Stafford County Military Realtor | Quantico Marine Base Real Estate Specialist",
     description: "Expert Stafford County military realtor serving Quantico Marine Base personnel. Specializing in military families, PCS relocations, and VA loans.",
-    url: "https://www.militaryrealestatenova.com/locations/stafford",
+    url: "https://pbrealtynova.com/locations/stafford",
   },
 };
 

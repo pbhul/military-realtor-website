@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fairfax County Military Realtor | Northern Virginia Military Real Estate",
     description: "Expert Fairfax County military realtor serving Fort Belvoir and Pentagon personnel. Specializing in military families, PCS relocations, and VA loans.",
-    url: "https://www.militaryrealestatenova.com/locations/fairfax-county",
+    url: "https://pbrealtynova.com/locations/fairfax-county",
   },
 };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Deployment Property Management | Military Real Estate Northern VA",
     description: "Professional property management for deployed military families. Keep your Northern Virginia home profitable while serving overseas.",
-    url: "https://www.militaryrealestatenova.com/deployment-property-management",
+    url: "https://pbrealtynova.com/deployment-property-management",
   },
 };
 

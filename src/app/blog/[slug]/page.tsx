@@ -105,7 +105,7 @@ const getBlogPost = (slug: string) => {
         "@type": "BlogPosting",
         "headline": "2024 BAH Rate Changes: What Military Families in Northern Virginia Need to Know",
         "description": "The 2024 BAH rates have been released, and Northern Virginia military families will see significant changes. Here's what you need to know about the new rates and how they affect your housing budget.",
-        "image": "https://www.militaryrealestatenova.com/blog/bah-rates-2024.jpg",
+        "image": "https://pbrealtynova.com/blog/bah-rates-2024.jpg",
         "author": {
           "@type": "Person",
           "name": "Military Real Estate Specialist"
@@ -115,7 +115,7 @@ const getBlogPost = (slug: string) => {
           "name": "Military Real Estate Northern Virginia",
           "logo": {
             "@type": "ImageObject", 
-            "url": "https://www.militaryrealestatenova.com/logo.jpg"
+            "url": "https://pbrealtynova.com/logo.jpg"
           }
         },
         "datePublished": "2024-01-15",
@@ -148,7 +148,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://www.militaryrealestatenova.com/blog/${slug}`,
+      url: `https://pbrealtynova.com/blog/${slug}`,
       type: 'article',
       images: [post.image],
       publishedTime: post.publishDate,
@@ -188,10 +188,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             ...post.schema,
-            "url": `https://www.militaryrealestatenova.com/blog/${slug}`,
+            "url": `https://pbrealtynova.com/blog/${slug}`,
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": `https://www.militaryrealestatenova.com/blog/${slug}`
+              "@id": `https://pbrealtynova.com/blog/${slug}`
             }
           })
         }}

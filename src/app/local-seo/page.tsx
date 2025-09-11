@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Northern Virginia Military Realtor Near Me | Local Expert",
     description: "Find the best military realtor near you in Northern Virginia. Local expert serving Fort Belvoir, Pentagon, Quantico areas.",
-    url: "https://www.militaryrealestatenova.com/local-seo",
+    url: "https://pbrealtynova.com/local-seo",
   },
 };
 
@@ -21,8 +21,8 @@ const localBusinessData = {
   "@type": "RealEstateAgent",
   "name": "Military Real Estate Northern Virginia",
   "telephone": "+1-703-477-2606",
-  "email": "info@militaryrealestatenova.com",
-  "url": "https://www.militaryrealestatenova.com",
+  "email": "info@pbrealtynova.com",
+  "url": "https://pbrealtynova.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "123 Military Drive",
