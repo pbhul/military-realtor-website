@@ -186,8 +186,8 @@ async function sendEmailNotification(formData: ContactFormData) {
     const sgMail = await import('@sendgrid/mail');
     
     const sendGridApiKey = process.env.SENDGRID_API_KEY;
-    const toEmail = process.env.CONTACT_EMAIL || 'leads@militaryrealestatenova.com';
-    const fromEmail = process.env.FROM_EMAIL || 'noreply@militaryrealestatenova.com';
+    const toEmail = process.env.CONTACT_EMAIL || 'parjinder@pbrealtynova.com';
+    const fromEmail = process.env.FROM_EMAIL || 'noreply@pbrealtynova.com';
     
     if (!sendGridApiKey) {
       console.log('SendGrid not configured, logging email instead');
@@ -389,7 +389,7 @@ async function sendAutoReply(formData: ContactFormData) {
             <div class="contact-info">
                 <strong>📞 Need to reach me sooner?</strong><br>
                 Phone: <a href="tel:+1-703-477-2606">(703) 477-2606</a><br>
-                Email: <a href="mailto:contact@militaryrealestatenova.com">contact@militaryrealestatenova.com</a><br>
+                Email: <a href="mailto:parjinder@pbrealtynova.com">parjinder@pbrealtynova.com</a><br>
                 <br>
                 <em>Available 7 days a week to accommodate military schedules</em>
             </div>
@@ -429,7 +429,7 @@ What happens next:
 
 Need to reach me sooner?
 Phone: (703) 477-2606
-Email: contact@militaryrealestatenova.com
+Email: parjinder@pbrealtynova.com
 Available 7 days a week for military schedules
 
 Your service deserves our best service.

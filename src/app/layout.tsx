@@ -146,7 +146,7 @@ export default function RootLayout({
                     "https://instagram.com/militaryrealestatenova"
                   ],
                   "telephone": "+1-703-477-2606",
-                  "email": "contact@militaryrealestatenova.com",
+                  "email": "parjinder@pbrealtynova.com",
                   "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "123 Military Drive",

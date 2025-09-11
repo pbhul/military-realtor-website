@@ -170,7 +170,7 @@ export default function TermsOfService() {
                   Questions about these terms or our military real estate services?
                 </p>
                 <div className="space-y-2 text-gray-600">
-                  <p><strong>Email:</strong> contact@militaryrealestatenova.com</p>
+                  <p><strong>Email:</strong> parjinder@pbrealtynova.com</p>
                   <p><strong>Phone:</strong> (703) 477-2606</p>
                   <p><strong>Office:</strong> 123 Military Drive, Fairfax, VA 22030</p>
                   <p><strong>License:</strong> Virginia Real Estate License #[Number]</p>

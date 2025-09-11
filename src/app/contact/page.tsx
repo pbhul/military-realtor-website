@@ -85,9 +85,9 @@ export default function ContactPage() {
     {
       icon: EnvelopeIcon,
       title: "Email", 
-      content: "contact@militaryrealestatenova.com",
+      content: "parjinder@pbrealtynova.com",
       subContent: "Fast response times",
-      action: "mailto:contact@militaryrealestatenova.com"
+      action: "mailto:parjinder@pbrealtynova.com"
     },
     {
       icon: MapPinIcon,

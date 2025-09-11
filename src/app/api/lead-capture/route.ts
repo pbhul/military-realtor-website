@@ -114,8 +114,8 @@ async function sendLeadNotification(leadData: LeadCaptureData) {
     const sgMail = await import('@sendgrid/mail');
     
     const sendGridApiKey = process.env.SENDGRID_API_KEY;
-    const toEmail = process.env.LEAD_NOTIFICATION_EMAIL || process.env.CONTACT_EMAIL || 'leads@militaryrealestatenova.com';
-    const fromEmail = process.env.FROM_EMAIL || 'noreply@militaryrealestatenova.com';
+    const toEmail = process.env.LEAD_NOTIFICATION_EMAIL || process.env.CONTACT_EMAIL || 'parjinder@pbrealtynova.com';
+    const fromEmail = process.env.FROM_EMAIL || 'noreply@pbrealtynova.com';
     
     if (!sendGridApiKey) {
       console.log('SendGrid not configured, logging lead instead');
@@ -322,7 +322,7 @@ async function sendLeadMagnetEmail(leadData: LeadCaptureData) {
             
             <p><strong>Need to talk sooner?</strong><br>
             📞 <a href="tel:+1-703-477-2606">(703) 477-2606</a><br>
-            📧 <a href="mailto:contact@militaryrealestatenova.com">contact@militaryrealestatenova.com</a></p>
+            📧 <a href="mailto:parjinder@pbrealtynova.com">parjinder@pbrealtynova.com</a></p>
             
             <p>Your service to our country deserves the best service from us. I look forward to helping you and your family find the perfect home in Northern Virginia!</p>
             
@@ -334,7 +334,7 @@ async function sendLeadMagnetEmail(leadData: LeadCaptureData) {
         <div class="footer">
             Military Real Estate Northern Virginia<br>
             Serving Fort Belvoir • Pentagon • Quantico • All of NoVA<br>
-            📧 contact@militaryrealestatenova.com | 📞 (703) 477-2606
+            📧 parjinder@pbrealtynova.com | 📞 (703) 477-2606
         </div>
     </body>
     </html>
@@ -370,7 +370,7 @@ I'll contact you within 24 hours to discuss your specific needs and answer any q
 
 📞 NEED TO TALK SOONER?
 Phone: (703) 477-2606
-Email: contact@militaryrealestatenova.com
+Email: parjinder@pbrealtynova.com
 
 Your service deserves our best service!
 

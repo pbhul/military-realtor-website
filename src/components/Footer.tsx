@@ -50,8 +50,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <EnvelopeIcon className="h-5 w-5 text-blue-400" />
-                <a href="mailto:contact@militaryrealestatenova.com" className="text-gray-300 hover:text-white">
-                  contact@militaryrealestatenova.com
+                <a href="mailto:parjinder@pbrealtynova.com" className="text-gray-300 hover:text-white">
+                  parjinder@pbrealtynova.com
                 </a>
               </div>
               <div className="flex items-center gap-3">

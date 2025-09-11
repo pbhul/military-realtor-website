@@ -147,7 +147,7 @@ function DownloadGuideContent() {
                 (703) 477-2606
               </a>
               <a 
-                href="mailto:contact@militaryrealestatenova.com"
+                href="mailto:parjinder@pbrealtynova.com"
                 className="flex items-center gap-3 bg-white text-blue-900 border border-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
               >
                 <EnvelopeIcon className="h-5 w-5" />
