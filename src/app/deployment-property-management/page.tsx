@@ -258,9 +258,9 @@ export default function DeploymentPropertyManagementPage() {
                 </div>
               </div>
               
-              <div className="mt-6 p-4 bg-yellow-50 rounded-lg">
+              <div className="mt-6 p-4 bg-blue-50 rounded-lg">
                 <p className="text-sm text-gray-700 font-medium">
-                  🎖️ <strong>Military Benefit:</strong> 25% discount for active duty deployed personnel
+                  💼 <strong>Competitive Rates:</strong> Transparent pricing with no hidden fees
                 </p>
               </div>
             </div>
