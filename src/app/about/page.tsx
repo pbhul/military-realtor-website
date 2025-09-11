@@ -130,7 +130,7 @@ export default function AboutPage() {
                 <img
                   className="h-48 w-48 rounded-full object-cover border-4 border-blue-200 shadow-lg"
                   src="/photos/Headshot.png"
-                  alt="Your Military Realtor"
+                  alt="Parjinder - Professional military veteran realtor specializing in Northern Virginia Fort Belvoir Pentagon Quantico"
                 />
               </div>
               <div className="bg-blue-50 rounded-lg p-6">

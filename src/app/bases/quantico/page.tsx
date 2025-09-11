@@ -5,9 +5,9 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Quantico Marine Base Realtor | Military Real Estate Specialist Virginia",
-  description: "Expert Quantico Marine Base realtor specializing in military families, PCS moves, and VA loans. Serving Quantico, Stafford County, Woodbridge, and surrounding Northern Virginia areas.",
-  keywords: "Quantico Marine Base realtor, Quantico military housing, Marine Corps Base Quantico homes, Quantico VA loan specialist, Quantico PCS relocation, military realtor near Quantico, Stafford County military realtor",
+  title: "Quantico Marine Realtor | #1 Marine Corps Real Estate Specialist Virginia",
+  description: "🇺🇸 #1 Quantico Marine realtor specializing exclusively in Marine Corps families. Expert PCS moves, VA loans, emergency relocations. Serving Marines since 2020. Semper Fi!",
+  keywords: "Quantico Marine realtor, Marine Corps realtor Quantico, Quantico Marine real estate agent, Marine realtor Virginia, Quantico Marine specialist, Marine Corps Base Quantico realtor, Marine family realtor",
   openGraph: {
     title: "Quantico Marine Base Realtor | Military Real Estate Specialist",
     description: "Expert Quantico Marine Base realtor specializing in military families, PCS moves, and VA loans. Serving Quantico and surrounding Virginia areas.",
@@ -108,11 +108,11 @@ export default function QuanticoPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Quantico Marine Base Realtor
+              🇺🇸 #1 Quantico Marine Realtor
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
-              Your trusted real estate specialist for Quantico Marine Base personnel and families. Expert in Marine Corps 
-              PCS relocations, VA loans, and finding the perfect home near base in Stafford County and surrounding areas.
+              <strong>Semper Fi!</strong> The only realtor in Northern Virginia specializing exclusively in Marine Corps families at Quantico. 
+              Expert Marine PCS relocations, emergency orders, VA loans, and finding homes that honor your service.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -128,6 +128,43 @@ export default function QuanticoPage() {
                 <PhoneIcon className="h-5 w-5" />
                 Call (703) 477-2606
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Marine Corps Specialist Section */}
+      <section className="py-16 bg-red-50 border-y-4 border-red-600">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="flex justify-center mb-6">
+              <div className="text-6xl">🇺🇸</div>
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
+              Why Choose a Quantico Marine Realtor?
+            </h2>
+            <div className="bg-white p-8 rounded-lg shadow-lg border-l-8 border-red-600">
+              <p className="text-lg text-gray-700 mb-4">
+                <strong>"Once a Marine, Always a Marine."</strong> As your dedicated Quantico Marine realtor, 
+                I understand Marine Corps values, deployment cycles, and the unique challenges Marine families face.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <div className="text-center">
+                  <div className="text-2xl mb-2">⚡</div>
+                  <h3 className="font-bold text-gray-900">Emergency Response</h3>
+                  <p className="text-sm text-gray-600">24-48 hour response for urgent Marine orders</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl mb-2">🏠</div>
+                  <h3 className="font-bold text-gray-900">Marine Family Homes</h3>
+                  <p className="text-sm text-gray-600">Houses that fit Marine Corps lifestyle & budget</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl mb-2">🎖️</div>
+                  <h3 className="font-bold text-gray-900">Honor & Integrity</h3>
+                  <p className="text-sm text-gray-600">Service with Marine Corps values</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -267,7 +304,7 @@ export default function QuanticoPage() {
                 type="submit"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-blue-900 shadow-sm hover:bg-blue-50"
               >
-                Get Free Quantico Guide
+                🇺🇸 Get Free Marine Home Guide
               </button>
             </form>
           </div>
@@ -300,6 +337,49 @@ export default function QuanticoPage() {
             >
               Explore all Virginia locations <span aria-hidden="true">→</span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Marine Emergency Contact */}
+      <section className="bg-red-800 py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <div className="flex justify-center mb-6">
+              <div className="text-4xl">🇺🇸</div>
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Semper Fi! Ready to Serve Your Real Estate Mission?
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-red-100">
+              Whether you're PCSing to Quantico, receiving emergency orders, or ready to buy your first home as a Marine, 
+              your dedicated Quantico Marine realtor is standing by. <strong>Oorah!</strong>
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a
+                href="tel:+1-703-477-2606"
+                className="flex items-center gap-3 rounded-md bg-white px-6 py-4 text-lg font-bold text-red-800 shadow-sm hover:bg-gray-100 transform hover:scale-105 transition-all duration-200"
+              >
+                <PhoneIcon className="h-6 w-6" />
+                Call Your Marine Realtor: (703) 477-2606
+              </a>
+            </div>
+            
+            <div className="mt-8 p-6 bg-red-700 rounded-lg">
+              <h3 className="text-xl font-bold text-white mb-4">⚡ Emergency Marine Orders?</h3>
+              <p className="text-red-100 mb-4">Got last-minute orders? Don't stress - we handle emergency real estate situations for Marines daily.</p>
+              <Link 
+                href="/emergency-pcs"
+                className="inline-flex items-center rounded-md bg-yellow-400 px-4 py-2 text-sm font-bold text-red-800 hover:bg-yellow-300"
+              >
+                🚨 Emergency PCS Help
+              </Link>
+            </div>
+            
+            <div className="mt-8 text-center text-red-100">
+              <p className="font-semibold">🎖️ "Your Service Deserves Our Best Service" 🎖️</p>
+              <p className="text-sm mt-2">Proudly serving Marine Corps families at Quantico since 2020</p>
+            </div>
           </div>
         </div>
       </section>

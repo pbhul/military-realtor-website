@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { PhoneIcon, MapPinIcon, ShieldCheckIcon, HomeIcon, DocumentTextIcon, CalculatorIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const [leadFormData, setLeadFormData] = useState({
@@ -143,10 +144,13 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Why Choose an MRP Certified Military Veteran?
             <div className="mt-8 flex justify-center">
-              <img
+              <Image
                 className="h-24 w-24 rounded-full object-cover border-4 border-blue-200"
                 src="/photos/Headshot.png"
-                alt="Your Military Realtor"
+                alt="Parjinder - Northern Virginia Military Realtor specializing in Fort Belvoir, Pentagon, and Quantico Marine Base relocations"
+                width={96}
+                height={96}
+                priority
               />
             </div>
             </h2>
@@ -159,10 +163,13 @@ export default function Home() {
           {/* Military Family with Keys Image */}
           <div className="mx-auto mt-12 max-w-4xl">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <img
+              <Image
                 className="w-full rounded-lg shadow-xl"
                 src="/photos/house-key-door.jpg"
-                alt="House keys in front of door - home ownership"
+                alt="Military family home keys - VA loan homeownership success in Northern Virginia near Fort Belvoir Pentagon Quantico"
+                width={600}
+                height={400}
+                loading="lazy"
               />
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-gray-900">🎖️ Military Families Trust Our Expertise</h3>
@@ -233,9 +240,12 @@ export default function Home() {
       <section className="bg-blue-900 py-16 sm:py-24 relative overflow-hidden">
         {/* Military Background */}
         <div className="absolute inset-0">
-          <img
+          <Image
             className="h-full w-full object-cover"
-            alt="Military service members saluting with American flag"
+            src="/photos/military-flag-background.jpg"
+            alt="Northern Virginia military personnel saluting American flag - Fort Belvoir Pentagon Quantico real estate specialist"
+            fill
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-blue-900/85"></div>
         </div>

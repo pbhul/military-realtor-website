@@ -126,6 +126,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // High-priority new service pages for immediate ranking
+  const emergencyServicePages = [
+    {
+      url: `${baseUrl}/emergency-pcs`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.95, // Very high priority - unique service
+    },
+    {
+      url: `${baseUrl}/deployment-property-management`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.9, // High priority - zero competition
+    },
+  ];
+
   // Military-specific resource pages - high value for SEO
   const militaryResourcePages = [
     {
@@ -212,6 +228,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...corePages,
+    ...emergencyServicePages, // Add new high-priority pages first
     ...basePages,
     ...locationPages,
     ...militaryResourcePages,
