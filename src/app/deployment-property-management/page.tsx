@@ -34,8 +34,8 @@ export default function DeploymentPropertyManagementPage() {
     },
     {
       icon: ShieldCheckIcon,
-      title: "Military-Grade Security",
-      description: "Enhanced security monitoring and regular property inspections with military attention to detail."
+      title: "Enhanced Property Security",
+      description: "Regular security monitoring and property inspections with thorough attention to detail."
     }
   ];
 
@@ -63,14 +63,14 @@ export default function DeploymentPropertyManagementPage() {
   ];
 
   const managementFeatures = [
-    "Military tenant preference screening",
+    "Comprehensive tenant screening and background verification",
     "Monthly property inspections with photo reports", 
     "Emergency repair coordination (24/7)",
     "Rent collection and income reporting",
-    "Lawn care and seasonal maintenance",
+    "Coordination of lawn care and seasonal maintenance services",
     "Tax documentation for rental income",
     "Market analysis and rent optimization",
-    "Secure military-grade property monitoring"
+    "Regular property security monitoring and oversight"
   ];
 
   return (
@@ -133,8 +133,8 @@ export default function DeploymentPropertyManagementPage() {
                   <ul className="space-y-2 text-gray-700">
                     <li>• Generate rental income during deployment</li>
                     <li>• Professional maintenance oversight</li>
-                    <li>• Military-grade security monitoring</li>
-                    <li>• Expert military tenant screening</li>
+                    <li>• Enhanced security monitoring</li>
+                    <li>• Professional tenant screening and background checks</li>
                     <li>• 24/7 support regardless of your location</li>
                   </ul>
                 </div>
@@ -291,7 +291,7 @@ export default function DeploymentPropertyManagementPage() {
               <div className="text-center">
                 <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Tenant Screening</h3>
-                <p className="text-gray-600 text-sm">Military-preferred tenant screening and background checks</p>
+                <p className="text-gray-600 text-sm">Comprehensive tenant screening and background verification</p>
               </div>
               
               <div className="text-center">
