@@ -134,7 +134,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
-                <p className="text-lg font-semibold text-gray-900">[Your Name]</p>
+                <p className="text-lg font-semibold text-gray-900">Parjinder</p>
                 <p className="text-blue-600 font-medium">Military Veteran & MRP Certified Agent</p>
                 <p className="text-gray-600 mt-2">Serving Northern Virginia Military Families</p>
               </div>
