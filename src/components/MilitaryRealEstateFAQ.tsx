@@ -9,7 +9,12 @@ export default function MilitaryRealEstateFAQ() {
     },
     {
       question: "What are the current VA loan limits for Northern Virginia in 2025?",
-      answer: "As of 2025, all Northern Virginia counties have unified VA loan limits: Fairfax County - $1,209,750, Loudoun County - $1,209,750, Arlington County - $1,209,750, Prince William County - $1,209,750, Stafford County - $1,209,750. These high-cost area limits reflect elevated home values in the region and are set by the Department of Veterans Affairs annually. Veterans with full entitlement may be able to purchase above these limits with a down payment.",
+      answer: "As of 2020, most veterans with full entitlement (including first-time VA loan users) have no loan limits and can purchase homes of any price with no down payment, subject to lender approval. VA loan limits only apply to borrowers with partial entitlement from previous VA loan use: Fairfax County - $1,209,750, Loudoun County - $1,209,750, Arlington County - $1,209,750, Prince William County - $1,209,750, Stafford County - $1,209,750.",
+      category: "VA Loans"
+    },
+    {
+      question: "What is the difference between full and partial VA loan entitlement?",
+      answer: "Full entitlement means you have never used your VA loan benefit or have fully restored your entitlement from a previous VA loan. With full entitlement, there are no loan limits - you can purchase homes of any price with no down payment. Partial entitlement occurs when you have previously used your VA loan benefit and have remaining entitlement. Only borrowers with partial entitlement are subject to VA loan limits.",
       category: "VA Loans"
     },
     {

@@ -50,7 +50,7 @@ export default function PentagonPage() {
     {
       icon: CalculatorIcon,
       title: "VA Loan Optimization",
-      description: "Maximize your VA loan benefits in the high-cost Pentagon area with specialized knowledge of loan limits and competitive strategies."
+      description: "Maximize your VA loan benefits in the high-cost Pentagon area with no down payment for qualified borrowers with full entitlement, regardless of home price."
     },
     {
       icon: ClockIcon,

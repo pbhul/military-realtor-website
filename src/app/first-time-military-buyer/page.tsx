@@ -127,7 +127,7 @@ export default function FirstTimeMilitaryBuyerPage() {
     {
       icon: CurrencyDollarIcon,
       title: "Zero Down Payment",
-      description: "No down payment required on VA loans up to $1,209,750 in Northern Virginia (2025 limits).",
+      description: "No down payment required on VA loans for first-time users with full entitlement (no purchase price limits).",
       details: "Build equity from day one without depleting savings for a large down payment."
     },
     {

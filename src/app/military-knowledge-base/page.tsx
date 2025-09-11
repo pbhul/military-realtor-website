@@ -21,8 +21,8 @@ export default function MilitaryKnowledgeBase() {
       lastUpdated: "January 2025",
       facts: [
         {
-          title: "2025 VA Loan Limits Northern Virginia",
-          content: "All Northern Virginia counties now have unified VA loan limits: Fairfax County: $1,209,750 | Loudoun County: $1,209,750 | Arlington County: $1,209,750 | Prince William County: $1,209,750 | Stafford County: $1,209,750. These high-cost area limits reflect elevated home values in the region and are set annually by the Department of Veterans Affairs.",
+          title: "2025 VA Loan Limits and Full Entitlement",
+          content: "As of 2020, veterans with full entitlement (including most first-time VA loan users) have no loan limits and can purchase homes of any price with no down payment, subject to lender approval. VA loan limits only apply to borrowers with partial entitlement from previous use: Fairfax County: $1,209,750 | Loudoun County: $1,209,750 | Arlington County: $1,209,750 | Prince William County: $1,209,750 | Stafford County: $1,209,750.",
           source: "Department of Veterans Affairs, 2025"
         },
         {
