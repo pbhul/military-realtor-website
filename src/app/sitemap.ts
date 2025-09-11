@@ -1,8 +1,8 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.militaryrealestatenova.com';
-  const currentDate = new Date('2024-09-08');
+  const baseUrl = 'https://pbrealtynova.com';
+  const currentDate = new Date(); // Use current date for dynamic updates
   
   // Core pages with highest priority
   const corePages = [

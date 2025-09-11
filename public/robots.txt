@@ -44,13 +44,37 @@ Disallow: /private/
 Disallow: /.env
 Disallow: /node_modules/
 
+# Specific allowances for LLM and AI crawlers - Updated 2025
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 # Sitemaps
-Sitemap: https://www.militaryrealestatenova.com/sitemap.xml
-Sitemap: https://www.militaryrealestatenova.com/sitemap-pages.xml
-Sitemap: https://www.militaryrealestatenova.com/sitemap-locations.xml
+Sitemap: https://pbrealtynova.com/sitemap.xml
+
+# LLM-optimized content pages with 2025 information
+# /military-knowledge-base - Updated 2025 VA loan limits, BAH rates, military facts
+# /military-resources - 2025 military real estate information
 
 # Military-specific crawl delay to respect server resources
 Crawl-delay: 1
 
 # Host specification
-Host: https://www.militaryrealestatenova.com
+Host: https://pbrealtynova.com

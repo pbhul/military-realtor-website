@@ -1,11 +1,20 @@
 'use client';
 
-import { useState } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { useState, Suspense } from 'react';
+import dynamic from 'next/dynamic';
 import { PhoneIcon, MapPinIcon, ShieldCheckIcon, HomeIcon, DocumentTextIcon, CalculatorIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
+
+// Dynamic imports for better code splitting
+const Header = dynamic(() => import('@/components/Header'), {
+  loading: () => <div className="h-16 bg-white shadow-sm"></div>
+});
+
+const Footer = dynamic(() => import('@/components/Footer'), {
+  loading: () => <div className="h-32 bg-gray-50"></div>,
+  ssr: false
+});
 
 export default function Home() {
   const [leadFormData, setLeadFormData] = useState({
@@ -143,6 +152,7 @@ export default function Home() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Why Choose an MRP Certified Military Veteran?
+            </h2>
             <div className="mt-8 flex justify-center">
               <Image
                 className="h-24 w-24 rounded-full object-cover border-4 border-blue-200"
@@ -153,7 +163,6 @@ export default function Home() {
                 priority
               />
             </div>
-            </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               As a Military Relocation Professional (MRP), I have specialized training beyond standard real estate education. 
               This certification ensures deep understanding of military life, PCS timelines, VA loans, and the unique challenges military families face.
@@ -219,11 +228,33 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            {locations.map((location) => (
-              <div key={location} className="flex items-center justify-center rounded-lg bg-blue-50 px-6 py-4 shadow-md border border-blue-100">
-                <span className="text-sm font-semibold text-blue-900">{location}</span>
-              </div>
-            ))}
+            {locations.map((location, index) => {
+              // Create internal links for key military locations
+              const locationLinks = {
+                "Fort Belvoir Area": "/bases/fort-belvoir",
+                "Pentagon Region": "/bases/pentagon", 
+                "Quantico Marine Base": "/bases/quantico",
+                "Fairfax County": "/locations/fairfax-county",
+                "Alexandria": "/locations/alexandria",
+                "Stafford County": "/locations/stafford"
+              };
+              
+              const linkUrl = locationLinks[location as keyof typeof locationLinks];
+              
+              if (linkUrl) {
+                return (
+                  <Link key={location} href={linkUrl} className="flex items-center justify-center rounded-lg bg-blue-50 px-6 py-4 shadow-md border border-blue-100 hover:bg-blue-100 transition-colors">
+                    <span className="text-sm font-semibold text-blue-900">{location}</span>
+                  </Link>
+                );
+              } else {
+                return (
+                  <div key={location} className="flex items-center justify-center rounded-lg bg-blue-50 px-6 py-4 shadow-md border border-blue-100">
+                    <span className="text-sm font-semibold text-blue-900">{location}</span>
+                  </div>
+                );
+              }
+            })}
           </div>
           <div className="mt-12 text-center">
             <Link
@@ -294,7 +325,9 @@ export default function Home() {
                   onChange={handleLeadInputChange}
                   placeholder="Full Name"
                   required
-                  className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
+                  autoComplete="name"
+                  inputMode="text"
+                  className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
                 />
                 <input
                   type="email"
@@ -303,7 +336,9 @@ export default function Home() {
                   onChange={handleLeadInputChange}
                   placeholder="Email Address"
                   required
-                  className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
+                  autoComplete="email"
+                  inputMode="email"
+                  className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
                 />
                 <input
                   type="tel"
@@ -312,7 +347,9 @@ export default function Home() {
                   onChange={handleLeadInputChange}
                   placeholder="Phone Number"
                   required
-                  className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
+                  autoComplete="tel"
+                  inputMode="tel"
+                  className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
                 />
                 <select 
                   name="base"

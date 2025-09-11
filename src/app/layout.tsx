@@ -2,20 +2,26 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics, FacebookPixel } from '@/components/Analytics';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import LLMEntityMarkup from '@/components/LLMEntityMarkup';
 import { Suspense } from 'react';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap',
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: 'swap',
+  preload: false,
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.militaryrealestatenova.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://pbrealtynova.com'),
   title: {
     default: "Military Realtor Northern Virginia | MRP Certified | PCS & VA Loan Specialist",
     template: "%s | Military Real Estate NoVA"
@@ -53,7 +59,7 @@ export const metadata: Metadata = {
   ].join(", "),
   authors: [{ 
     name: "Military Real Estate Specialist",
-    url: "https://www.militaryrealestatenova.com"
+    url: "https://pbrealtynova.com"
   }],
   creator: "MRP Certified Military Real Estate Professional",
   publisher: "Military Real Estate Northern Virginia",
@@ -63,7 +69,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "🎖️ Military Realtor Northern Virginia | MRP Certified PCS & VA Loan Expert",
     description: "Veteran-owned MRP certified realtor specializing in Fort Belvoir, Pentagon, Quantico military relocations. Expert PCS moves, VA loans, BAH optimization for military families.",
-    url: "https://www.militaryrealestatenova.com",
+    url: "https://pbrealtynova.com",
     siteName: "Military Real Estate Northern Virginia",
     locale: "en_US",
     type: "website",
@@ -99,7 +105,7 @@ export const metadata: Metadata = {
   },
   
   alternates: {
-    canonical: "https://www.militaryrealestatenova.com",
+    canonical: "https://pbrealtynova.com",
   },
   
   verification: {
@@ -135,11 +141,11 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "RealEstateAgent",
-                  "@id": "https://www.militaryrealestatenova.com/#agent",
+                  "@id": "https://pbrealtynova.com/#agent",
                   "name": "Military Real Estate Northern Virginia",
                   "alternateName": "MRP Certified Military Realtor NoVA",
                   "description": "🎖️ MRP Certified military real estate specialist serving Fort Belvoir, Pentagon, and Quantico areas. Expert in PCS relocations, VA loans, BAH optimization for military families.",
-                  "url": "https://www.militaryrealestatenova.com",
+                  "url": "https://pbrealtynova.com",
                   "sameAs": [
                     "https://facebook.com/militaryrealestatenova",
                     "https://linkedin.com/in/militaryrealtor",
@@ -243,11 +249,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Organization",
-                  "@id": "https://www.militaryrealestatenova.com/#organization", 
+                  "@id": "https://pbrealtynova.com/#organization", 
                   "name": "Military Real Estate Northern Virginia",
                   "alternateName": "Military Realtor NoVA",
                   "description": "Veteran-owned MRP certified real estate company specializing in military relocations in Northern Virginia",
-                  "url": "https://www.militaryrealestatenova.com",
+                  "url": "https://pbrealtynova.com",
                   "foundingDate": "2020",
                   "founder": {
                     "@type": "Person",
@@ -259,19 +265,19 @@ export default function RootLayout({
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://www.militaryrealestatenova.com/#website",
-                  "url": "https://www.militaryrealestatenova.com",
+                  "@id": "https://pbrealtynova.com/#website",
+                  "url": "https://pbrealtynova.com",
                   "name": "Military Real Estate Northern Virginia",
                   "description": "MRP Certified military realtor serving Fort Belvoir, Pentagon, Quantico. Expert PCS relocations, VA loans for military families.",
                   "publisher": {
-                    "@id": "https://www.militaryrealestatenova.com/#organization"
+                    "@id": "https://pbrealtynova.com/#organization"
                   },
                   "potentialAction": [
                     {
                       "@type": "SearchAction",
                       "target": {
                         "@type": "EntryPoint",
-                        "urlTemplate": "https://www.militaryrealestatenova.com/search?q={search_term_string}"
+                        "urlTemplate": "https://pbrealtynova.com/search?q={search_term_string}"
                       },
                       "query-input": "required name=search_term_string"
                     }
@@ -279,11 +285,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Service",
-                  "@id": "https://www.militaryrealestatenova.com/#services",
+                  "@id": "https://pbrealtynova.com/#services",
                   "name": "Military Real Estate Services",
                   "description": "Comprehensive real estate services for military families including PCS relocations, VA loan assistance, and military housing solutions",
                   "provider": {
-                    "@id": "https://www.militaryrealestatenova.com/#agent"
+                    "@id": "https://pbrealtynova.com/#agent"
                   },
                   "areaServed": {
                     "@type": "State",
@@ -339,6 +345,8 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <GoogleAnalytics ga_id="GA_MEASUREMENT_ID" />
           <FacebookPixel pixel_id="FB_PIXEL_ID" />
+          <BreadcrumbSchema />
+          <LLMEntityMarkup />
         </Suspense>
         {children}
       </body>

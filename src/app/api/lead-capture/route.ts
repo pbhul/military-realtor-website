@@ -295,7 +295,7 @@ async function sendLeadMagnetEmail(leadData: LeadCaptureData) {
                 </ul>
                 
                 <div style="text-align: center; margin: 20px 0;">
-                    <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3003'}/download-guide?email=${encodeURIComponent(leadData.email)}" class="download-btn" style="color: white;">
+                    <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.pbrealtynova.com'}/download-guide?email=${encodeURIComponent(leadData.email)}" class="download-btn" style="color: white;">
                         📋 DOWNLOAD YOUR FREE GUIDE
                     </a>
                 </div>
@@ -357,7 +357,7 @@ Thank you for your service and for requesting our Military Real Estate Guide!
 • Northern Virginia Insider Information
 
 📋 DOWNLOAD YOUR GUIDE:
-${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3003'}/download-guide?email=${encodeURIComponent(leadData.email)}
+${process.env.NEXT_PUBLIC_BASE_URL || 'https://www.pbrealtynova.com'}/download-guide?email=${encodeURIComponent(leadData.email)}
 
 💡 QUICK WINS:
 • Start housing search 2-3 months before PCS

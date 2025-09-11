@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import MilitaryRealEstateFAQ from '@/components/MilitaryRealEstateFAQ';
 import { CalculatorIcon, DocumentTextIcon, HomeIcon, PhoneIcon, BookOpenIcon, ClockIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -141,24 +142,6 @@ export default function MilitaryResourcesPage() {
     }
   ];
 
-  const faqs = [
-    {
-      question: "Can I use my VA loan benefit more than once?",
-      answer: "Yes! You can use your VA loan benefit multiple times. Your entitlement may restore when you sell your home, or you may have remaining entitlement to purchase another property."
-    },
-    {
-      question: "How do I coordinate home buying with PCS orders?",
-      answer: "Start the process 90 days before your report date. We can work with remote closings, power of attorney, and coordinate with your military timeline."
-    },
-    {
-      question: "What if I need to sell quickly due to military orders?",
-      answer: "We specialize in quick military sales, including pricing strategies, staging, and marketing to military families. We can also discuss rent-to-own options if selling isn't feasible."
-    },
-    {
-      question: "Can I buy a home while deployed?",
-      answer: "Yes, many military members buy homes while deployed using remote processes, electronic signatures, and power of attorney arrangements."
-    }
-  ];
 
   return (
     <>
@@ -270,39 +253,8 @@ export default function MilitaryResourcesPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-24 sm:py-32 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Frequently Asked Questions
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Common questions from military families about real estate in Northern Virginia.
-            </p>
-          </div>
-          
-          <div className="mx-auto max-w-4xl">
-            <div className="space-y-8">
-              {faqs.map((faq, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
-                  <p className="text-gray-600">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          <div className="mt-12 text-center">
-            <Link
-              href="/bah-housing-guide"
-              className="inline-flex items-center text-blue-600 hover:text-blue-500 font-medium"
-            >
-              Have more questions? Contact us <span className="ml-1">→</span>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Compliant FAQ Section */}
+      <MilitaryRealEstateFAQ />
 
       {/* CTA Section */}
       <section className="bg-blue-900 py-16 sm:py-24">
