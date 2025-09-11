@@ -134,7 +134,7 @@ export default function QuanticoPage() {
       </section>
 
       {/* Marine Corps Specialist Section */}
-      <section className="py-16 bg-red-50 border-y-4 border-red-600">
+      <section className="py-16 bg-blue-50 border-y-4 border-blue-600">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <div className="flex justify-center mb-6">
@@ -143,7 +143,7 @@ export default function QuanticoPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
               Why Choose a Veteran Who Serves Marine Families?
             </h2>
-            <div className="bg-white p-8 rounded-lg shadow-lg border-l-8 border-red-600">
+            <div className="bg-white p-8 rounded-lg shadow-lg border-l-8 border-blue-600">
               <p className="text-lg text-gray-700 mb-4">
                 <strong>"Honoring All Military Service."</strong> As a military veteran and your dedicated Quantico Marine Base realtor, 
                 I understand Marine Corps values, deployment cycles, and the unique challenges Marine families face.

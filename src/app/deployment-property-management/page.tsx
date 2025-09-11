@@ -78,29 +78,29 @@ export default function DeploymentPropertyManagementPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-900 to-blue-900 text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-green-800/90 to-blue-800/90"></div>
+      <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-800/90 to-blue-600/90"></div>
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <div className="flex justify-center mb-6">
-              <GlobeAltIcon className="h-16 w-16 text-green-300" />
+              <GlobeAltIcon className="h-16 w-16 text-blue-300" />
             </div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
               🌍 Deployment Property Management
             </h1>
-            <p className="mt-6 text-xl leading-8 text-green-100">
+            <p className="mt-6 text-xl leading-8 text-blue-100">
               <strong>Serving overseas?</strong> Don't let your Northern Virginia home sit empty. 
               Professional property management designed specifically for deployed military families.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
                 href="tel:+1-703-477-2606"
-                className="flex items-center gap-3 rounded-md bg-white px-6 py-4 text-lg font-bold text-green-900 shadow-sm hover:bg-green-50 transform hover:scale-105 transition-all duration-200"
+                className="flex items-center gap-3 rounded-md bg-white px-6 py-4 text-lg font-bold text-blue-900 shadow-sm hover:bg-blue-50 transform hover:scale-105 transition-all duration-200"
               >
                 <PhoneIcon className="h-6 w-6" />
                 Call Now: (703) 477-2606
               </a>
-              <p className="text-green-100 text-sm text-center">
+              <p className="text-blue-100 text-sm text-center">
                 🌍 Serving military families worldwide<br/>
                 📧 Email updates from anywhere you're stationed
               </p>
@@ -110,13 +110,13 @@ export default function DeploymentPropertyManagementPage() {
       </section>
 
       {/* Problem Statement */}
-      <section className="py-16 bg-yellow-50 border-t-4 border-yellow-400">
+      <section className="py-16 bg-blue-50 border-t-4 border-blue-400">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               🎯 The Deployed Military Family Dilemma
             </h2>
-            <div className="mt-8 bg-white p-8 rounded-lg shadow-lg border-l-8 border-yellow-500">
+            <div className="mt-8 bg-white p-8 rounded-lg shadow-lg border-l-8 border-blue-500">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                 <div>
                   <h3 className="font-bold text-red-600 mb-3">❌ Common Problems:</h3>
