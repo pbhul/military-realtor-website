@@ -58,7 +58,7 @@ const getBlogPost = (slug: string) => {
           <li>Lower overall cost of homeownership compared to conventional loans</li>
         </ul>
       `,
-      author: "Parjinder Brar, MRP Certified",
+      author: "Parjinder, MRP Certified",
       publishDate: "2025-01-11",
       readTime: "6 min read",
       category: "VA Loans",
@@ -72,7 +72,7 @@ const getBlogPost = (slug: string) => {
         "image": "https://pbrealtynova.com/photos/military-family-keys.jpg",
         "author": {
           "@type": "Person",
-          "name": "Parjinder Brar, MRP Certified"
+          "name": "Parjinder, MRP Certified"
         },
         "publisher": {
           "@type": "Organization",
@@ -130,7 +130,7 @@ const getBlogPost = (slug: string) => {
           <li>Greater competition for quality housing near Fort Belvoir</li>
         </ul>
       `,
-      author: "Parjinder Brar, MRP Certified",
+      author: "Parjinder, MRP Certified",
       publishDate: "2025-01-10",
       readTime: "8 min read",
       category: "BAH & Housing Allowance",
@@ -144,7 +144,7 @@ const getBlogPost = (slug: string) => {
         "image": "https://pbrealtynova.com/photos/fort-belvoir-housing.jpg",
         "author": {
           "@type": "Person",
-          "name": "Parjinder Brar, MRP Certified"
+          "name": "Parjinder, MRP Certified"
         },
         "publisher": {
           "@type": "Organization",
@@ -211,7 +211,7 @@ const getBlogPost = (slug: string) => {
           <li>Increased military BAH rates improving affordability</li>
         </ul>
       `,
-      author: "Parjinder Brar, MRP Certified",
+      author: "Parjinder, MRP Certified",
       publishDate: "2025-01-08",
       readTime: "10 min read",
       category: "Market Updates",
@@ -225,7 +225,7 @@ const getBlogPost = (slug: string) => {
         "image": "https://pbrealtynova.com/photos/pentagon-metro.jpg",
         "author": {
           "@type": "Person",
-          "name": "Parjinder Brar, MRP Certified"
+          "name": "Parjinder, MRP Certified"
         },
         "publisher": {
           "@type": "Organization",

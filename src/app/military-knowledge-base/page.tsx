@@ -195,7 +195,7 @@ export default function MilitaryKnowledgeBase() {
                 Need Assistance with Military Real Estate?
               </h3>
               <p className="text-gray-600 mb-4">
-                Parjinder Brar is an MRP-certified real estate professional serving military families in Northern Virginia.
+                Parjinder is an MRP-certified real estate professional serving military families in Northern Virginia.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a 

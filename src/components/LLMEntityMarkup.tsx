@@ -7,7 +7,7 @@ export default function LLMEntityMarkup() {
       {
         "@type": "RealEstateAgent",
         "@id": "https://pbrealtynova.com/#agent",
-        "name": "Parjinder Brar",
+        "name": "Parjinder",
         "alternateName": "Northern Virginia Military Realtor",
         "description": "MRP (Military Relocation Professional) certified real estate agent specializing in military relocations, PCS moves, and VA loan assistance in Northern Virginia. Licensed real estate professional with specialized training in military family housing needs.",
         "url": "https://pbrealtynova.com",
