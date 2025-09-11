@@ -65,20 +65,78 @@ export async function POST(request: NextRequest) {
     const boldTrailApiUrl = process.env.BOLDTRAIL_API_URL;
     const boldTrailApiKey = process.env.BOLDTRAIL_API_KEY;
 
+    console.log('BoldTrail Debug:', {
+      hasApiUrl: !!boldTrailApiUrl,
+      hasApiKey: !!boldTrailApiKey,
+      apiUrl: boldTrailApiUrl ? `${boldTrailApiUrl.substring(0, 20)}...` : 'Not set'
+    });
+
     if (boldTrailApiUrl && boldTrailApiKey) {
       try {
-        const response = await fetch(`${boldTrailApiUrl}/leads`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${boldTrailApiKey}`,
-            'X-API-Key': boldTrailApiKey,
-          },
-          body: JSON.stringify(boldTrailLead),
+        console.log('Attempting to send lead to BoldTrail:', {
+          url: `${boldTrailApiUrl}/leads`,
+          leadData: {
+            first_name: boldTrailLead.first_name,
+            last_name: boldTrailLead.last_name,
+            email: boldTrailLead.email,
+            phone: boldTrailLead.phone
+          }
+        });
+
+        // Try multiple BoldTrail API endpoints and formats
+        const endpoints = [
+          `${boldTrailApiUrl}/leads`,
+          `${boldTrailApiUrl}/contacts`,
+          `${boldTrailApiUrl}/lead`,
+          `${boldTrailApiUrl}/api/leads`,
+          `${boldTrailApiUrl}/v1/leads`
+        ];
+
+        let response;
+        let lastError;
+
+        for (const endpoint of endpoints) {
+          try {
+            console.log(`Trying endpoint: ${endpoint}`);
+            
+            response = await fetch(endpoint, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${boldTrailApiKey}`,
+                'X-API-Key': boldTrailApiKey,
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify(boldTrailLead),
+            });
+
+            if (response.ok) {
+              console.log(`Success with endpoint: ${endpoint}`);
+              break;
+            } else {
+              console.log(`Failed with endpoint ${endpoint}: ${response.status} ${response.statusText}`);
+              lastError = { status: response.status, statusText: response.statusText, endpoint };
+            }
+          } catch (err) {
+            console.log(`Error with endpoint ${endpoint}:`, err);
+            lastError = { error: err, endpoint };
+            continue;
+          }
+        }
+
+        const responseText = await response.text();
+        console.log('BoldTrail API Response:', {
+          status: response.status,
+          statusText: response.statusText,
+          body: responseText
         });
 
         if (!response.ok) {
-          console.error('BoldTrail API error:', response.statusText);
+          console.error('BoldTrail API error:', {
+            status: response.status,
+            statusText: response.statusText,
+            body: responseText
+          });
           // Continue with fallback even if CRM fails
         } else {
           console.log('Lead successfully sent to BoldTrail CRM');
@@ -88,7 +146,10 @@ export async function POST(request: NextRequest) {
         // Continue with fallback even if CRM fails
       }
     } else {
-      console.warn('BoldTrail credentials not configured');
+      console.warn('BoldTrail credentials not configured - missing:', {
+        apiUrl: !boldTrailApiUrl,
+        apiKey: !boldTrailApiKey
+      });
     }
 
     // Fallback: Email notification
