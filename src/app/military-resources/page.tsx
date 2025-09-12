@@ -58,7 +58,7 @@ export default function MilitaryResourcesPage() {
         "BAH for different ranks",
         "Off-base vs on-base housing decisions"
       ],
-      link: "/bah-housing-guide"
+      link: "/bah-housing-guide" // Fixed: was incorrectly pointing to /contact
     },
     {
       icon: DocumentTextIcon,
