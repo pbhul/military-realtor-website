@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Quantico Marine Base Realtor | #1 Marine Corps Real Estate Specialist Virginia",
-  description: "🇺🇸 #1 Quantico Marine Base realtor specializing in Marine Corps families. Military veteran providing expert PCS moves, VA loans, emergency relocations. Serving Marines since 2020.",
+  description: "🇺🇸 #1 Quantico Marine Base realtor specializing in Marine Corps families. Military veteran providing expert PCS moves, VA loans, emergency relocations for Marines.",
   keywords: "Quantico Marine Base realtor, Marine Corps realtor Quantico, Quantico Marine real estate agent, Marine realtor Virginia, Quantico Marine specialist, Marine Corps Base Quantico realtor, Marine family realtor",
   openGraph: {
     title: "Quantico Marine Base Realtor | Military Real Estate Specialist",
@@ -358,7 +358,7 @@ export default function QuanticoPage() {
             
             <div className="mt-8 text-center text-red-100">
               <p className="font-semibold">🎖️ "Your Service Deserves Our Best Service" 🎖️</p>
-              <p className="text-sm mt-2">Military veteran proudly serving Marine Corps families at Quantico since 2020</p>
+              <p className="text-sm mt-2">Military veteran proudly serving Marine Corps families at Quantico</p>
             </div>
           </div>
         </div>

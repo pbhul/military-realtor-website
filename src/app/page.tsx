@@ -206,7 +206,7 @@ export default function Home() {
                   <span className="text-3xl">🎖️</span>
                   <div>
                     <p className="font-semibold text-gray-900">Veteran-Owned Business</p>
-                    <p className="text-gray-600">Supporting military families since 2020</p>
+                    <p className="text-gray-600">Supporting military families</p>
                   </div>
                 </div>
               </div>
