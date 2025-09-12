@@ -3,31 +3,31 @@ import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline
 
 export default function Footer() {
   const services = [
-    'PCS Relocation Services',
-    'VA Loan Assistance',
-    'Military Home Buying',
-    'Military Home Selling',
-    'Military Spouse Support',
+    { name: 'Emergency PCS Services', href: '/emergency-pcs' },
+    { name: 'Deployment Property Management', href: '/deployment-property-management' },
+    { name: 'VA Loan Guidance', href: '/va-loan-guidance' },
+    { name: 'Military Selling Guide', href: '/military-selling-guide' },
+    { name: 'First-Time Military Buyer Guide', href: '/first-time-military-buyer' },
   ];
 
   const locations = [
-    'Fort Belvoir Area',
-    'Pentagon Area',
-    'Quantico Marine Base',
-    'Fairfax County',
-    'Alexandria',
-    'Arlington',
-    'Loudoun County',
-    'Prince William County',
+    { name: 'Fort Belvoir Homes', href: '/bases/fort-belvoir' },
+    { name: 'Pentagon Area Real Estate', href: '/bases/pentagon' },
+    { name: 'Quantico Marine Base', href: '/bases/quantico' },
+    { name: 'Alexandria Homes', href: '/locations/alexandria' },
+    { name: 'Fairfax County Properties', href: '/locations/fairfax-county' },
+    { name: 'Stafford County', href: '/locations/stafford' },
+    { name: 'Arlington Properties', href: '/locations/arlington' },
+    { name: 'Prince William County', href: '/locations/prince-william-county' },
   ];
 
   const resources = [
-    'PCS Timeline Guide',
-    'VA Loan Calculator',
-    'BAH Housing Guide',
-    'Military Resources',
-    'Area Schools Info',
-    'Base Commute Guide',
+    { name: 'PCS Timeline Guide', href: '/pcs-timeline' },
+    { name: 'BAH Calculator', href: '/bah-calculator' },
+    { name: 'BAH Housing Guide', href: '/bah-housing-guide' },
+    { name: 'Base Proximity Map', href: '/base-proximity-map' },
+    { name: 'Commute Calculator', href: '/commute-calculator' },
+    { name: 'Military Communities', href: '/military-communities' },
   ];
 
   return (
@@ -67,9 +67,9 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">Services</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {services.map((service) => (
-                    <li key={service}>
-                      <Link href="/services" className="text-sm leading-6 text-gray-300 hover:text-white">
-                        {service}
+                    <li key={service.name}>
+                      <Link href={service.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                        {service.name}
                       </Link>
                     </li>
                   ))}
@@ -79,9 +79,9 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">Locations</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {locations.map((location) => (
-                    <li key={location}>
-                      <Link href="/locations" className="text-sm leading-6 text-gray-300 hover:text-white">
-                        {location}
+                    <li key={location.name}>
+                      <Link href={location.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                        {location.name}
                       </Link>
                     </li>
                   ))}
@@ -93,9 +93,9 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">Military Resources</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {resources.map((resource) => (
-                    <li key={resource}>
-                      <Link href="/military-resources" className="text-sm leading-6 text-gray-300 hover:text-white">
-                        {resource}
+                    <li key={resource.name}>
+                      <Link href={resource.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                        {resource.name}
                       </Link>
                     </li>
                   ))}

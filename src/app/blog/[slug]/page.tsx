@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendarIcon, ClockIcon, TagIcon, UserIcon, ShareIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 // Sample blog post data - in production this would come from a CMS or markdown files
@@ -493,10 +494,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
           {/* Featured Image */}
-          <img 
+          <Image 
             src={post.image}
-            alt={post.title}
+            alt={`${post.title} - Military real estate insights for Northern Virginia`}
             className="w-full h-64 lg:h-96 object-cover rounded-lg mb-12"
+            width={800}
+            height={384}
+            loading="lazy"
           />
         </div>
       </section>

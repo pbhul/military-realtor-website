@@ -135,11 +135,13 @@ export async function POST(request: NextRequest) {
           console.error('BoldTrail API error:', {
             status: response.status,
             statusText: response.statusText,
-            body: responseText
+            body: responseText,
+            headers: Object.fromEntries(response.headers.entries())
           });
           // Continue with fallback even if CRM fails
         } else {
-          console.log('Lead successfully sent to BoldTrail CRM');
+          console.log('✅ Lead successfully sent to BoldTrail CRM');
+          console.log('BoldTrail success response:', responseText);
         }
       } catch (crmError) {
         console.error('CRM integration error:', crmError);
@@ -155,13 +157,18 @@ export async function POST(request: NextRequest) {
     // Fallback: Email notification
     await sendEmailNotification(body);
 
-    // Log the lead for tracking
-    console.log('New lead received:', {
-      name: body.fullName,
-      email: body.email,
-      service: body.serviceType,
-      timestamp: new Date().toISOString(),
-    });
+    // Log the lead for tracking (always log to server console)
+    console.log('=== NEW LEAD RECEIVED ===');
+    console.log('Timestamp:', new Date().toISOString());
+    console.log('Name:', body.fullName);
+    console.log('Email:', body.email);
+    console.log('Phone:', body.phone);
+    console.log('Service Type:', body.serviceType);
+    console.log('Military Branch:', body.branch || 'Not specified');
+    console.log('Base:', body.base || 'Not specified');
+    console.log('Timeline:', body.timeline || 'Not specified');
+    console.log('Message:', body.message || 'No additional message');
+    console.log('=== END LEAD DATA ===');
 
     return NextResponse.json(
       { 

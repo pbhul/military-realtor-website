@@ -2,6 +2,18 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CheckCircleIcon, DocumentTextIcon, CalculatorIcon, ClockIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "VA Loan Guidance Northern Virginia | Expert Military Home Financing Help",
+  description: "🎖️ Complete VA loan guidance for Northern Virginia military families. No down payment, no PMI, competitive rates. Expert assistance from MRP-certified military realtor specialist.",
+  keywords: "VA loan guidance Northern Virginia, military home financing, VA loan benefits Fort Belvoir Pentagon Quantico, no down payment home loans, military mortgage specialist",
+  openGraph: {
+    title: "VA Loan Guidance Northern Virginia | Expert Military Home Financing Help",
+    description: "Complete VA loan guidance for Northern Virginia military families. No down payment, no PMI, competitive rates from MRP-certified specialist.",
+    url: "https://pbrealtynova.com/va-loan-guidance",
+  },
+};
 
 export default function VALoanGuidance() {
   const benefits = [

@@ -4,6 +4,7 @@ import "./globals.css";
 import { GoogleAnalytics, FacebookPixel } from '@/components/Analytics';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import LLMEntityMarkup from '@/components/LLMEntityMarkup';
+import MilitaryServiceSchema from '@/components/MilitaryServiceSchema';
 import { Suspense } from 'react';
 
 const geistSans = Geist({
@@ -347,6 +348,7 @@ export default function RootLayout({
           <FacebookPixel pixel_id="FB_PIXEL_ID" />
           <BreadcrumbSchema />
           <LLMEntityMarkup />
+          <MilitaryServiceSchema />
         </Suspense>
         {children}
       </body>

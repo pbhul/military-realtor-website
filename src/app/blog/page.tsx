@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendarIcon, ClockIcon, TagIcon, UserIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -114,10 +115,13 @@ export default function BlogPage() {
           <div className="grid gap-8 lg:grid-cols-3">
             {featuredPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
+                <Image 
                   src={post.image || "/photos/military-family-keys.jpg"}
-                  alt={post.title}
+                  alt={`${post.title} - Military real estate insights for Northern Virginia families`}
                   className="w-full h-48 object-cover"
+                  width={400}
+                  height={192}
+                  loading="lazy"
                 />
                 <div className="p-6">
                   <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
@@ -176,10 +180,13 @@ export default function BlogPage() {
                 {recentPosts.map((post) => (
                   <article key={post.id} className="bg-white rounded-lg shadow p-6">
                     <div className="flex gap-6">
-                      <img 
+                      <Image 
                         src={post.image || "/photos/military-family-keys.jpg"}
-                        alt={post.title}
+                        alt={`${post.title} - Military real estate guide for Northern Virginia`}
                         className="w-32 h-24 object-cover rounded flex-shrink-0"
+                        width={128}
+                        height={96}
+                        loading="lazy"
                       />
                       <div className="flex-1">
                         <div className="flex items-center gap-4 text-sm text-gray-500 mb-2">

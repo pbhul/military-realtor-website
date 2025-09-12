@@ -74,22 +74,38 @@ export default function Home() {
     {
       icon: ShieldCheckIcon,
       title: "MRP Certified Military Veteran",
-      description: "Veteran-owned and Military Relocation Professional (MRP) certified with specialized training in military relocations, PCS moves, and deployment challenges."
+      description: (
+        <>
+          Veteran-owned and Military Relocation Professional (MRP) certified with specialized training in military relocations, <Link href="/pcs-timeline" className="text-blue-600 hover:text-blue-500 font-medium">PCS moves</Link>, and <Link href="/deployment-property-management" className="text-blue-600 hover:text-blue-500 font-medium">deployment challenges</Link>.
+        </>
+      )
     },
     {
       icon: HomeIcon,
       title: "VA Loan Process Guide",
-      description: "Expert guidance through VA loan process, connecting you with trusted lenders and helping navigate the benefits you've earned."
+      description: (
+        <>
+          Expert guidance through <Link href="/va-loan-guidance" className="text-blue-600 hover:text-blue-500 font-medium">VA loan process</Link>, connecting you with trusted lenders and helping navigate the benefits you've earned.
+        </>
+      )
     },
     {
       icon: MapPinIcon,
       title: "Local Knowledge",
-      description: "Intimate knowledge of Fort Belvoir, Pentagon, and Quantico areas with base proximity insights and military community connections."
+      description: (
+        <>
+          Intimate knowledge of <Link href="/bases/fort-belvoir" className="text-blue-600 hover:text-blue-500 font-medium">Fort Belvoir</Link>, <Link href="/bases/pentagon" className="text-blue-600 hover:text-blue-500 font-medium">Pentagon</Link>, and <Link href="/bases/quantico" className="text-blue-600 hover:text-blue-500 font-medium">Quantico</Link> areas with <Link href="/base-proximity-map" className="text-blue-600 hover:text-blue-500 font-medium">base proximity insights</Link> and military community connections.
+        </>
+      )
     },
     {
       icon: DocumentTextIcon,
       title: "PCS Timeline Expert",
-      description: "Coordinating real estate transactions with military orders and deployment schedules from someone who understands the process."
+      description: (
+        <>
+          Coordinating real estate transactions with military orders and deployment schedules from someone who understands the process. Get our detailed <Link href="/pcs-timeline" className="text-blue-600 hover:text-blue-500 font-medium">PCS timeline guide</Link>.
+        </>
+      )
     }
   ];
 
@@ -288,7 +304,7 @@ export default function Home() {
                 🎖️ Free Military PCS Real Estate Guide
               </h2>
               <p className="mt-6 text-lg leading-8 text-blue-100">
-                Get your comprehensive guide to buying or selling during a PCS move. Includes VA loan guidance, 
+                Get your comprehensive guide to buying or selling during a PCS move. Includes <Link href="/va-loan-guidance" className="text-blue-200 hover:text-white underline font-medium">VA loan guidance</Link>, 
                 timeline checklists, and Northern Virginia area insights from a fellow veteran.
               </p>
               <div className="mt-8 flex items-center gap-4">

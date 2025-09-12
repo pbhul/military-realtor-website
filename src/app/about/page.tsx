@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { PhoneIcon, ShieldCheckIcon, HomeIcon, AcademicCapIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -127,10 +128,13 @@ export default function AboutPage() {
                 Your Trusted Military Realtor
               </h3>
               <div className="flex justify-center mb-6">
-                <img
+                <Image
                   className="h-48 w-48 rounded-full object-cover border-4 border-blue-200 shadow-lg"
                   src="/photos/Headshot.png"
                   alt="Parjinder - Professional military veteran realtor specializing in Northern Virginia Fort Belvoir Pentagon Quantico"
+                  width={192}
+                  height={192}
+                  priority
                 />
               </div>
               <div className="bg-blue-50 rounded-lg p-6">

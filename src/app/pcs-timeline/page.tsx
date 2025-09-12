@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ClockIcon, CheckCircleIcon, ExclamationTriangleIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function PCSTimeline() {
   const timeline = [
@@ -109,9 +110,12 @@ export default function PCSTimeline() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <Image
             className="h-full w-full object-cover"
-            alt="Military family moving boxes"
+            src="/photos/packing-moving.jpg"
+            alt="Military family moving boxes - PCS relocation timeline guide for Northern Virginia"
+            fill
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-blue-900/75"></div>
         </div>
