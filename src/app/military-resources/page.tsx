@@ -58,7 +58,7 @@ export default function MilitaryResourcesPage() {
         "BAH for different ranks",
         "Off-base vs on-base housing decisions"
       ],
-      link: "/contact"
+      link: "/bah-housing-guide"
     },
     {
       icon: DocumentTextIcon,
@@ -138,7 +138,7 @@ export default function MilitaryResourcesPage() {
     {
       title: "🏛️ Military Housing Guide",
       description: "BAH optimization and housing allowance strategies",
-      link: "/contact"
+      link: "/bah-housing-guide"
     }
   ];
 
