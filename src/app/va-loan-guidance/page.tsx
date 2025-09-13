@@ -227,15 +227,15 @@ export default function VALoanGuidance() {
               <CalculatorIcon className="h-10 w-10 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-4">VA Loan Calculator</h3>
               <p className="text-gray-600 mb-6">Calculate your monthly payments with VA loan benefits</p>
-              <Link href="/contact" className="text-blue-600 hover:text-blue-500 font-semibold">
-                Request Calculator →
+              <Link href="/va-loan-calculator" className="text-blue-600 hover:text-blue-500 font-semibold">
+                Use Calculator →
               </Link>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <DocumentTextIcon className="h-10 w-10 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Pre-Approval Checklist</h3>
               <p className="text-gray-600 mb-6">Everything you need for VA loan pre-approval</p>
-              <Link href="/contact" className="text-blue-600 hover:text-blue-500 font-semibold">
+              <Link href="/va-loan-pre-approval-checklist" className="text-blue-600 hover:text-blue-500 font-semibold">
                 Get Checklist →
               </Link>
             </div>
