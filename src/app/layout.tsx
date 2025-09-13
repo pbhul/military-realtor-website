@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://pbrealtynova.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.pbrealtynova.com'),
   title: {
     default: "Military Realtor Northern Virginia | MRP Certified | PCS & VA Loan Specialist",
     template: "%s | Military Real Estate NoVA"
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "🎖️ Military Realtor Northern Virginia | MRP Certified PCS & VA Loan Expert",
     description: "Veteran-owned MRP certified realtor specializing in Fort Belvoir, Pentagon, Quantico military relocations. Expert PCS moves, VA loans, BAH optimization for military families.",
-    url: "https://pbrealtynova.com",
+    url: "https://www.pbrealtynova.com",
     siteName: "Military Real Estate Northern Virginia",
     locale: "en_US",
     type: "website",
@@ -106,7 +106,7 @@ export const metadata: Metadata = {
   },
   
   alternates: {
-    canonical: "https://pbrealtynova.com",
+    canonical: "https://www.pbrealtynova.com",
   },
   
   verification: {
@@ -142,11 +142,11 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "RealEstateAgent",
-                  "@id": "https://pbrealtynova.com/#agent",
+                  "@id": "https://www.pbrealtynova.com/#agent",
                   "name": "Military Real Estate Northern Virginia",
                   "alternateName": "MRP Certified Military Realtor NoVA",
                   "description": "🎖️ MRP Certified military real estate specialist serving Fort Belvoir, Pentagon, and Quantico areas. Expert in PCS relocations, VA loans, BAH optimization for military families.",
-                  "url": "https://pbrealtynova.com",
+                  "url": "https://www.pbrealtynova.com",
                   "sameAs": [
                     "https://facebook.com/militaryrealestatenova",
                     "https://linkedin.com/in/militaryrealtor",
@@ -250,11 +250,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Organization",
-                  "@id": "https://pbrealtynova.com/#organization", 
+                  "@id": "https://www.pbrealtynova.com/#organization", 
                   "name": "Military Real Estate Northern Virginia",
                   "alternateName": "Military Realtor NoVA",
                   "description": "Veteran-owned MRP certified real estate company specializing in military relocations in Northern Virginia",
-                  "url": "https://pbrealtynova.com",
+                  "url": "https://www.pbrealtynova.com",
                   "foundingDate": "2020",
                   "founder": {
                     "@type": "Person",
@@ -266,12 +266,12 @@ export default function RootLayout({
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://pbrealtynova.com/#website",
-                  "url": "https://pbrealtynova.com",
+                  "@id": "https://www.pbrealtynova.com/#website",
+                  "url": "https://www.pbrealtynova.com",
                   "name": "Military Real Estate Northern Virginia",
                   "description": "MRP Certified military realtor serving Fort Belvoir, Pentagon, Quantico. Expert PCS relocations, VA loans for military families.",
                   "publisher": {
-                    "@id": "https://pbrealtynova.com/#organization"
+                    "@id": "https://www.pbrealtynova.com/#organization"
                   },
                   "potentialAction": [
                     {
@@ -286,11 +286,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Service",
-                  "@id": "https://pbrealtynova.com/#services",
+                  "@id": "https://www.pbrealtynova.com/#services",
                   "name": "Military Real Estate Services",
                   "description": "Comprehensive real estate services for military families including PCS relocations, VA loan assistance, and military housing solutions",
                   "provider": {
-                    "@id": "https://pbrealtynova.com/#agent"
+                    "@id": "https://www.pbrealtynova.com/#agent"
                   },
                   "areaServed": {
                     "@type": "State",
