@@ -26,7 +26,7 @@ export default function VALoanCalculator() {
 
   const monthlyTax = (parseFloat(propertyTax) || 0) / 12;
   const monthlyInsurance = (parseFloat(homeInsurance) || 0) / 12;
-  const monthlyHOA = (parseFloat(hoaFees) || 0) / 12;
+  const monthlyHOA = parseFloat(hoaFees) || 0;
   const totalMonthly = monthlyPI + monthlyTax + monthlyInsurance + monthlyHOA;
 
   const vaFundingFee = principal * 0.023; // 2.3% for first-time users
