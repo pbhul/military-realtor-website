@@ -180,8 +180,10 @@ export default function Home() {
               />
             </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              As a Military Relocation Professional (MRP), I have specialized training beyond standard real estate education. 
-              This certification ensures deep understanding of military life, PCS timelines, VA loans, and the unique challenges military families face.
+              As a Military Relocation Professional (MRP) and fellow veteran, I bring more than just real estate expertise—I bring firsthand understanding of the military lifestyle. Having served on active duty myself, I know the demands of PCS moves, the complexities of VA loans, and the unique challenges military families face when relocating.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              Now, as a realtor, my mission is simple: to serve as a true asset and trusted guide throughout your transition. I'm not here to focus on a single transaction—I'm here to build lasting relationships, provide clarity, and ensure you feel supported every step of the way. You can count on me to listen, understand, and get the job done with the same dedication and integrity that defined my military service.
             </p>
           </div>
           
