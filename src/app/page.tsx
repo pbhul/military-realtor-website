@@ -137,7 +137,7 @@ export default function Home() {
               </span>
             </div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Northern Virginia MRP Certified Military Realtor
+              Veterans Realtor Northern Virginia | Military Real Estate Agent
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
               Veteran-owned & MRP Certified real estate services for military families at Fort Belvoir, Pentagon, and Quantico. 

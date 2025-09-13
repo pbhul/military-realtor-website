@@ -226,8 +226,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // High-priority SEO landing pages for target keywords
+  const seoLandingPages = [
+    {
+      url: `${baseUrl}/veterans-realtor`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.95, // Very high priority for "veterans realtor" keyword
+    },
+    {
+      url: `${baseUrl}/real-estate-agents-northern-virginia`, 
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.95, // Very high priority for target keyword
+    },
+  ];
+
   return [
     ...corePages,
+    ...seoLandingPages, // Add SEO landing pages with highest priority
     ...emergencyServicePages, // Add new high-priority pages first
     ...basePages,
     ...locationPages,
