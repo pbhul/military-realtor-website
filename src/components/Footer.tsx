@@ -121,6 +121,9 @@ export default function Footer() {
               Licensed Real Estate Professional serving military families in Northern Virginia. 
               Equal Housing Opportunity. VA Loan Specialist.
             </p>
+            <p className="text-xs text-gray-500 mt-2">
+              Proudly affiliated with Samson Properties - Your trusted Northern Virginia real estate brokerage.
+            </p>
           </div>
         </div>
       </div>
