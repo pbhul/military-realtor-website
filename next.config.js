@@ -54,7 +54,6 @@ const nextConfig = {
   
   // Performance optimizations for Core Web Vitals
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['@heroicons/react'],
   },
   

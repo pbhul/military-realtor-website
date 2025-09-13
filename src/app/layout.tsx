@@ -344,7 +344,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Suspense fallback={null}>
-          <GoogleAnalytics ga_id="GA_MEASUREMENT_ID" />
+          <GoogleAnalytics ga_id="G-9VQ03RG2LR" />
           <FacebookPixel pixel_id="FB_PIXEL_ID" />
           <BreadcrumbSchema />
           <LLMEntityMarkup />
