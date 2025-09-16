@@ -82,7 +82,7 @@ export default function PCSTimeline() {
     {
       title: "Remote Transactions",
       description: "Difficulty viewing and purchasing homes from a distance",
-      solution: "Use virtual tours, FaceTime walk-throughs, and trusted local military realtors"
+      solution: "Live video tours via FaceTime/Zoom, virtual walkthroughs, remote online notarization (RON), and digital closing capabilities"
     },
     {
       title: "Funding Gaps",
@@ -249,6 +249,90 @@ export default function PCSTimeline() {
                   <strong>Pro Tip:</strong> Start gathering these documents as soon as you receive orders. 
                   Having everything ready accelerates your pre-approval and closing process significantly.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Integration for Military Families */}
+      <section className="py-24">
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Advanced Technology for Remote PCS Coordination
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Seamless military relocations with cutting-edge technology integration
+              </p>
+            </div>
+
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div className="bg-blue-50 rounded-lg p-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Virtual Tour Capabilities</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Live video walkthroughs via FaceTime/Zoom</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Interactive floor plan navigation</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Detailed exterior property overview</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Real-time Q&A during virtual tours</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-green-50 rounded-lg p-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Remote Closing Technology</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Digital signature platforms (DocuSign, etc.)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Remote online notarization (RON)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Virtual final walkthroughs</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Digital wire transfer coordination</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Secure document sharing portals</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-12 bg-blue-900 rounded-lg p-8 text-white">
+              <h3 className="text-xl font-semibold mb-4">Military-Friendly Communication</h3>
+              <div className="grid gap-6 lg:grid-cols-3">
+                <div>
+                  <h4 className="font-medium text-blue-100 mb-2">Multi-Platform Accessibility</h4>
+                  <p className="text-sm text-blue-200">WhatsApp, Signal, email, phone - whatever works best for your situation</p>
+                </div>
+                <div>
+                  <h4 className="font-medium text-blue-100 mb-2">Time Zone Coordination</h4>
+                  <p className="text-sm text-blue-200">Flexible scheduling across different time zones and deployment schedules</p>
+                </div>
+                <div>
+                  <h4 className="font-medium text-blue-100 mb-2">Quick Response Times</h4>
+                  <p className="text-sm text-blue-200">Understanding urgent military timelines with rapid communication</p>
+                </div>
               </div>
             </div>
           </div>

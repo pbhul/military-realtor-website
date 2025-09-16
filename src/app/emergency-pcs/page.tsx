@@ -5,12 +5,12 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Emergency PCS Real Estate Services | 24-48 Hour Response | Northern Virginia",
-  description: "🚨 URGENT military orders? Get emergency PCS real estate help within 24-48 hours. Fast home sales, emergency relocations, last-minute moves. Northern Virginia military specialist.",
-  keywords: "emergency PCS realtor, urgent home sale military orders, last minute military move, emergency military relocation, quick sale PCS orders, 24 hour realtor response",
+  title: "Emergency PCS Realtor | Veterans Realtor Northern Virginia | 24-Hour Response",
+  description: "🚨 Emergency PCS realtor providing 24-hour response for urgent military orders. Veterans realtor Northern Virginia specializing in last-minute PCS moves and emergency relocations.",
+  keywords: "emergency PCS realtor, veterans realtor northern virginia, emergency military relocation realtor, urgent home sale military orders, last minute military move, 24 hour realtor response, emergency military realtor",
   openGraph: {
-    title: "🚨 Emergency PCS Real Estate | 24-48 Hour Response",
-    description: "Got urgent military orders? Emergency real estate services for military families in Northern Virginia. Fast response guaranteed.",
+    title: "🚨 Emergency PCS Realtor | Veterans Realtor Northern Virginia",
+    description: "Emergency PCS realtor providing 24-hour response for urgent military orders. Veterans realtor Northern Virginia specializing in emergency relocations.",
     url: "https://pbrealtynova.com/emergency-pcs",
   },
 };

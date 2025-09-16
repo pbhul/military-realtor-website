@@ -137,11 +137,11 @@ export default function Home() {
               </span>
             </div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Veterans Realtor Northern Virginia | Military Real Estate Agent
+              Veterans Realtor Northern Virginia | Tri-Base Military Realtor Specialist
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
-              Veteran-owned & MRP Certified real estate services for military families at Fort Belvoir, Pentagon, and Quantico. 
-              Specializing in PCS relocations, VA loan guidance, and military housing solutions with specialized military relocation training.
+              Veterans realtor Northern Virginia serving as your Pentagon area military realtor and Quantico Marine realtor.
+              MRP certified tri-base military realtor specializing in emergency PCS relocations, VA loans, and deployment real estate management.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -167,7 +167,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Why Choose an MRP Certified Military Veteran?
+              Why Choose an MRP Certified Veterans Realtor Northern Virginia?
             </h2>
             <div className="mt-8 flex justify-center">
               <Image

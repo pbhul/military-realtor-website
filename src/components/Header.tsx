@@ -14,6 +14,7 @@ export default function Header() {
     { name: 'Military Resources', href: '/military-resources' },
     { name: 'Blog', href: '/blog' },
     { name: 'About', href: '/about' },
+    { name: 'FAQ', href: '/faq' },
     { name: 'Contact', href: '/contact' },
   ];
 

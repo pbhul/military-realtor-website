@@ -5,12 +5,12 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Quantico Marine Base Realtor | #1 Marine Corps Real Estate Specialist Virginia",
-  description: "🇺🇸 #1 Quantico Marine Base realtor specializing in Marine Corps families. Military veteran providing expert PCS moves, VA loans, emergency relocations for Marines.",
-  keywords: "Quantico Marine Base realtor, Marine Corps realtor Quantico, Quantico Marine real estate agent, Marine realtor Virginia, Quantico Marine specialist, Marine Corps Base Quantico realtor, Marine family realtor",
+  title: "Quantico Military Realtor | Veterans Realtor Northern Virginia Serving Marines",
+  description: "🇺🇸 Veterans realtor Northern Virginia specializing in Marine Corps families at Quantico. Military veteran providing expert PCS moves, VA loans, emergency relocations for Marines.",
+  keywords: "quantico marine realtor, veterans realtor northern virginia, quantico marine real estate agent, marine realtor virginia, quantico military housing realtor, marine corps quantico realtor, quantico marine base realtor",
   openGraph: {
-    title: "Quantico Marine Base Realtor | Military Real Estate Specialist",
-    description: "Expert Quantico Marine Base realtor specializing in military families, PCS moves, and VA loans. Serving Quantico and surrounding Virginia areas.",
+    title: "Quantico Marine Realtor | Veterans Realtor Northern Virginia",
+    description: "Quantico Marine realtor specializing in Marine Corps families. Veterans realtor Northern Virginia serving Marines with PCS moves, VA loans.",
     url: "https://pbrealtynova.com/bases/quantico",
   },
 };
@@ -88,11 +88,11 @@ export default function QuanticoPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              🇺🇸 #1 Quantico Marine Base Realtor
+              🇺🇸 Quantico Military Realtor Serving Marines
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
-              <strong>Honoring All Who Serve!</strong> As a military veteran, I have extensive experience serving Marine Corps families at Quantico. 
-              Expert Marine PCS relocations, emergency orders, VA loans, and finding homes that honor your service.
+              <strong>Honoring All Who Serve!</strong> Veterans realtor Northern Virginia proudly serving Marine families at Quantico.
+              Expert Marine PCS relocations, emergency orders, VA loans, and military housing solutions for Marine families.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -126,7 +126,7 @@ export default function QuanticoPage() {
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-8 border-blue-600">
               <p className="text-lg text-gray-700 mb-4">
                 <strong>"Honoring All Military Service."</strong> As a military veteran and your dedicated Quantico Marine Base realtor, 
-                I understand Marine Corps values, deployment cycles, and the unique challenges Marine families face.
+                I understand Marine Corps values, deployment cycles, and the unique challenges Marine families face as your dedicated Quantico Marine realtor.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
@@ -155,7 +155,7 @@ export default function QuanticoPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Marine Corps Base Quantico Real Estate Expertise
+              Quantico Marine Realtor Expertise
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Marine Corps Base Quantico is home to over 12,000 Marines, sailors, and civilian personnel. 

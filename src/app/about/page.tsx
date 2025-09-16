@@ -20,13 +20,13 @@ export default function AboutPage() {
   const qualifications = [
     {
       icon: ShieldCheckIcon,
-      title: "Military Veteran",
-      description: "Personal military service experience provides deep understanding of military life, PCS moves, and deployment challenges."
+      title: "U.S. Army Veteran",
+      description: "Personal military service experience provides deep understanding of military life, PCS moves, and deployment challenges - not just observation."
     },
     {
       icon: HomeIcon,
-      title: "Northern Virginia Expert",
-      description: "Extensive knowledge of Fort Belvoir, Pentagon, and Quantico areas built through years of serving military families."
+      title: "10+ Years Northern Virginia Expert",
+      description: "Deep local market knowledge with base commute calculators, proximity maps, and VA loan calculators available on website."
     },
     {
       icon: AcademicCapIcon,
@@ -41,14 +41,14 @@ export default function AboutPage() {
   ];
 
   const services = [
-    "PCS Relocation Coordination",
-    "VA Loan Process Guidance", 
-    "Military Community Expertise",
-    "Deployment-Friendly Scheduling",
-    "Base Proximity Analysis",
-    "Military Spouse Support",
+    "PCS Timeline Management & Remote Coordination",
+    "VA Loan Process Guidance with Online Calculators",
+    "Military Community Expertise (Quantico, Pentagon, Fort Belvoir)",
+    "Deployment-Friendly Scheduling (8 AM - 8 PM, After-Hours Available)",
+    "Base Proximity Analysis with Interactive Maps",
+    "Virtual Tours & Remote Closing Capabilities",
     "Investment Property Guidance",
-    "First-Time Buyer Education"
+    "First-Time Buyer Education with Technology Integration"
   ];
 
   const areaExpertise = [
@@ -103,23 +103,24 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Understanding Military Life from Experience
+                First-Hand Military Experience + Deep Local Market Knowledge
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                As a military veteran, I understand the unique challenges that come with military life. 
-                From PCS moves on short notice to deployment schedules that don&apos;t align with traditional 
-                real estate timelines, I&apos;ve lived the experiences that my clients are navigating.
+                As a U.S. Army veteran who served our country AND a 10+ year Northern Virginia resident,
+                I bring the perfect combination of military understanding and local market expertise. Unlike
+                military spouses who observe the process, I've personally experienced PCS moves, VA loan
+                processes, and the unique challenges of military family relocations.
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                This personal understanding, combined with years of serving military families in Northern Virginia, 
-                allows me to provide the specialized service that military personnel and their families deserve. 
-                I know what it&apos;s like to balance military obligations with family needs, and I bring that 
-                perspective to every real estate transaction.
+                This first-hand military experience, combined with deep local area knowledge and over a decade
+                of Northern Virginia market insights, ensures you work with someone who truly "gets it" because
+                I've lived both the military life AND the local market dynamics. From tight PCS timelines to
+                navigating VA loan benefits, I understand your unique needs firsthand.
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Whether you&apos;re PCSing to the area, looking to buy your first home with VA loan benefits, 
-                or need to sell quickly due to military orders, I&apos;m here to make the process as smooth 
-                as possible for you and your family.
+                Whether you&apos;re PCSing to the area, looking to buy your first home with VA loan benefits,
+                or need to sell quickly due to military orders, I&apos;m here to make the process as smooth
+                as possible with the expertise that comes from personal military service and extensive local knowledge.
               </p>
             </div>
             
@@ -138,8 +139,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="bg-blue-50 rounded-lg p-6">
-                <p className="text-lg font-semibold text-gray-900">Parjinder</p>
-                <p className="text-blue-600 font-medium">Military Veteran & MRP Certified Agent</p>
+                <p className="text-lg font-semibold text-gray-900">Parjinder Bhullar</p>
+                <p className="text-blue-600 font-medium">U.S. Army Veteran & MRP Certified Agent</p>
                 <p className="text-gray-600 mt-2">Serving Northern Virginia Military Families</p>
               </div>
             </div>

@@ -5,12 +5,12 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Pentagon Realtor | Military Real Estate Specialist Washington DC Area",
-  description: "Expert Pentagon area realtor specializing in military families, PCS moves, and VA loans. Serving Pentagon, Arlington, Alexandria, and surrounding Northern Virginia/DC areas.",
-  keywords: "Pentagon realtor, Pentagon area military housing, Pentagon VA loan specialist, Pentagon PCS relocation, military realtor near Pentagon, Pentagon area homes, Arlington military realtor",
+  title: "Pentagon Area Military Realtor | Veterans Realtor Northern Virginia",
+  description: "Pentagon area military realtor specializing in veterans and active duty families. MRP certified pentagon area military realtor with Metro expertise, VA loans, and PCS coordination.",
+  keywords: "pentagon area military realtor, veterans realtor northern virginia, pentagon military housing realtor, pentagon area VA loan specialist, military realtor pentagon, pentagon PCS realtor, MRP certified pentagon realtor",
   openGraph: {
-    title: "Pentagon Realtor | Military Real Estate Specialist",
-    description: "Expert Pentagon area realtor specializing in military families, PCS moves, and VA loans. Serving Pentagon and surrounding Washington DC areas.",
+    title: "Pentagon Area Military Realtor | Veterans Realtor NoVA",
+    description: "Pentagon area military realtor serving veterans and active duty personnel. MRP certified with Metro expertise for Pentagon commuters.",
     url: "https://pbrealtynova.com/bases/pentagon",
   },
 };
@@ -78,11 +78,11 @@ export default function PentagonPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Pentagon Area Realtor
+              Pentagon Area Military Realtor
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
-              Your trusted real estate specialist for Pentagon military personnel. Expert navigation of the competitive 
-              Washington DC area market with deep knowledge of Metro access, military housing, and VA loans.
+              Pentagon area military realtor serving veterans and active duty personnel. MRP certified with specialized Pentagon commute expertise,
+              VA loan guidance, and military-friendly housing solutions near Metro stations.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -108,11 +108,11 @@ export default function PentagonPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Pentagon Area Real Estate Expertise
+              Pentagon Area Military Realtor Expertise
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              The Pentagon serves over 26,000 military and civilian personnel daily. The surrounding area offers 
-              premium housing options with excellent Metro connectivity and world-class amenities.
+              The Pentagon serves over 26,000 military and civilian personnel daily. As your Pentagon area military realtor, I provide
+              expert guidance on premium housing with Metro connectivity, military-friendly communities, and VA loan optimization.
             </p>
           </div>
           
