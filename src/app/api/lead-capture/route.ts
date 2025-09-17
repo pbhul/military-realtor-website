@@ -58,8 +58,19 @@ export async function POST(request: NextRequest) {
     const boldTrailApiUrl = process.env.BOLDTRAIL_API_URL;
     const boldTrailApiKey = process.env.BOLDTRAIL_API_KEY;
 
+    console.log('BoldTrail Config Check:', {
+      hasApiUrl: !!boldTrailApiUrl,
+      hasApiKey: !!boldTrailApiKey,
+      apiUrl: boldTrailApiUrl ? `${boldTrailApiUrl.substring(0, 20)}...` : 'NOT SET'
+    });
+
     if (boldTrailApiUrl && boldTrailApiKey) {
       try {
+        console.log('Sending lead to BoldTrail:', {
+          url: `${boldTrailApiUrl}/leads`,
+          leadData: { ...boldTrailLead, phone: boldTrailLead.phone.substring(0, 5) + '***' }
+        });
+
         const response = await fetch(`${boldTrailApiUrl}/leads`, {
           method: 'POST',
           headers: {
@@ -70,14 +81,25 @@ export async function POST(request: NextRequest) {
           body: JSON.stringify(boldTrailLead),
         });
 
+        const responseText = await response.text();
+
         if (!response.ok) {
-          console.error('BoldTrail API error:', response.statusText);
+          console.error('BoldTrail API error:', {
+            status: response.status,
+            statusText: response.statusText,
+            response: responseText
+          });
         } else {
-          console.log('Lead successfully sent to BoldTrail CRM');
+          console.log('Lead successfully sent to BoldTrail CRM:', {
+            status: response.status,
+            response: responseText
+          });
         }
       } catch (crmError) {
         console.error('CRM integration error:', crmError);
       }
+    } else {
+      console.log('BoldTrail not configured - missing API URL or API KEY');
     }
 
     // Send email notifications
