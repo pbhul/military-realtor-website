@@ -70,11 +70,11 @@ export async function POST(request: NextRequest) {
     if (boldTrailApiUrl && boldTrailApiKey) {
       try {
         console.log('Sending lead to BoldTrail:', {
-          url: `${boldTrailApiUrl}/contacts`,
+          url: `${boldTrailApiUrl}/leads`,
           leadData: { ...boldTrailLead, phone: boldTrailLead.phone.substring(0, 5) + '***' }
         });
 
-        const response = await fetch(`${boldTrailApiUrl}/contacts`, {
+        const response = await fetch(`${boldTrailApiUrl}/leads`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
