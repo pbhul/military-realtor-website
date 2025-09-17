@@ -55,7 +55,7 @@ export default function Header() {
             href="/contact"
             className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
           >
-            Free PCS Guide
+            Free Military Guide
           </Link>
         </div>
       </nav>
@@ -102,7 +102,7 @@ export default function Header() {
                     className="mt-4 block rounded-md bg-blue-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-800"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Free PCS Guide
+                    Free Military Guide
                   </Link>
                 </div>
               </div>

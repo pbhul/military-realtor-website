@@ -148,11 +148,11 @@ export default function Home() {
                 href="/pcs-timeline"
                 className="rounded-md bg-white px-6 py-3 text-base font-semibold text-blue-900 shadow-lg hover:bg-blue-50 transition-colors"
               >
-                🏠 Get Free PCS Guide
+                🏠 Get Free Military Relocation Guide
               </Link>
               <a
                 href="tel:+1-703-477-2606"
-                className="flex items-center gap-2 text-base font-semibold leading-6 text-white hover:text-blue-100 transition-colors"
+                className="flex items-center gap-2 text-base font-semibold leading-6 text-white hover:text-blue-100 transition-colors whitespace-nowrap"
               >
                 <PhoneIcon className="h-6 w-6" />
                 Call (703) 477-2606
@@ -303,7 +303,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                🎖️ Free Military PCS Real Estate Guide
+                🎖️ Free Military Relocation Guide to Northern Virginia
               </h2>
               <p className="mt-6 text-lg leading-8 text-blue-100">
                 Get your comprehensive guide to buying or selling during a PCS move. Includes <Link href="/va-loan-guidance" className="text-blue-200 hover:text-white underline font-medium">VA loan guidance</Link>, 
@@ -381,13 +381,22 @@ export default function Home() {
                   <option value="quantico" className="text-gray-900">🛡️ Quantico Marine Base</option>
                   <option value="other" className="text-gray-900">🎖️ Other/Not Military</option>
                 </select>
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full rounded-md bg-white hover:bg-blue-50 disabled:bg-gray-300 px-4 py-3 text-base font-semibold text-blue-900 shadow-lg transition-colors"
-                >
-                  {isSubmitting ? '📤 Sending...' : '🎖️ Get Free Military Guide'}
-                </button>
+                <div className="space-y-3">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full rounded-md bg-white hover:bg-blue-50 disabled:bg-gray-300 px-4 py-3 text-base font-semibold text-blue-900 shadow-lg transition-colors"
+                  >
+                    {isSubmitting ? '📤 Sending...' : '🎖️ Get Free Military Guide'}
+                  </button>
+                  <a
+                    href="/downloads/military-relocation-guide-northern-virginia.pdf"
+                    download="Military-Relocation-Guide-Northern-Virginia.pdf"
+                    className="w-full inline-block text-center rounded-md bg-blue-600 hover:bg-blue-700 px-4 py-3 text-base font-semibold text-white shadow-lg transition-colors"
+                  >
+                    📄 Download PDF Guide
+                  </a>
+                </div>
               </form>
             </div>
           </div>
