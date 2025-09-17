@@ -38,8 +38,12 @@ export default function Home() {
   const handleLeadSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
+    console.log('🚀 Form submitted from Homepage:', leadFormData);
+
     try {
+      console.log('📡 Sending request to /api/lead-capture...');
+
       const response = await fetch('/api/lead-capture', {
         method: 'POST',
         headers: {
@@ -51,7 +55,10 @@ export default function Home() {
         }),
       });
 
+      console.log('📨 API Response status:', response.status);
+
       if (response.ok) {
+        console.log('✅ Homepage form submission successful!');
         setSubmitStatus('success');
         setLeadFormData({
           fullName: '',
@@ -60,10 +67,13 @@ export default function Home() {
           base: ''
         });
       } else {
+        console.error('❌ Homepage form submission failed with status:', response.status);
+        const errorText = await response.text();
+        console.error('❌ Error response:', errorText);
         throw new Error('Submission failed');
       }
     } catch (error) {
-      console.error('Lead form submission error:', error);
+      console.error('💥 Homepage lead form submission error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

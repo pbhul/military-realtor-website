@@ -23,8 +23,11 @@ interface BoldTrailLead {
 }
 
 export async function POST(request: NextRequest) {
+  console.log('🎯 API ENDPOINT HIT: /api/lead-capture');
+
   try {
     const body: LeadCaptureData = await request.json();
+    console.log('📝 Received form data:', { ...body, phone: body.phone?.substring(0, 5) + '***' });
     
     // Validate required fields
     if (!body.fullName || !body.email || !body.phone) {
