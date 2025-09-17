@@ -45,9 +45,9 @@ export async function POST(request: NextRequest) {
       last_name: lastName,
       email: body.email,
       phone: body.phone,
-      source: `Website Lead Capture - ${body.sourceForm}`,
-      campaign: 'Military Real Estate Lead Magnet',
-      notes: `Lead captured from ${body.sourceForm} form. Requested military real estate guide.`,
+      source: `Website - ${body.sourceForm}`,
+      campaign: 'Military Real Estate Guide',
+      notes: `Lead captured from ${body.sourceForm} form. Military base: ${body.base || 'Not specified'}. Requested military real estate guide for Northern Virginia.`,
       custom_fields: {
         military_base: body.base,
         lead_source: body.sourceForm,
@@ -67,16 +67,15 @@ export async function POST(request: NextRequest) {
     if (boldTrailApiUrl && boldTrailApiKey) {
       try {
         console.log('Sending lead to BoldTrail:', {
-          url: `${boldTrailApiUrl}/leads`,
+          url: `${boldTrailApiUrl}/contacts`,
           leadData: { ...boldTrailLead, phone: boldTrailLead.phone.substring(0, 5) + '***' }
         });
 
-        const response = await fetch(`${boldTrailApiUrl}/leads`, {
+        const response = await fetch(`${boldTrailApiUrl}/contacts`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${boldTrailApiKey}`,
-            'X-API-Key': boldTrailApiKey,
           },
           body: JSON.stringify(boldTrailLead),
         });
