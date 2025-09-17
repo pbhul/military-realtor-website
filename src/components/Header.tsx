@@ -6,6 +6,71 @@ import { Bars3Icon, XMarkIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    base: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/lead-capture', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          sourceForm: 'Header Free Guide Modal'
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          base: ''
+        });
+        // Auto-download PDF after successful submission
+        const link = document.createElement('a');
+        link.href = '/downloads/military-relocation-guide-northern-virginia.pdf';
+        link.download = 'Military-Relocation-Guide-Northern-Virginia.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Close modal after 2 seconds
+        setTimeout(() => {
+          setModalOpen(false);
+          setSubmitStatus('idle');
+        }, 2000);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      console.error('Lead form submission error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -47,16 +112,16 @@ export default function Header() {
         </div>
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-4">
-          <a href="tel:+1-703-477-2606" className="flex items-center gap-2 text-sm font-semibold leading-6 text-blue-900 hover:text-blue-700">
+          <a href="tel:+1-703-477-2606" className="flex items-center gap-2 text-sm font-semibold leading-6 text-blue-900 hover:text-blue-700 whitespace-nowrap">
             <PhoneIcon className="h-5 w-5" />
             (703) 477-2606
           </a>
-          <Link
-            href="/contact"
+          <button
+            onClick={() => setModalOpen(true)}
             className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
           >
             Free Relocation Guide
-          </Link>
+          </button>
         </div>
       </nav>
 
@@ -97,15 +162,108 @@ export default function Header() {
                     <PhoneIcon className="h-5 w-5" />
                     (703) 477-2606
                   </a>
-                  <Link
-                    href="/contact"
-                    className="mt-4 block rounded-md bg-blue-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-800"
-                    onClick={() => setMobileMenuOpen(false)}
+                  <button
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setModalOpen(true);
+                    }}
+                    className="mt-4 block w-full rounded-md bg-blue-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-800"
                   >
                     Free Relocation Guide
-                  </Link>
+                  </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Lead Capture Modal */}
+      {modalOpen && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-2xl font-bold text-gray-900">
+                  🎖️ Free Military Relocation Guide
+                </h2>
+                <button
+                  onClick={() => setModalOpen(false)}
+                  className="text-gray-400 hover:text-gray-600"
+                >
+                  <XMarkIcon className="h-6 w-6" />
+                </button>
+              </div>
+
+              <p className="text-gray-600 mb-6">
+                Get your comprehensive guide to military relocations in Northern Virginia.
+                Includes VA loan guidance, PCS timeline, and local area insights.
+              </p>
+
+              {submitStatus === 'success' && (
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md">
+                  <p className="text-green-800 text-center font-semibold">
+                    🎉 Success! Your guide is downloading now. We'll be in touch within 24 hours!
+                  </p>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-md">
+                  <p className="text-red-800 text-center">
+                    ❌ Sorry, there was an error. Please try calling us at (703) 477-2606.
+                  </p>
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <input
+                  type="text"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                  placeholder="Full Name"
+                  required
+                  className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="Email Address"
+                  required
+                  className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  placeholder="Phone Number"
+                  required
+                  className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                />
+                <select
+                  name="base"
+                  value={formData.base}
+                  onChange={handleInputChange}
+                  className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="">🏛️ Select Your Base</option>
+                  <option value="fort-belvoir">🏰 Fort Belvoir</option>
+                  <option value="pentagon">🏢 Pentagon</option>
+                  <option value="quantico">🛡️ Quantico Marine Base</option>
+                  <option value="other">🎖️ Other/Not Military</option>
+                </select>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full rounded-md bg-blue-900 hover:bg-blue-800 disabled:bg-gray-400 px-4 py-3 text-base font-semibold text-white shadow-lg transition-colors"
+                >
+                  {isSubmitting ? '📤 Sending...' : '🎖️ Get Free Guide & Download PDF'}
+                </button>
+              </form>
             </div>
           </div>
         </div>

@@ -381,22 +381,13 @@ export default function Home() {
                   <option value="quantico" className="text-gray-900">🛡️ Quantico Marine Base</option>
                   <option value="other" className="text-gray-900">🎖️ Other/Not Military</option>
                 </select>
-                <div className="space-y-3">
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full rounded-md bg-white hover:bg-blue-50 disabled:bg-gray-300 px-4 py-3 text-base font-semibold text-blue-900 shadow-lg transition-colors"
-                  >
-                    {isSubmitting ? '📤 Sending...' : '🎖️ Get Free Military Guide'}
-                  </button>
-                  <a
-                    href="/downloads/military-relocation-guide-northern-virginia.pdf"
-                    download="Military-Relocation-Guide-Northern-Virginia.pdf"
-                    className="w-full inline-block text-center rounded-md bg-blue-600 hover:bg-blue-700 px-4 py-3 text-base font-semibold text-white shadow-lg transition-colors"
-                  >
-                    📄 Download PDF Guide
-                  </a>
-                </div>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full rounded-md bg-white hover:bg-blue-50 disabled:bg-gray-300 px-4 py-3 text-base font-semibold text-blue-900 shadow-lg transition-colors"
+                >
+                  {isSubmitting ? '📤 Sending...' : '🎖️ Get Free Military Guide'}
+                </button>
               </form>
             </div>
           </div>
