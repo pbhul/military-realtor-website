@@ -20,8 +20,7 @@ export default function Home() {
   const [leadFormData, setLeadFormData] = useState({
     fullName: '',
     email: '',
-    phone: '',
-    base: ''
+    phone: ''
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -64,8 +63,7 @@ export default function Home() {
         setLeadFormData({
           fullName: '',
           email: '',
-          phone: '',
-          base: ''
+          phone: ''
         });
       } else {
         console.error('❌ Homepage form submission failed with status:', response.status);
@@ -380,18 +378,6 @@ export default function Home() {
                   inputMode="tel"
                   className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
                 />
-                <select 
-                  name="base"
-                  value={leadFormData.base}
-                  onChange={handleLeadInputChange}
-                  className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-white focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
-                >
-                  <option value="" className="text-gray-900">🏛️ Select Your Base</option>
-                  <option value="fort-belvoir" className="text-gray-900">🏰 Fort Belvoir</option>
-                  <option value="pentagon" className="text-gray-900">🏢 Pentagon</option>
-                  <option value="quantico" className="text-gray-900">🛡️ Quantico Marine Base</option>
-                  <option value="other" className="text-gray-900">🎖️ Other/Not Military</option>
-                </select>
                 <button
                   type="submit"
                   disabled={isSubmitting}

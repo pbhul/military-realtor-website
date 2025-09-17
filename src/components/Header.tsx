@@ -12,8 +12,7 @@ export default function Header() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    phone: '',
-    base: ''
+    phone: ''
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -53,8 +52,7 @@ export default function Header() {
         setFormData({
           fullName: '',
           email: '',
-          phone: '',
-          base: ''
+          phone: ''
         });
         // Auto-download PDF after successful submission
         const link = document.createElement('a');
@@ -261,18 +259,6 @@ export default function Header() {
                   inputMode="tel"
                   className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
-                <select
-                  name="base"
-                  value={formData.base}
-                  onChange={handleInputChange}
-                  className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                >
-                  <option value="">🏛️ Select Your Base</option>
-                  <option value="fort-belvoir">🏰 Fort Belvoir</option>
-                  <option value="pentagon">🏢 Pentagon</option>
-                  <option value="quantico">🛡️ Quantico Marine Base</option>
-                  <option value="other">🎖️ Other/Not Military</option>
-                </select>
                 <button
                   type="submit"
                   disabled={isSubmitting}

@@ -50,9 +50,9 @@ export async function POST(request: NextRequest) {
       phone: body.phone,
       source: `Website - ${body.sourceForm}`,
       campaign: 'Military Real Estate Guide',
-      notes: `Lead captured from ${body.sourceForm} form. Military base: ${body.base || 'Not specified'}. Requested military real estate guide for Northern Virginia.`,
+      notes: `Lead captured from ${body.sourceForm} form. Requested military real estate guide for Northern Virginia.`,
       custom_fields: {
-        military_base: body.base,
+        military_base: body.base || 'Not specified',
         lead_source: body.sourceForm,
       }
     };
