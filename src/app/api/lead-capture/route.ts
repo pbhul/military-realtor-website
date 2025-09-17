@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
     const boldTrailApiUrl = process.env.BOLDTRAIL_API_URL;
     const boldTrailApiKey = process.env.BOLDTRAIL_API_KEY;
 
-    console.log('BoldTrail Config Check:', {
+    console.log('KvCore Config Check:', {
       hasApiUrl: !!boldTrailApiUrl,
       hasApiKey: !!boldTrailApiKey,
       apiUrl: boldTrailApiUrl ? `${boldTrailApiUrl.substring(0, 20)}...` : 'NOT SET'
@@ -69,12 +69,12 @@ export async function POST(request: NextRequest) {
 
     if (boldTrailApiUrl && boldTrailApiKey) {
       try {
-        console.log('Sending lead to BoldTrail:', {
-          url: `${boldTrailApiUrl}/leads`,
+        console.log('Sending lead to KvCore:', {
+          url: `${boldTrailApiUrl}/contacts`,
           leadData: { ...boldTrailLead, phone: boldTrailLead.phone.substring(0, 5) + '***' }
         });
 
-        const response = await fetch(`${boldTrailApiUrl}/leads`, {
+        const response = await fetch(`${boldTrailApiUrl}/contacts`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -86,13 +86,13 @@ export async function POST(request: NextRequest) {
         const responseText = await response.text();
 
         if (!response.ok) {
-          console.error('BoldTrail API error:', {
+          console.error('KvCore API error:', {
             status: response.status,
             statusText: response.statusText,
             response: responseText
           });
         } else {
-          console.log('Lead successfully sent to BoldTrail CRM:', {
+          console.log('Lead successfully sent to KvCore CRM:', {
             status: response.status,
             response: responseText
           });
@@ -101,7 +101,7 @@ export async function POST(request: NextRequest) {
         console.error('CRM integration error:', crmError);
       }
     } else {
-      console.log('BoldTrail not configured - missing API URL or API KEY');
+      console.log('KvCore not configured - missing API URL or API KEY');
     }
 
     // Send email notifications
