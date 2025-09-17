@@ -236,6 +236,7 @@ export default function Header() {
                   placeholder="Full Name"
                   required
                   autoComplete="name"
+                  inputMode="text"
                   className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
                 <input
@@ -246,6 +247,7 @@ export default function Header() {
                   placeholder="Email Address"
                   required
                   autoComplete="email"
+                  inputMode="email"
                   className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
                 <input
@@ -256,6 +258,7 @@ export default function Header() {
                   placeholder="Phone Number"
                   required
                   autoComplete="tel"
+                  inputMode="tel"
                   className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
                 <select
