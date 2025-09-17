@@ -36,6 +36,7 @@ export default function Home() {
   };
 
   const handleLeadSubmit = async (e: React.FormEvent) => {
+    console.log('🔥 FORM SUBMIT TRIGGERED - Homepage');
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -354,7 +355,6 @@ export default function Home() {
                   placeholder="Full Name"
                   required
                   autoComplete="name"
-                  inputMode="text"
                   className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
                 />
                 <input
@@ -365,7 +365,6 @@ export default function Home() {
                   placeholder="Email Address"
                   required
                   autoComplete="email"
-                  inputMode="email"
                   className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
                 />
                 <input
@@ -376,7 +375,6 @@ export default function Home() {
                   placeholder="Phone Number"
                   required
                   autoComplete="tel"
-                  inputMode="tel"
                   className="w-full rounded-md border-0 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/70 focus:bg-white/20 focus:ring-2 focus:ring-white/50 backdrop-blur-sm"
                 />
                 <select 

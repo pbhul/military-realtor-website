@@ -25,6 +25,7 @@ export default function Header() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
+    console.log('🔥 FORM SUBMIT TRIGGERED - Header Modal');
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -234,6 +235,7 @@ export default function Header() {
                   onChange={handleInputChange}
                   placeholder="Full Name"
                   required
+                  autoComplete="name"
                   className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
                 <input
@@ -243,6 +245,7 @@ export default function Header() {
                   onChange={handleInputChange}
                   placeholder="Email Address"
                   required
+                  autoComplete="email"
                   className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
                 <input
@@ -252,6 +255,7 @@ export default function Header() {
                   onChange={handleInputChange}
                   placeholder="Phone Number"
                   required
+                  autoComplete="tel"
                   className="w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder:text-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                 />
                 <select
