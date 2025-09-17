@@ -74,14 +74,39 @@ export async function POST(request: NextRequest) {
           leadData: { ...boldTrailLead, phone: boldTrailLead.phone.substring(0, 5) + '***' }
         });
 
-        const response = await fetch(`${boldTrailApiUrl}/contacts`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${boldTrailApiKey}`,
-          },
-          body: JSON.stringify(boldTrailLead),
-        });
+        // Try multiple endpoints to find the correct one
+        let response;
+        const endpoints = [
+          `${boldTrailApiUrl}/v1/contacts`,
+          `${boldTrailApiUrl}/v2/contacts`,
+          `${boldTrailApiUrl}/contacts`,
+          `${boldTrailApiUrl}/contact`,
+          `${boldTrailApiUrl}/v1/leads`,
+          `${boldTrailApiUrl}/v2/leads`,
+          `${boldTrailApiUrl}/leads`,
+          `${boldTrailApiUrl}/lead`,
+          `${boldTrailApiUrl}/api/v1/contacts`,
+          `${boldTrailApiUrl}/api/v2/contacts`
+        ];
+
+        for (const endpoint of endpoints) {
+          console.log(`Trying endpoint: ${endpoint}`);
+          response = await fetch(endpoint, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${boldTrailApiKey}`,
+            },
+            body: JSON.stringify(boldTrailLead),
+          });
+
+          if (response.ok) {
+            console.log(`✅ Success with endpoint: ${endpoint}`);
+            break;
+          } else {
+            console.log(`❌ Failed with endpoint: ${endpoint} - Status: ${response.status}`);
+          }
+        }
 
         const responseText = await response.text();
 
