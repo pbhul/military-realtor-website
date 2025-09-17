@@ -24,6 +24,7 @@ interface BoldTrailLead {
 
 export async function POST(request: NextRequest) {
   console.log('🎯 API ENDPOINT HIT: /api/lead-capture');
+  let testResults = [];
 
   try {
     const body: LeadCaptureData = await request.json();
@@ -91,22 +92,44 @@ export async function POST(request: NextRequest) {
 
         for (const endpoint of endpoints) {
           console.log(`Trying endpoint: ${endpoint}`);
-          response = await fetch(endpoint, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Bearer ${boldTrailApiKey}`,
-            },
-            body: JSON.stringify(boldTrailLead),
-          });
 
-          if (response.ok) {
-            console.log(`✅ Success with endpoint: ${endpoint}`);
-            break;
-          } else {
-            console.log(`❌ Failed with endpoint: ${endpoint} - Status: ${response.status}`);
+          try {
+            response = await fetch(endpoint, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${boldTrailApiKey}`,
+              },
+              body: JSON.stringify(boldTrailLead),
+            });
+
+            const result = {
+              endpoint: endpoint,
+              status: response.status,
+              statusText: response.statusText,
+              success: response.ok
+            };
+
+            testResults.push(result);
+            console.log(`Result for ${endpoint}: Status ${response.status} - ${response.ok ? 'SUCCESS' : 'FAILED'}`);
+
+            if (response.ok) {
+              console.log(`✅ Success with endpoint: ${endpoint}`);
+              break;
+            }
+          } catch (error) {
+            console.log(`❌ Error with endpoint: ${endpoint} - ${error.message}`);
+            testResults.push({
+              endpoint: endpoint,
+              status: 'ERROR',
+              statusText: error.message,
+              success: false
+            });
           }
         }
+
+        // Log all test results for debugging
+        console.log('🧪 ENDPOINT TEST RESULTS:', JSON.stringify(testResults, null, 2));
 
         const responseText = await response.text();
 
@@ -142,9 +165,13 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json(
-      { 
+      {
         message: 'Lead captured successfully',
         leadId: generateLeadId(),
+        debug: {
+          kvCoreEndpointTests: testResults || [],
+          kvCoreConfigured: !!(boldTrailApiUrl && boldTrailApiKey)
+        }
       },
       { status: 200 }
     );
