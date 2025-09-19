@@ -225,11 +225,33 @@ This document serves as the **definitive SEO roadmap and progress tracker** for 
 - [ ] "mrp realtor northern virginia" - Expected #1 ranking within 1-2 weeks
 - [ ] "military relocation professional" - Expected top 3 within 1 week
 - [ ] "military relocation professional northern virginia" - Expected #1 within 2 weeks
+- [ ] "military relocation specialist" - Expected top 5 within 1-2 weeks
+- [ ] "va certified real estate agent" - Expected top 5 within 2-3 weeks
+- [ ] "veterans real estate agent" - Expected top 3 within 2-3 weeks
 
 **Call Tracking Setup:**
 - [ ] Monitor (703) 477-2606 call volume increase
 - [ ] Track call sources mentioning "MRP realtor" or "Military Relocation Professional"
 - [ ] Document first calls from new keywords (expected within 5-7 days)
+
+#### **🏛️ HUD/NAR COMPLIANCE GUIDELINES**
+
+**Content Standards (All content must follow these rules):**
+- ✅ **Fellow veteran references allowed** - Factual statement of military service
+- ✅ **Licensed professional language** - Always reference proper licensing
+- ❌ **No opinions or subjective claims** - Only factual, verifiable information
+- ❌ **No plural "agents" references** - Single practitioner, use "I provide" not "we provide"
+- ❌ **No superlative claims without data** - Avoid "best," "expert" without qualification
+- ✅ **Factual service descriptions** - "I provide" or "services include"
+- ✅ **Proper certification references** - MRP certification, VA certification (factual)
+
+**Language Compliance Examples:**
+- ✅ "Fellow veteran and licensed real estate professional"
+- ✅ "I have completed MRP certification"
+- ✅ "Licensed to serve the [area] region"
+- ❌ "Team of agents" or "our agents"
+- ❌ "Best agent in the area"
+- ❌ "We understand better than others"
 
 #### **⚡ NEXT 48 HOURS ACTIONS**
 1. **Google Indexing:** New pages should be indexed within 24-48 hours

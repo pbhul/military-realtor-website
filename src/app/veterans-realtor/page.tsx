@@ -6,9 +6,9 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Veterans Realtor Northern Virginia | Veteran Real Estate Agent | Military Specialist",
-  description: "🎖️ Veterans realtor serving Northern Virginia military families. Fellow veteran and MRP certified real estate agent specializing in PCS moves, VA loans, military relocations.",
-  keywords: "veterans realtor, veteran real estate agent, military real estate agent, northern virginia veterans realtor, realtors near me, military realtor",
+  title: "Veterans Real Estate Agent Northern Virginia | Veterans Realtor | Military Realtor",
+  description: "🎖️ Veterans real estate agent and military realtor in Northern Virginia. VA certified real estate agent serving military families with PCS moves, VA loans, veterans real estate services.",
+  keywords: "veterans real estate agent, veterans realtor, military real estate agent, military realtor, va certified real estate agent, veterans real estate, military realtor near me, real estate for veterans, military real estate",
   openGraph: {
     title: "Veterans Realtor Northern Virginia | Veteran Real Estate Agent",
     description: "Veterans realtor and fellow service member specializing in military real estate in Northern Virginia.",

@@ -241,6 +241,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.97, // Very high priority for "military relocation professional" keyword
     },
     {
+      url: `${baseUrl}/military-relocation-specialist`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.96, // High priority for "military relocation specialist" keywords
+    },
+    {
+      url: `${baseUrl}/va-certified-real-estate-agent`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.95, // High priority for "va certified real estate agent" keywords
+    },
+    {
       url: `${baseUrl}/veterans-realtor`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,

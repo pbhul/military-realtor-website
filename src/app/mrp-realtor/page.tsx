@@ -36,7 +36,7 @@ export default function MRPRealtorPage() {
               Military Relocation Professional Certified Agent
             </h2>
             <p className="mt-6 text-lg leading-8 text-blue-100">
-              As an MRP realtor in Northern Virginia, I provide specialized Military Relocation Professional services for PCS moves, emergency relocations, and VA loan assistance. Fellow veteran serving Fort Belvoir, Pentagon, and Quantico military families.
+              As an MRP realtor in Northern Virginia, I provide Military Relocation Professional services for PCS moves, emergency relocations, and VA loan assistance. Fellow veteran and licensed real estate professional serving Fort Belvoir, Pentagon, and Quantico areas.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -65,7 +65,7 @@ export default function MRPRealtorPage() {
               What Makes an MRP Realtor Different?
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Military Relocation Professional (MRP) certification provides specialized training that standard real estate agents don't receive. As your MRP realtor, I understand the unique challenges military families face.
+              Military Relocation Professional (MRP) certification provides specialized training in military relocations. As an MRP realtor, I have completed this certification to serve military families.
             </p>
           </div>
 
@@ -137,17 +137,17 @@ export default function MRPRealtorPage() {
             <Link href="/bases/fort-belvoir" className="group relative flex flex-col items-center p-8 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors shadow-lg">
               <ShieldCheckIcon className="h-12 w-12 text-blue-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-900">Fort Belvoir</h3>
-              <p className="mt-2 text-sm text-gray-600 text-center">Army base specialists with deep knowledge of surrounding communities</p>
+              <p className="mt-2 text-sm text-gray-600 text-center">Licensed to serve the Fort Belvoir area and surrounding communities</p>
             </Link>
             <Link href="/bases/pentagon" className="group relative flex flex-col items-center p-8 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors shadow-lg">
               <ShieldCheckIcon className="h-12 w-12 text-blue-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-900">Pentagon</h3>
-              <p className="mt-2 text-sm text-gray-600 text-center">DC area expertise with Metro access and urban living insights</p>
+              <p className="mt-2 text-sm text-gray-600 text-center">Licensed to serve the Pentagon area including DC and Metro accessible locations</p>
             </Link>
             <Link href="/bases/quantico" className="group relative flex flex-col items-center p-8 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors shadow-lg">
               <ShieldCheckIcon className="h-12 w-12 text-blue-600 mb-4" />
               <h3 className="text-lg font-semibold text-gray-900">Quantico</h3>
-              <p className="mt-2 text-sm text-gray-600 text-center">Marine Corps specialists understanding unique Corps culture and needs</p>
+              <p className="mt-2 text-sm text-gray-600 text-center">Licensed to serve the Quantico Marine Base area and surrounding regions</p>
             </Link>
           </div>
         </div>
@@ -164,12 +164,12 @@ export default function MRPRealtorPage() {
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="flex flex-col p-8 bg-white rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">🚀 Emergency PCS Services</h3>
-              <p className="text-gray-600 mb-4">Rapid response for emergency PCS orders with compressed timelines. I understand the urgency and can coordinate fast closings.</p>
+              <p className="text-gray-600 mb-4">Real estate services for emergency PCS orders with compressed timelines. I provide coordination for transactions with urgent timing requirements.</p>
               <Link href="/emergency-pcs" className="text-blue-600 hover:text-blue-500 font-medium">Learn more →</Link>
             </div>
             <div className="flex flex-col p-8 bg-white rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">🏠 VA Loan Expertise</h3>
-              <p className="text-gray-600 mb-4">Complete VA loan guidance from pre-approval to closing. I work with military-friendly lenders who understand your benefits.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">🏠 VA Loan Guidance</h3>
+              <p className="text-gray-600 mb-4">VA loan guidance from pre-approval to closing. I work with lenders experienced in VA loan processes and requirements.</p>
               <Link href="/va-loan-guidance" className="text-blue-600 hover:text-blue-500 font-medium">Learn more →</Link>
             </div>
             <div className="flex flex-col p-8 bg-white rounded-lg shadow-lg">
