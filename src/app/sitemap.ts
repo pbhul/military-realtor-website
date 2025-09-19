@@ -229,13 +229,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // High-priority SEO landing pages for target keywords
   const seoLandingPages = [
     {
+      url: `${baseUrl}/mrp-realtor`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.98, // HIGHEST priority for "mrp realtor" keyword - immediate ranking target
+    },
+    {
+      url: `${baseUrl}/military-relocation-professional`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.97, // Very high priority for "military relocation professional" keyword
+    },
+    {
       url: `${baseUrl}/veterans-realtor`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.95, // Very high priority for "veterans realtor" keyword
     },
     {
-      url: `${baseUrl}/real-estate-agents-northern-virginia`, 
+      url: `${baseUrl}/real-estate-agents-northern-virginia`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.95, // Very high priority for target keyword

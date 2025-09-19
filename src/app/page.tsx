@@ -146,7 +146,7 @@ export default function Home() {
               </span>
             </div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Veterans Realtor Northern Virginia | Tri-Base Military Realtor Specialist
+              MRP Realtor Northern Virginia | Veterans Realtor | Military Relocation Professional
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
               Veterans realtor Northern Virginia serving as your Pentagon area military realtor and Quantico Marine realtor.
@@ -164,7 +164,7 @@ export default function Home() {
                 className="flex items-center gap-2 text-base font-semibold leading-6 text-white hover:text-blue-100 transition-colors whitespace-nowrap"
               >
                 <PhoneIcon className="h-6 w-6" />
-                Call (703) 477-2606
+                Call MRP Realtor: (703) 477-2606
               </a>
             </div>
           </div>
@@ -176,8 +176,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Why Choose an MRP Certified Veterans Realtor Northern Virginia?
+              Why Choose an MRP Realtor Northern Virginia?
             </h2>
+            <h3 className="text-xl font-semibold text-gray-700 mt-4">
+              Military Relocation Professional | Veterans Real Estate Agent | MRP Certified
+            </h3>
             <div className="mt-8 flex justify-center">
               <Image
                 className="h-24 w-24 rounded-full object-cover border-4 border-blue-200"

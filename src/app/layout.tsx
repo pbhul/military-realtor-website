@@ -24,11 +24,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://www.pbrealtynova.com'),
   title: {
-    default: "Veterans Realtor Northern Virginia | Military Real Estate Agent | MRP Certified",
-    template: "%s | Veterans Realtor NoVA"
+    default: "MRP Realtor Northern Virginia | Military Relocation Professional | Veterans Real Estate Agent",
+    template: "%s | MRP Realtor NoVA"
   },
-  description: "🎖️ Veterans realtor and military real estate agent in Northern Virginia. MRP certified veteran-owned business serving Fort Belvoir, Pentagon, Quantico. Expert PCS relocations, VA loans, military families.",
+  description: "🎖️ MRP realtor and military relocation professional in Northern Virginia. Veterans real estate agent serving Fort Belvoir, Pentagon, Quantico. Military veteran real estate agents specializing in PCS relocations, VA loans, deployment management.",
   keywords: [
+    // PRIORITY TARGET KEYWORDS - Immediate Call Generation
+    "mrp realtor", "mrp realtor northern virginia", "military relocation professional",
+    "military relocation professional northern virginia", "veterans real estate agent",
+    "military veteran real estate agents near me", "relocation realtor", "veterans realtor",
+    "military real estate agent", "military realtor", "military realtor near me",
+    "va certified real estate agent", "real estate for veterans", "military real estate",
+
     // Primary Target Keywords - Phase 1 Low Competition
     "veterans realtor northern virginia", "MRP certified realtor northern virginia", "pentagon area military realtor",
     "quantico marine realtor", "emergency PCS realtor", "tri-base military realtor",
