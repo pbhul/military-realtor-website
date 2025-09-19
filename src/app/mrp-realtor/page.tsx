@@ -64,6 +64,16 @@ export default function MRPRealtorPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               What Makes an MRP Realtor Different?
             </h2>
+            <div className="mt-8 flex justify-center">
+              <Image
+                className="h-32 w-auto rounded-lg shadow-lg"
+                src="/photos/mrp.png"
+                alt="Military Relocation Professional (MRP) Certification - Certified MRP Realtor Northern Virginia"
+                width={200}
+                height={128}
+                loading="lazy"
+              />
+            </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Military Relocation Professional (MRP) certification provides specialized training in military relocations. As an MRP realtor, I have completed this certification to serve military families.
             </p>

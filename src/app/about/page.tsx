@@ -137,6 +137,19 @@ export default function AboutPage() {
                   priority
                 />
               </div>
+
+              {/* MRP Certification Badge */}
+              <div className="flex justify-center mt-6 mb-6">
+                <Image
+                  className="h-24 w-auto rounded-lg shadow-md"
+                  src="/photos/mrp.png"
+                  alt="Military Relocation Professional (MRP) Certification - Certified MRP Realtor"
+                  width={150}
+                  height={96}
+                  loading="lazy"
+                />
+              </div>
+
               <div className="bg-blue-50 rounded-lg p-6">
                 <p className="text-lg font-semibold text-gray-900">Parjinder</p>
                 <p className="text-blue-600 font-medium">Military Veteran & MRP Certified Agent</p>

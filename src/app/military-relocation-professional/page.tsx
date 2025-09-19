@@ -64,6 +64,16 @@ export default function MilitaryRelocationProfessionalPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               What is a Military Relocation Professional (MRP)?
             </h2>
+            <div className="mt-8 flex justify-center">
+              <Image
+                className="h-32 w-auto rounded-lg shadow-lg"
+                src="/photos/mrp.png"
+                alt="Military Relocation Professional (MRP) Certification - NAR Certified Military Relocation Professional"
+                width={200}
+                height={128}
+                loading="lazy"
+              />
+            </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               The Military Relocation Professional (MRP) certification is awarded by the National Association of REALTORS® to agents who complete specialized training in military relocations and demonstrate expertise in serving military families.
             </p>
