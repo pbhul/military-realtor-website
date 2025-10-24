@@ -103,7 +103,7 @@ export default function Home() {
       title: "Local Knowledge",
       description: (
         <>
-          Intimate knowledge of <Link href="/bases/fort-belvoir" className="text-blue-600 hover:text-blue-500 font-medium">Fort Belvoir</Link>, <Link href="/bases/pentagon" className="text-blue-600 hover:text-blue-500 font-medium">Pentagon</Link>, and <Link href="/bases/quantico" className="text-blue-600 hover:text-blue-500 font-medium">Quantico</Link> areas with <Link href="/base-proximity-map" className="text-blue-600 hover:text-blue-500 font-medium">base proximity insights</Link> and military community connections.
+          Over 10 years of Northern Virginia local expertise with intimate knowledge of <Link href="/bases/fort-belvoir" className="text-blue-600 hover:text-blue-500 font-medium">Fort Belvoir</Link>, <Link href="/bases/pentagon" className="text-blue-600 hover:text-blue-500 font-medium">Pentagon</Link>, and <Link href="/bases/quantico" className="text-blue-600 hover:text-blue-500 font-medium">Quantico</Link> areas, <Link href="/base-proximity-map" className="text-blue-600 hover:text-blue-500 font-medium">base proximity insights</Link>, and military community connections.
         </>
       )
     },
@@ -192,10 +192,10 @@ export default function Home() {
               />
             </div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              As a Military Relocation Professional (MRP) and fellow veteran, I bring more than just real estate expertise—I bring firsthand understanding of the military lifestyle. Having served on active duty myself, I know the demands of PCS moves, the complexities of VA loans, and the unique challenges military families face when relocating.
+              As a Military Relocation Professional (MRP) and fellow veteran with over 10 years living and working in Northern Virginia, I bring more than just real estate expertise—I bring firsthand understanding of the military lifestyle. Having served on active duty myself, I know the demands of PCS moves, the complexities of VA loans, and the unique challenges military families face when relocating.
             </p>
             <p className="mt-4 text-lg leading-8 text-gray-600">
-              Now, as a realtor, my mission is simple: to serve as a true asset and trusted guide throughout your transition. I'm not here to focus on a single transaction—I'm here to build lasting relationships, provide clarity, and ensure you feel supported every step of the way. You can count on me to listen, understand, and get the job done with the same dedication and integrity that defined my military service.
+              My decade of local experience gives me intimate knowledge of every neighborhood, school district, commute route, and community around Fort Belvoir, Pentagon, and Quantico. I'm not here to focus on a single transaction—I'm here to build lasting relationships, provide clarity, and ensure you feel supported every step of the way with the same dedication and integrity that defined my military service.
             </p>
           </div>
           
