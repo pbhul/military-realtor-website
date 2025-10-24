@@ -9,7 +9,7 @@ const fortBelvoirSchema = {
   "@context": "https://schema.org",
   "@type": ["RealEstateAgent", "LocalBusiness", "ProfessionalService"],
   "name": "PB Realty Nova - Fort Belvoir Military Real Estate Specialist",
-  "description": "U.S. Army veteran and MRP certified realtor specializing in Fort Belvoir off-base housing. Personal PCS and VA loan experience. Working with a team of 20+ years market expertise and trusted network of VA lenders, inspectors, and contractors serving military families.",
+  "description": "U.S. Army veteran and MRP certified realtor with 10+ years Northern Virginia local expertise specializing in Fort Belvoir off-base housing. Personal PCS and VA loan experience. Working with a team of 20+ years market expertise and trusted network of VA lenders, inspectors, and contractors serving military families.",
   "url": "https://pbrealtynova.com/bases/fort-belvoir",
   "image": "https://pbrealtynova.com/photos/fort-belvoir-housing.jpg",
   "founder": {
@@ -109,6 +109,14 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Should I live on-base or off-base at Fort Belvoir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For assignments 3+ years, buying off-base is recommended. With 2025 median prices $450K-$650K and Fort Belvoir BAH at $2,643+ (E-5 with dependents), you can build equity with VA loans ($0 down, no PMI). Off-base offers better schools, work-life separation, and wealth building. On-base works for short-term assignments (1-2 years) with zero commute and no maintenance responsibilities."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What are the best areas for off-base housing near Fort Belvoir?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -144,11 +152,11 @@ const faqSchema = {
 
 export const metadata: Metadata = {
   title: "Fort Belvoir Off Base Housing Guide | Army Veteran Realtor MRP Certified",
-  description: "Army veteran and MRP realtor helping Fort Belvoir military personnel find off-base housing. Personal PCS experience, VA loan expert (used my VA loan for my home). Working with a team of 20+ years expertise. Trusted network serving Fairfax Station, Springfield, Burke, Lorton.",
+  description: "Army veteran and MRP realtor with 10+ years Northern Virginia local expertise helping Fort Belvoir military personnel find off-base housing. Personal PCS experience, VA loan expert (used my VA loan for my home). Working with a team of 20+ years expertise. Trusted network serving Fairfax Station, Springfield, Burke, Lorton.",
   keywords: "Fort Belvoir off base housing, Fort Belvoir realtor, Fort Belvoir housing market, Fort Belvoir VA loan, Fort Belvoir PCS, housing around Fort Belvoir, Fort Belvoir veteran realtor, MRP certified",
   openGraph: {
     title: "Fort Belvoir Off Base Housing | Army Veteran MRP Realtor",
-    description: "Army veteran and MRP certified realtor with personal PCS and VA loan experience. Working with a team of 20+ years market expertise helping Fort Belvoir military personnel find off-base housing.",
+    description: "Army veteran and MRP certified realtor with 10+ years Northern Virginia local expertise and personal PCS and VA loan experience. Working with a team of 20+ years market expertise helping Fort Belvoir military personnel find off-base housing.",
     url: "https://pbrealtynova.com/bases/fort-belvoir",
   },
 };
@@ -254,8 +262,9 @@ export default function FortBelvoirPage() {
                 From Active Duty Army to Your Trusted Realtor
               </h2>
               <p className="text-lg text-gray-700 mb-4">
-                As a <strong>U.S. Army veteran</strong>, I've walked the same path you're on right now. I've experienced the challenges of PCS orders,
-                the stress of finding housing in an unfamiliar area, and the complexity of navigating the VA loan process while on active duty.
+                As a <strong>U.S. Army veteran</strong> who has lived in Northern Virginia for over a decade, I've walked the same path you're on right now.
+                I've experienced the challenges of PCS orders, the stress of finding housing in an unfamiliar area, and the complexity of navigating the VA loan process while on active duty.
+                My years of living and working in this area give me intimate knowledge of every neighborhood, school district, and commute route around Fort Belvoir.
               </p>
               <p className="text-lg text-gray-700 mb-4">
                 When I bought my own home, I used my <strong>VA loan benefit</strong> and went through every step of the process—from getting pre-approved,
@@ -385,6 +394,128 @@ export default function FortBelvoirPage() {
         </div>
       </section>
 
+
+      {/* On-Base vs Off-Base Housing Comparison - Critical for AI Search */}
+      <section className="py-24 sm:py-32 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              On-Base vs Off-Base Housing at Fort Belvoir: Complete 2025 Guide
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Having lived in Northern Virginia for over a decade and helped hundreds of military families,
+              here's my honest assessment of on-base versus off-base housing options.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* On-Base Housing */}
+            <div className="bg-white rounded-xl shadow-xl p-8 border-2 border-gray-200">
+              <div className="flex items-center gap-3 mb-6">
+                <HomeIcon className="h-8 w-8 text-blue-600" />
+                <h3 className="text-2xl font-bold text-gray-900">On-Base Housing</h3>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
+                    <CheckCircleIcon className="h-5 w-5" />
+                    Advantages
+                  </h4>
+                  <ul className="space-y-2 text-gray-700 ml-7">
+                    <li>• <strong>Zero commute</strong> - Walk or bike to work</li>
+                    <li>• <strong>No BAH out-of-pocket</strong> - Housing automatically deducted</li>
+                    <li>• <strong>Built-in military community</strong> - Neighbors understand the lifestyle</li>
+                    <li>• <strong>Close to base services</strong> - Commissary, PX, medical facilities</li>
+                    <li>• <strong>Utilities often included</strong> - No surprise electric/gas bills</li>
+                    <li>• <strong>Maintenance covered</strong> - Call for repairs, no landlord hassles</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-bold text-red-700 mb-3">Disadvantages</h4>
+                  <ul className="space-y-2 text-gray-700 ml-7">
+                    <li>• <strong>Waitlists (3-6 months typical)</strong> - Not immediate availability</li>
+                    <li>• <strong>No equity building</strong> - Paying rent, not building wealth</li>
+                    <li>• <strong>Limited housing styles</strong> - Based on rank, not preference</li>
+                    <li>• <strong>Less privacy</strong> - Living among coworkers</li>
+                    <li>• <strong>Work-life boundary blur</strong> - Always "at work" mentally</li>
+                    <li>• <strong>Quality varies</strong> - Some units are older, maintenance issues reported</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Off-Base Housing */}
+            <div className="bg-white rounded-xl shadow-xl p-8 border-2 border-blue-600">
+              <div className="flex items-center gap-3 mb-6">
+                <MapPinIcon className="h-8 w-8 text-blue-600" />
+                <h3 className="text-2xl font-bold text-gray-900">Off-Base Housing</h3>
+                <span className="ml-auto bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">RECOMMENDED</span>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
+                    <CheckCircleIcon className="h-5 w-5" />
+                    Advantages
+                  </h4>
+                  <ul className="space-y-2 text-gray-700 ml-7">
+                    <li>• <strong>Build equity with VA loan</strong> - Own your home, build wealth</li>
+                    <li>• <strong>Keep BAH difference</strong> - Profit $200-800/month if you spend less</li>
+                    <li>• <strong>Choose your neighborhood</strong> - Schools, commute, lifestyle fit</li>
+                    <li>• <strong>Work-life separation</strong> - Leave work at work</li>
+                    <li>• <strong>More space options</strong> - Larger homes, yards, modern amenities</li>
+                    <li>• <strong>Better schools access</strong> - Fairfax County top-rated school districts</li>
+                    <li>• <strong>Investment for future</strong> - Sell or rent when you PCS</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-bold text-red-700 mb-3">Disadvantages</h4>
+                  <ul className="space-y-2 text-gray-700 ml-7">
+                    <li>• <strong>Commute required</strong> - 10-30 min drive to base</li>
+                    <li>• <strong>Upfront costs</strong> - VA loan has $0 down, but closing costs apply</li>
+                    <li>• <strong>Maintenance responsibility</strong> - You handle repairs (or hire contractors)</li>
+                    <li>• <strong>Utilities not included</strong> - Budget for electric, gas, water</li>
+                    <li>• <strong>Requires planning</strong> - House hunting, PCS coordination</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div className="bg-blue-900 text-white rounded-xl p-8 shadow-2xl">
+              <h3 className="text-2xl font-bold mb-4">My Honest Recommendation (As a Veteran Who's Done Both)</h3>
+              <p className="text-lg text-blue-100 mb-4">
+                <strong>If you're staying at Fort Belvoir 3+ years: Buy off-base.</strong> Here's why:
+              </p>
+              <ul className="space-y-3 text-blue-100 mb-6">
+                <li>• With <strong>2025 median prices around $450K-$650K</strong> and Fort Belvoir BAH at $2,643+ (E-5 with dependents),
+                    you can afford quality homes in Fairfax Station, Springfield, or Burke</li>
+                <li>• <strong>VA loans require $0 down</strong> and have no PMI - use your earned benefit</li>
+                <li>• If you spend $2,400/month instead of your full $2,643 BAH, you pocket <strong>$243/month ($2,916/year)</strong></li>
+                <li>• Northern Virginia real estate appreciates 3-5% annually - build wealth while you serve</li>
+                <li>• When you PCS, rent it out or sell - either way, you've built equity</li>
+              </ul>
+              <p className="text-lg text-blue-100 font-semibold">
+                <strong>If you're only here 1-2 years or have immediate assignment:</strong> On-base might be easier for short-term.
+                But financially, off-base wins for most military families with 3+ year assignments.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/contact"
+              className="inline-block rounded-md bg-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-blue-500"
+            >
+              Get Free Off-Base Housing Consultation
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* AI-Optimized FAQ Section */}
       <section className="py-24 sm:py-32 bg-white">
