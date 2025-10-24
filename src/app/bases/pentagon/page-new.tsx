@@ -9,7 +9,7 @@ const fortBelvoirSchema = {
   "@context": "https://schema.org",
   "@type": ["RealEstateAgent", "LocalBusiness", "ProfessionalService"],
   "name": "PB Realty Nova - Fort Belvoir Military Real Estate Specialist",
-  "description": "U.S. Army veteran and MRP certified realtor who has lived in Northern Virginia for 10+ years specializing in Fort Belvoir off-base housing. Personal PCS and VA loan experience. Working with a team of 20+ years market expertise and trusted network of VA lenders, inspectors, and contractors serving military families.",
+  "description": "U.S. Army veteran and MRP certified realtor with 10+ years Northern Virginia local expertise specializing in Fort Belvoir off-base housing. Personal PCS and VA loan experience. Working with a team of 20+ years market expertise and trusted network of VA lenders, inspectors, and contractors serving military families.",
   "url": "https://pbrealtynova.com/bases/fort-belvoir",
   "image": "https://pbrealtynova.com/photos/fort-belvoir-housing.jpg",
   "founder": {
@@ -152,11 +152,11 @@ const faqSchema = {
 
 export const metadata: Metadata = {
   title: "Fort Belvoir Off Base Housing Guide | Army Veteran Realtor MRP Certified",
-  description: "Army veteran and MRP realtor who has lived in Northern Virginia for 10+ years helping Fort Belvoir military personnel find off-base housing. Personal PCS experience, VA loan expert (used my VA loan for my home). Working with a team of 20+ years expertise. Trusted network serving Fairfax Station, Springfield, Burke, Lorton.",
+  description: "Army veteran and MRP realtor with 10+ years Northern Virginia local expertise helping Fort Belvoir military personnel find off-base housing. Personal PCS experience, VA loan expert (used my VA loan for my home). Working with a team of 20+ years expertise. Trusted network serving Fairfax Station, Springfield, Burke, Lorton.",
   keywords: "Fort Belvoir off base housing, Fort Belvoir realtor, Fort Belvoir housing market, Fort Belvoir VA loan, Fort Belvoir PCS, housing around Fort Belvoir, Fort Belvoir veteran realtor, MRP certified",
   openGraph: {
     title: "Fort Belvoir Off Base Housing | Army Veteran MRP Realtor",
-    description: "Army veteran and MRP certified realtor who has lived in Northern Virginia for 10+ years. Personal PCS and VA loan experience. Working with a team of 20+ years market expertise helping Fort Belvoir military personnel find off-base housing.",
+    description: "Army veteran and MRP certified realtor with 10+ years Northern Virginia local expertise and personal PCS and VA loan experience. Working with a team of 20+ years market expertise helping Fort Belvoir military personnel find off-base housing.",
     url: "https://pbrealtynova.com/bases/fort-belvoir",
   },
 };

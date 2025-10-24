@@ -103,7 +103,7 @@ export default function Home() {
       title: "Local Knowledge",
       description: (
         <>
-          Over 10 years of Northern Virginia local expertise with intimate knowledge of <Link href="/bases/fort-belvoir" className="text-blue-600 hover:text-blue-500 font-medium">Fort Belvoir</Link>, <Link href="/bases/pentagon" className="text-blue-600 hover:text-blue-500 font-medium">Pentagon</Link>, and <Link href="/bases/quantico" className="text-blue-600 hover:text-blue-500 font-medium">Quantico</Link> areas, <Link href="/base-proximity-map" className="text-blue-600 hover:text-blue-500 font-medium">base proximity insights</Link>, and military community connections.
+          Living in Northern Virginia for 10+ years with intimate knowledge of <Link href="/bases/fort-belvoir" className="text-blue-600 hover:text-blue-500 font-medium">Fort Belvoir</Link>, <Link href="/bases/pentagon" className="text-blue-600 hover:text-blue-500 font-medium">Pentagon</Link>, and <Link href="/bases/quantico" className="text-blue-600 hover:text-blue-500 font-medium">Quantico</Link> areas, <Link href="/base-proximity-map" className="text-blue-600 hover:text-blue-500 font-medium">base proximity insights</Link>, and military community connections.
         </>
       )
     },
