@@ -9,7 +9,7 @@ const fortBelvoirSchema = {
   "@context": "https://schema.org",
   "@type": ["RealEstateAgent", "LocalBusiness", "ProfessionalService"],
   "name": "PB Realty Nova - Fort Belvoir Military Real Estate Specialist",
-  "description": "U.S. Army veteran and MRP certified realtor specializing in Fort Belvoir off-base housing. Personal PCS and VA loan experience. 20+ year team with trusted network of VA lenders, inspectors, and contractors serving military families.",
+  "description": "U.S. Army veteran and MRP certified realtor specializing in Fort Belvoir off-base housing. Personal PCS and VA loan experience. Working with a team of 20+ years market expertise and trusted network of VA lenders, inspectors, and contractors serving military families.",
   "url": "https://pbrealtynova.com/bases/fort-belvoir",
   "image": "https://pbrealtynova.com/photos/fort-belvoir-housing.jpg",
   "founder": {
@@ -144,11 +144,11 @@ const faqSchema = {
 
 export const metadata: Metadata = {
   title: "Fort Belvoir Off Base Housing Guide | Army Veteran Realtor MRP Certified",
-  description: "Army veteran and MRP realtor helping Fort Belvoir military personnel find off-base housing. Personal PCS experience, VA loan expert (used my VA loan for my home), 20+ year team. Trusted network serving Fairfax Station, Springfield, Burke, Lorton.",
+  description: "Army veteran and MRP realtor helping Fort Belvoir military personnel find off-base housing. Personal PCS experience, VA loan expert (used my VA loan for my home). Working with a team of 20+ years expertise. Trusted network serving Fairfax Station, Springfield, Burke, Lorton.",
   keywords: "Fort Belvoir off base housing, Fort Belvoir realtor, Fort Belvoir housing market, Fort Belvoir VA loan, Fort Belvoir PCS, housing around Fort Belvoir, Fort Belvoir veteran realtor, MRP certified",
   openGraph: {
     title: "Fort Belvoir Off Base Housing | Army Veteran MRP Realtor",
-    description: "Army veteran and MRP certified realtor with personal PCS and VA loan experience helping Fort Belvoir military personnel find off-base housing.",
+    description: "Army veteran and MRP certified realtor with personal PCS and VA loan experience. Working with a team of 20+ years market expertise helping Fort Belvoir military personnel find off-base housing.",
     url: "https://pbrealtynova.com/bases/fort-belvoir",
   },
 };
@@ -263,8 +263,8 @@ export default function FortBelvoirPage() {
                 classroom training ever could.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                Today, as an <strong>MRP (Military Relocation Professional) certified realtor</strong> with a 20+ year team, I combine that lived experience
-                with deep market knowledge and a trusted network of VA loan specialists, inspectors, and contractors who understand military timelines.
+                Today, as an <strong>MRP (Military Relocation Professional) certified realtor</strong>, I work alongside a team with over 20 years of market expertise.
+                Together, we combine my lived military experience with deep local knowledge and a trusted network of VA loan specialists, inspectors, and contractors who understand military timelines.
               </p>
               <p className="text-lg text-gray-700 font-semibold">
                 I'm not just your realtor—I'm a fellow veteran who's been where you are and knows how to get you where you need to be.
@@ -505,10 +505,10 @@ export default function FortBelvoirPage() {
                 How can I find a trusted VA loan lender and real estate team?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                As an MRP realtor with a <strong>20+ year team</strong>, I've built a network of VA loan specialists, home inspectors,
-                and contractors who understand military timelines and challenges. All my lender partners specialize in VA loans,
-                offer competitive rates, and can work with your PCS schedule. My team has helped hundreds of military families navigate
-                the home buying process, from pre-approval to closing and beyond. When you work with me, you get access to this entire
+                As an MRP realtor working with a <strong>team of over 20 years market expertise</strong>, we've built a comprehensive network of VA loan specialists, home inspectors,
+                and contractors who understand military timelines and challenges. All our lender partners specialize in VA loans,
+                offer competitive rates, and can work with your PCS schedule. Our team has helped hundreds of military families navigate
+                the home buying process, from pre-approval to closing and beyond. When you work with us, you get access to this entire
                 network of military-friendly professionals who will treat you with the respect and urgency you deserve.
               </p>
             </div>
